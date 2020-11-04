@@ -1,0 +1,274 @@
+/*--------------共通樣式---------------- --*/
+/*----------- 先套用common 再用style--------*/
+/*-----------------------------------------*/
+@import 'for_bootstrap4.css';
+@import 'base.css';
+/*------------for old template-------------*/
+body,html{
+    font-size: 14px;
+    min-width: 1200px;
+    font-family: 'Microsoft JhengHei';
+}
+body#login2page{
+    min-width: auto;
+}
+#footer .navbar-nav{
+	display: flex;
+	justify-content: center;
+	flex-direction:row;
+}
+/*----------------for bootstrap4----------------------*/
+/*-------------------------------------------------------*/
+#header .menu_admin li{
+	display: block;
+	margin: 5px 0px 5px 10px;
+}
+#header .menu_admin .text-name{
+	color: #fff100;
+}
+#header .menu_admin .account_text{
+	display: flex;
+    align-items: center;
+}
+#header .login-table>div{
+    margin-right: 0.5em;
+}
+#header .login-table>div input{
+    min-width: 120px;
+}
+#header .login-table-on{
+    display: flex;
+    width: 330px;
+    flex-wrap: wrap;
+}
+#header .login-table-on .after-login-info{
+    display: flex;
+    margin-top: .7em;
+    background-color: #fff;
+    padding: .5em;
+    border-radius: .2rem;
+    justify-content: center;
+    width: 330px;
+}
+#header .login-table-on .btn-after-login{
+    width: 230px;
+    padding: 0.5rem .5rem;
+}
+#header .login-table-on #submit_to_chpassword{
+    width: 40px;
+}
+#header .login-table-on #submit_to_logout{
+    width: 60px;
+}
+#header .login-table-on #submit_reload_balance{
+    display: flex;
+    align-self: center;
+}
+#header .login-table-on>div:nth-child(1){
+    order:1;
+}
+#header .login-table-on>div:nth-child(3){
+    order:2;
+}
+#header .login-table-on>div:nth-child(2){
+    order:3;
+}
+.preview_status #preview_status{
+    color: #f00;
+}
+#header #head_member_menu{
+    border: 1px #ffffff57 solid;
+}
+.footer ul{
+	flex-direction:row;
+	padding: 20px 0;
+}
+.footer ul li{
+	margin: 0px 10px;
+}
+.input-group-addon{
+	padding: 6px 12px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1;
+    color: #555;
+    text-align: center;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    display: flex;
+    align-items:center;
+}
+/*----------------static---------------------*/
+#static p{
+	line-height: 25px;
+}
+/* #static .pages .nav-tabs li a{
+	position: relative;
+    padding: 8px;
+    padding-left: 40px;
+    margin: 0 5px;
+}
+#static .pages .nav-tabs li a::before{
+    font-family: Font Awesome\ 5 Free;
+    font-weight: 900;
+    content: "\f138";
+    font-size: 18px;
+    position: absolute;
+    top: 4px;
+    left: 17px;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+#static .pages .nav-tabs>li.active>a::before{
+	-webkit-transform: rotate(90deg);
+	        transform: rotate(90deg);
+} */
+#admin input + input{
+	margin-left: 3px;
+}
+#admin input + button{
+	margin-left: 3px;
+}
+#admin .panel-body,#login2page .panel-body,#member .panel-body{
+	background-color: #fff;
+	padding: 10px 10px 1px;
+	padding-bottom: 50px;
+}
+.table>tbody>tr.active>td, .table>tbody>tr.active>th, .table>tbody>tr>td.active, .table>tbody>tr>th.active, .table>tfoot>tr.active>td, .table>tfoot>tr.active>th, .table>tfoot>tr>td.active, .table>tfoot>tr>th.active, .table>thead>tr.active>td, .table>thead>tr.active>th, .table>thead>tr>td.active, .table>thead>tr>th.active {
+    background-color: #f5f5f5;
+}
+#header [type=reset],#header  [type=submit],#header  button,#header [type=button] {
+    -webkit-appearance: unset !important;
+}
+#casinotab.nav-tabs{
+	border-bottom: 0px !important;
+}
+.account-info [type=button]{
+    -webkit-appearance:unset !important;
+}
+/*-------------for bootstrap4 end--------------*/
+#header #gNavi li.hot::before,#footer .f_nav li.hot::before {
+    top: 0;
+    right: 0;
+}
+/*main menu*/
+#header .hBox{
+    display: flex;
+}
+#header .headlogin{
+    margin-left: auto;
+}
+#header .menu_top .nav-item.dropdown-lang{
+    position: relative;
+}
+#header .menu_admin>li, #header .menu_top>li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#header .menu_admin{
+	align-items: baseline;
+}
+#header #gNavi li{
+    position: relative;
+}
+#header .login-table{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#header .preview_status{
+    margin-top: .5em;
+}
+#header .login-table .login-table-verification-td{
+    position: relative;
+}
+/* .main-menu li::after{
+    font-family: "Glyphicons Halflings";
+    content: "\e212";
+    color: inherit;
+    position: absolute;
+    top: 0.5em;
+    font-size: 1.2em;
+} */
+#admin .main-menu li::after{
+    content: "";
+}
+.main-menu .nav-link{
+    margin-left: 5px;
+}
+#member #header #gNavi nav{
+    width: 100%;
+}
+h1 a:hover{
+    text-decoration: none;
+}
+.breadcrumb {
+    height: 36.77px;
+}
+
+/*cursor:pointer效果*/
+.cl_date, .cl_money, .cl_cate, .cl_casino, .cl_status, .ca_tdcancel, .cl_promotions{
+    cursor: pointer;
+}
+.cl_date:hover, .cl_money:hover, .cl_cate:hover, .cl_casino:hover, .cl_status:hover, .ca_tdcancel:hover, .cl_promotions:hover{
+    color: #555;
+}
+
+/* modal */
+.panel-body .modal-content{
+    width: 610px;
+}
+
+
+/*代理中心 - 會員管理*/
+.modal_contentstyle.modal-content .modal-body button{
+	border-bottom: 1px solid #e3e3e3;
+}
+.modal_contentstyle.modal-content .modal-body button:last-child{
+	border:0;
+}
+
+/* 代理中心 - 邀請碼 ， 站內信件表格*/
+.table.table_liststyle tr,table.dataTable.table_liststyle tbody tr,table.dataTable.table_liststyle thead tr,.stationmail_list tr{
+    margin-bottom: 0;
+}
+.table.table_liststyle th,.table.table_liststyle td,.stationmail_list td{
+    height: auto;
+    padding: 17px .75rem;
+}
+/* 代理說明 */
+#static h2,
+#static h3 {
+    color: #c39d6d;
+}
+/*個人信息  */
+.member_table tbody tr td input.form-control:focus,
+.member_table tbody tr td input,
+.member_table tbody tr td select,
+.member_table tbody tr td select:focus,
+.spread_add_style select.form-control,
+.spread_add_style input.form-control,
+.agentSettingArea select.form-control,
+.div_from2input>div input:focus,
+.div_from2input>div input
+{
+    color: #fff;
+}
+.member_table tbody tr td input::placeholder,
+.div_from2input>div input::placeholder,
+.pen_icon,
+input.form-control::placeholder
+{
+    color: #b4b4b4;
+}
+.agenthelp_password{
+    background: #aaa;
+}
+.agenthelp_password span{
+    color: #fff;
+}
+.input-focus{
+    color: #fff;
+}

@@ -1,0 +1,40 @@
+/*
+----------------------------------------------------------------------------
+// Features:	顏色、圖片相關CSS集中至本檔
+// File Name:	root.css
+// ----------------------------------------------------------------------------
+*/
+/*---------------背景色-------------*/
+#header{
+	background-color: var(--main);
+}
+#footer {
+    background-color: var(--main);
+    color: var(--font);
+}
+/*------------#header------------*/
+#header .account-info {
+    background: var(--sub) none repeat scroll 0 0;
+}
+#header {
+    background: var(--main);
+}
+/*--------morelink-------------*/
+
+/*-----------footer---------------*/
+
+/*-------------物件---------------*/
+.index_tabmenu>li.active, .index_tabmenu>li.active>a {
+    background-color: var(--sub) !important;
+    border: 1px solid var(--sub) !important;
+    border-bottom-color: var(--sub) !important;
+}
+.swiper-container #gNavi li a {
+    color: var(--font);
+}
+#index .index_m_title {
+    border-left: 5px solid var(--sub);
+}
+a {
+    color: var(--font);
+}

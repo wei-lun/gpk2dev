@@ -1,0 +1,69 @@
+/*
+----------------------------------------------------------------------------
+// Features:	顏色、圖片相關CSS集中至本檔
+// File Name:	root.css
+// ----------------------------------------------------------------------------
+*/
+/*---------------背景色-------------*/
+#header{
+	background-color: var(--main);
+}
+body{
+    background-color: var(--main);
+}
+#main {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+#footer {
+    background-color: var(--main);
+    color: var(--font);
+}
+/*------------#header------------*/
+#header .account-info {
+    background: var(--sub) none repeat scroll 0 0;
+}
+.navblock .nbox {
+    background-color: var(--sub);
+}
+#header .navbar-collapse {
+    background-color: rgba(32, 32, 32, 0.5);
+}
+#header .navlog {
+    background-color: rgba(32, 32, 32, 0.5);
+}
+/*--------morelink-------------*/
+
+/*-----------footer---------------*/
+
+/*-------------物件---------------*/
+.index_tabmenu>li.active, .index_tabmenu>li.active>a {
+    background-color: var(--main) !important;
+    border: 1px solid var(--main) !important;
+    border-bottom-color: var(--main) !important;
+}
+.swiper-slide {
+    background: var(--sub);
+}
+.swiper-container #gNavi li a {
+    color: var(--font);
+}
+#index .index_m_title {
+    border-left: 5px solid var(--sub);
+    background-color: var(--sub);
+}
+#index .index_m_title.h5, #index .index_m_title h5 {
+    color: var(--font);
+}
+a {
+    color: var(--font);
+}
+.gameitem {
+    background-color: rgba(34, 34, 34, 0.7) !important;
+    border: 2px rgba(149, 255, 103, 0.3) solid !important;
+}
+.marqueebox {
+    background-color: rgba(34, 34, 34, 0.7);
+}
+.swiper-container #gNavi li.active a {
+    color: #fff;
+}

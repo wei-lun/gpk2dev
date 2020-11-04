@@ -1,0 +1,449 @@
+ /*   三欄式曝光宣傳 --------------  */
+
+ .feature {
+     width: 380px;
+     text-align: center;
+     padding: 10px 0;
+     margin: 15px 0 10px;
+     float: left;
+ }
+
+ .feature span {
+     color: #c39d6d;
+     font-size: 50px;
+ }
+
+ .feature-left {
+     margin-left: 15px;
+     margin-right: 7.5px;
+ }
+
+ .feature-right {
+     margin-left: 7.5px;
+     margin-right: 15px;
+ }
+
+ .feature-center {
+     margin-left: 7.5px;
+     margin-right: 7.5px;
+ }
+
+ .feature.bg-light {
+     background-color: #f8f8f8 !important;
+ }
+
+ .feature.bg-dark {
+     background-color: #ebebeb !important;
+ }
+
+ .feature h5 {
+     margin-bottom: 15px;
+     margin-top: 20px;
+     font-size: 18px;
+     color: #111111;
+     font-family: "Microsoft JhengHei", sans-serif;
+     font-weight: 700;
+     letter-spacing: 0.1em;
+ }
+
+ .feature p {
+     color: #444;
+     font-family: "Microsoft JhengHei", sans-serif;
+     font-size: 15px;
+     font-weight: 400;
+     letter-spacing: 0.05em;
+     line-height: 20px;
+     margin-bottom: 10px;
+ }
+ /* -----------------------------*/
+ /* NEW ARRIVALS 標題--------------*/
+
+ .m_title h2 {
+     clear: both;
+     color: #252525;
+     font-family: Microsoft JhengHei;
+     font-size: 20px;
+     font-weight: 900;
+     position: relative;
+     text-align: center;
+     text-transform: uppercase;
+     margin-bottom: 20px;
+     margin-top: 20px;
+ }
+
+ .m_title h2::before,
+ .m_title h2::after {
+     border-top: 1px solid #eaeaea;
+     content: "";
+     left: 0;
+     position: absolute;
+     top: 50%;
+     width: 100%;
+     z-index: 1;
+ }
+
+ .m_title h2 span {
+     background-color: #fff;
+     padding: 0 20px;
+     position: relative;
+     z-index: 2;
+ }
+ /* -----------------------------*/
+ /* 四欄式項目--------------*/
+ /*   三欄式曝光宣傳 --------------  */
+
+ .homeproject {
+     width: 280px;
+     text-align: center;
+     padding: 10px 0;
+     margin: 15px 0 10px;
+     float: left;
+ }
+
+ .homeproject i {
+     color: #c39d6d;
+     font-size: 50px;
+ }
+
+ .homeproject-left {
+     margin-left: 15px;
+     margin-right: 7.5px;
+ }
+
+ .homeproject-right {
+     margin-left: 7.5px;
+     margin-right: 15px;
+ }
+
+ .homeproject-center {
+     margin-left: 7.5px;
+     margin-right: 7.5px;
+ }
+
+ .homeproject.bg-light {
+     background-color: #f8f8f8;
+ }
+
+ .homeproject.bg-dark {
+     background-color: #ebebeb;
+ }
+
+ .homeproject h5 {
+     margin-bottom: 15px;
+     margin-top: 20px;
+     font-size: 18px;
+     color: #111111;
+     font-family: "Microsoft JhengHei", sans-serif;
+     font-weight: 700;
+     letter-spacing: 0.1em;
+ }
+
+ .homeproject p {
+     color: #444;
+     font-family: "Microsoft JhengHei", sans-serif;
+     font-size: 15px;
+     font-weight: 400;
+     letter-spacing: 0.05em;
+     line-height: 20px;
+     margin-bottom: 10px;
+ }
+ /* -----------------------------*/
+
+ .m_projects {
+     margin-bottom: 15px;
+ }
+
+ ul#game-box {
+     margin: 0 0 5px;
+     list-style: none;
+     /* margin-left: 6%;*/
+ }
+
+ ul#game-box>li.discunt:before {
+     position: absolute;
+     top: 0;
+     left: 0;
+     z-index: 1;
+     content: '';
+     display: inline-block;
+     width: 100px;
+     height: 100px;
+     background: url("../img/home/bigwin.png");
+ }
+
+ ul#game-box>li>a {
+     display: inline-block;
+     width: 100%;
+     height: 100%;
+     color: #fff;
+     font-size: 15px;
+ }
+
+ ul#game-box>li.discunt>a div {
+     height: 60px;
+     line-height: 30px;
+ }
+
+ ul#game-box>li.discunt span {
+     display: block;
+     color: #fd0;
+     font-size: 13px;
+ }
+
+ ul#game-box>li>a div {
+     position: absolute;
+     bottom: 0;
+     left: 0;
+     right: 0;
+     width: 100%;
+     height: 40px;
+     padding: 0 10px;
+     color: #fff;
+     font-size: 15px;
+     line-height: 40px;
+     text-align: left;
+     background: rgba(195, 157, 109, 0.9);
+ }
+
+ ul#game-box>li {
+     position: relative;
+     float: left;
+     width: 280px;
+     height: 230px;
+     margin: 5px 10px 5px 0;
+     background-position: center top;
+ }
+
+ ul#game-box>li[data-img="promo01"] {
+     width: 480px;
+     height: 200px;
+     background-image: url("../img/home/bigwin.jpg");
+ }
+
+ ul#game-box>li[data-img="promo02"] {
+     width: 480px;
+     height: 200px;
+     background-image: url("../img/home/promo.jpg");
+ }
+
+ ul#game-box>li[data-img="mg_roulette"] {
+     margin-left: 10px;
+     background-image: url("../img/home/roulette.jpg");
+ }
+
+ ul#game-box>li[data-img="mg_slot"] {
+     background-image: url("../img/home/slot.jpg");
+ }
+
+ ul#game-box>li[data-img="mg_baccarat"] {
+     background-image: url("../img/home/baccarat.png");
+ }
+
+ ul#game-box>li[data-img="more"] {
+     /*  margin-left: 10px;*/
+     background-image: url("../img/home/more.jpg");
+ }
+ /*   home food --------------  */
+
+ ul#game-box>li[data-img="home_food_project01"] {
+     margin-left: 10px;
+     background-image: url("../img/home/home_food/home_food_project01.jpg");
+ }
+
+ ul#game-box>li[data-img="home_food_project02"] {
+     background-image: url("../img/home/home_food/home_food_project02.jpg");
+ }
+
+ ul#game-box>li[data-img="home_food_project03"] {
+     background-image: url("../img/home/home_food/home_food_project03.jpg");
+ }
+
+ ul#game-box>li[data-img="home_food_project04"] {
+     /*  margin-left: 10px;*/
+     background-image: url("../img/home/home_food/home_food_project04.jpg");
+ }
+ /*   home_clothing --------------  */
+
+ ul#game-box>li[data-img="home_clothing_project01"] {
+     margin-left: 10px;
+     background-image: url("../img/home/home_clothing/home_clothing_project01.jpg");
+ }
+
+ ul#game-box>li[data-img="home_clothing_project02"] {
+     background-image: url("../img/home/home_clothing/home_clothing_project02.jpg");
+ }
+
+ ul#game-box>li[data-img="home_clothing_project03"] {
+     background-image: url("../img/home/home_clothing/home_clothing_project03.jpg");
+ }
+
+ ul#game-box>li[data-img="home_clothing_project04"] {
+     /*  margin-left: 10px;*/
+     background-image: url("../img/home/home_clothing/home_clothing_project04.jpg");
+ }
+ /*   home_live --------------  */
+
+ ul#game-box>li[data-img="home_live_project01"] {
+     margin-left: 10px;
+     background-image: url("../img/home/home_live/home_live_project01.jpg");
+ }
+
+ ul#game-box>li[data-img="home_live_project02"] {
+     background-image: url("../img/home/home_live/home_live_project02.jpg");
+ }
+
+ ul#game-box>li[data-img="home_live_project03"] {
+     background-image: url("../img/home/home_live/home_live_project03.jpg");
+ }
+
+ ul#game-box>li[data-img="home_live_project04"] {
+     /*  margin-left: 10px;*/
+     background-image: url("../img/home/home_live/home_live_project04.jpg");
+ }
+ /*   home food --------------  */
+
+ ul#game-box>li[data-img="home_travel_project01"] {
+     margin-left: 10px;
+     background-image: url("../img/home/home_travel/home_travel_project01.jpg");
+ }
+
+ ul#game-box>li[data-img="home_travel_project02"] {
+     background-image: url("../img/home/home_travel/home_travel_project02.jpg");
+ }
+
+ ul#game-box>li[data-img="home_travel_project03"] {
+     background-image: url("../img/home/home_travel/home_travel_project03.jpg");
+ }
+
+ ul#game-box>li[data-img="home_travel_project04"] {
+     /*  margin-left: 10px;*/
+     background-image: url("../img/home/home_travel/home_travel_project04.jpg");
+ }
+ /*   home_edu --------------  */
+
+ ul#game-box>li[data-img="home_edu_project01"] {
+     margin-left: 10px;
+     background-image: url("../img/home/home_edu/home_edu_project01.jpg");
+ }
+
+ ul#game-box>li[data-img="home_edu_project02"] {
+     background-image: url("../img/home/home_edu/home_edu_project02.jpg");
+ }
+
+ ul#game-box>li[data-img="home_edu_project03"] {
+     background-image: url("../img/home/home_edu/home_edu_project03.jpg");
+ }
+
+ ul#game-box>li[data-img="home_edu_project04"] {
+     /*  margin-left: 10px;*/
+     background-image: url("../img/home/home_edu/home_edu_project04.jpg");
+ }
+ /*   home_fun --------------  */
+
+ ul#game-box>li[data-img="home_fun_project01"] {
+     margin-left: 10px;
+     background-image: url("../img/home/home_fun/home_fun_project01.jpg");
+ }
+
+ ul#game-box>li[data-img="home_fun_project02"] {
+     background-image: url("../img/home/home_fun/home_fun_project02.jpg");
+ }
+
+ ul#game-box>li[data-img="home_fun_project03"] {
+     background-image: url("../img/home/home_fun/home_fun_project03.jpg");
+ }
+
+ ul#game-box>li[data-img="home_fun_project04"] {
+     /*  margin-left: 10px;*/
+     background-image: url("../img/home/home_fun/home_fun_project04.jpg");
+ }
+ /* 焦点图效果 */
+
+ .picBtnTop {
+     width: 100%;
+     height: auto;
+     padding: 0;
+     position: relative;
+     zoom: 1;
+ }
+
+ .picBtnTop .hd {
+     float: left;
+     margin-left: -50px;
+     margin-top: 20px;
+     overflow: hidden;
+     padding: 3px;
+     position: absolute;
+     width: 100px;
+     z-index: 999;
+ }
+
+ .picBtnTop .hd ul li {
+     margin-bottom: 10px;
+     padding: 0 0 5px 5px;
+     text-align: center;
+     width: 80px;
+ }
+
+ .picBtnTop .hd ul li img {
+     height: 30px;
+     border: 4px solid #ddd;
+     cursor: pointer;
+ }
+
+ .picBtnTop .hd ul li.on {
+     background: url("../img/common/icoright.gif") no-repeat 0 28px;
+ }
+
+ .picBtnTop .hd ul li.on img {
+     border-color: #f60;
+ }
+
+ .picBtnTop .bd {
+     height: 100%;
+     overflow: hidden;
+     width: 100%;
+ }
+
+ .picBtnTop .bd li {
+     position: relative;
+     zoom: 1;
+     vertical-align: middle;
+ }
+
+ .picBtnTop .bd li .pic {
+     position: relative;
+     z-index: 0;
+ }
+
+ .picBtnTop .bd li .pic img {
+     vertical-align: bottom;
+     width: 100%;
+ }
+
+ .picBtnTop .bd li .bg {
+     width: 100%;
+     height: 30px;
+     position: absolute;
+     left: 0;
+     bottom: 0;
+     z-index: 1;
+     background: #000;
+     filter: alpha(opacity=60);
+     opacity: 0.6;
+ }
+
+ .picBtnTop .bd li .title {
+     width: 100%;
+     height: 30px;
+     line-height: 30px;
+     left: 0;
+     bottom: 0;
+     position: absolute;
+     z-index: 2;
+ }
+
+ .picBtnTop .bd li .title a {
+     color: #fff;
+     padding-left: 15px;
+ }

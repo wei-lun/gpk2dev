@@ -1,0 +1,8 @@
+.m_slides {
+    height: 250px;
+    overflow: hidden;
+}
+
+.carousel-inner {
+    top: -90px;
+}

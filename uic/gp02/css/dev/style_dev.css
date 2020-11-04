@@ -1,0 +1,1899 @@
+/*
+Feture: GPK 通用 CSS 樣板
+Version: v0.1
+Author: mtchang.tw@gmail.com
+Date: 2016.6.11
+// ---------------------------------------------------
+background-image: url("bg.png");
+background-color: #fff;
+background: rgba(250, 250, 251, 0.63);
+background-color: #dfdfdf;
+background-image: url("bg.png");
+// ---------------------------------------------------
+*/
+@import 'root.css';
+@import '../../../../in/css/common_old.css';
+/*外掛*/
+@import '../../../../ui/component/gametab_gp06/gametab_gp06.css';
+/* BASE */
+
+/*操控bootstrap 基本色 換成gpk02的金色*/
+/*
+.bg-primary
+.btn-primary
+*/
+body{
+	color: #FFF;
+}
+.headlogin .account-notice>a:hover, 
+.after-login-info .account-notice>a:hover{
+	color: #8a6f4d;
+}
+.modal-content{
+	color: #000;
+}
+#gametablepage{
+	color: #000;
+}
+.btn-primary,
+.btn-primary:hover{
+	background-color: #c39d6d;
+	border-color: #c39d6d;
+	color: #FFF;
+}
+.btn-primary.disabled, .btn-primary:disabled,
+.btn-primary:not(:disabled):not(.disabled).active, 
+.btn-primary:not(:disabled):not(.disabled):active, 
+.show>.btn-primary.dropdown-toggle,
+.btn-primary:not(:disabled):not(.disabled).active:focus, 
+.btn-primary:not(:disabled):not(.disabled):active:focus, 
+.show>.btn-primary.dropdown-toggle:focus{
+	background-color: #c39d6d;
+	border-color: #c39d6d;
+	color: #FFF;
+	box-shadow:0 0 0 0.2rem rgba(195, 157, 109, 0.5);	
+}
+.btn-primary.btn.focus, .btn-primary.btn:focus{
+	box-shadow:0 0 0 0.2rem rgba(195, 157, 109, 0.5);
+}
+/*原本藍色改主色*/
+.bg-primary{
+	background: #c39d6d!important;
+}
+button.bg-primary:hover{
+	background-color: #c39d6d!important;
+}
+button.bg-primary:focus{
+	background-color: #c39d6d!important;
+	border-color: #c39d6d!important;
+	color: #FFF!important;
+	box-shadow:0 0 0 0.2rem rgba(195, 157, 109, 0.5);	
+}
+/*原本藍色改主色*/
+.text-primary{
+	color: #c39d6d!important;
+}
+a.text-primary:focus, 
+a.text-primary:hover,
+a.text-primary:focus, 
+a.text-primary:hover{
+	color: #c39d6d!important;	
+}
+/*原本灰色改淡色灰*/
+/*.btn-secondary{
+	background: #868e94;
+	border-color:#868e94;
+}*/
+.btn-secondary{
+	background:#414141;
+	border-color:#4d4d4d;
+}
+.btn-secondary:hover{
+	background:#5a5a5a;
+	border-color:#5a5a5a;
+}
+.btn-secondary:not(:disabled):not(.disabled).active:focus,
+.btn-secondary:not(:disabled):not(.disabled):active:focus,
+.show>.btn-secondary.dropdown-toggle:focus{
+	box-shadow: 0 0 0 0.2rem rgb(65, 65, 65);
+}
+.btn-secondary:not(:disabled):not(.disabled).active, 
+.btn-secondary:not(:disabled):not(.disabled):active, 
+.show>.btn-secondary.dropdown-toggle{
+	background:#414141;
+	border-color:#4d4d4d;
+}
+.btn-outline-secondary{
+	color:#aaa;
+	border-color:#aaa;
+}
+/*原本灰色改淡色灰*/
+.border-secondary{
+	border-color:#454748!important;
+}
+/*原本淡綠色改深綠*/
+.alert-success{
+	background-color: #4b7e57;
+}
+/*bootstrap*/
+.form-control:disabled, 
+.form-control[readonly]{
+  background: #e0e0e0;
+  color: #939393;
+}
+.bg-secondary{
+	background: #868e94!important;
+}
+.list-group-item-success{
+	color: #a5e5b4;
+}
+
+.modal-body{
+	color: #000;
+}
+.slide-up-style.slide-up table th{
+	color: #FFF;	
+	font-weight: normal;
+}
+
+/*tr 背景顏色*/
+.table_bg{
+  background: rgba(67, 67, 67, 0.47843);  
+}
+
+a {
+	color: #c39d6d;
+}
+a:hover{
+	color: inherit;
+}
+
+ul {
+	list-style: outside none none;
+	margin: 0;
+	padding: 0;
+}
+
+body .layoutshadow {
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+	margin: 0 auto;
+	width: 100%;
+}
+
+body {
+	background: #222 fixed center top;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: Microsoft JhengHei;
+}
+
+/* LAYOUT */
+
+#wrapper {
+	margin: 0 auto;
+	min-width: 1200px;
+	/*回復窄版把width設為max-width */
+	/*min-height: 100%;*/
+}
+/*
+.container-fluid {
+	padding: 0;
+}
+*/
+.container {
+	/* 取消bootstrap 的自適應 */
+	min-width: 1200px;
+	/*padding-right: 0%;
+	padding-left: 0%;*/
+}
+#login2page .container{
+	min-width: auto;
+}
+/*
+.row {
+	width: 100% !important;
+	margin: 0 auto;
+	padding-right: 0%;
+	padding-left: 0%;
+}
+*/
+#header {
+	background: #222 url("../img/common/bg2.png") repeat fixed center top;
+	box-shadow: 0 5px 4px -4px rgba(0, 0, 0, 0.5);
+	font-family: "Microsoft JhengHei", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	position: relative;
+}
+
+.h_topnavb {
+	border-bottom: 2px solid #c39d6d;
+}
+
+.h_topnav {
+	background: rgba(0, 0, 0, 0.8) none repeat scroll 0 0;
+	border-bottom: 1px solid #333333
+}
+
+.h_topnav a {
+	color: #c39d6d;
+	text-shadow: 0 1px 0 #222;
+}
+
+.h_topnav .glyphicon {
+	padding-right: 5px;
+}
+
+.h_topnav .lnr {
+	padding-right: 5px;
+}
+
+.pull-lift>li>a {
+	padding: 10px 15px 10px 0;
+}
+
+.pull-right>li>a {
+	padding: 10px 0 10px 15px;
+}
+
+.h_mid {
+	height: 100px;
+	position: relative;
+	z-index: 2;
+	padding-top: 10px;
+}
+
+.h_logo {
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.h_logo span {
+	color: #eee;
+	font-size: 30px;
+	letter-spacing: 2px;
+	margin: 0 10px;
+	text-shadow: 0 2px 0 #6c5c48;
+	vertical-align: middle;
+}
+
+#member .h_logo img {
+	/* 針對會員中心單logo部分縮小 */
+	max-height: 40px;
+}
+#member #header #gNavi nav{
+	width: 100%;
+}
+.h_logo a:hover {
+	text-decoration: none;
+}
+
+.h_login {
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.h_nav {
+	height: 100%;
+	position: relative;
+	z-index: 1;
+}
+
+.nav li a:focus,
+.nav li a:hover {
+	background-color: transparent;
+}
+
+#member .panel-title {
+	/* 針對會員中心格式 */
+	color: #333;
+	font-size: 18px;
+	font-weight: 900;
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+
+#member .panel-success th {
+	width: 100px;
+}
+
+.panel-title .glyphicon {
+	padding-right: 5px;
+}
+/*-----------------------共用設定----------------*/
+/*標題顏色*/
+.announcement_title,
+.announcement_time{
+	color: #FFF;
+}
+#testArea .announcement .tail{
+	color: #838580;
+}
+/*最上方標題*/
+.title-color{
+	color: #FFF;
+}
+/*共用表格 - 兩欄位*/
+.table_form2 tr td input{
+	background: #4e4e4e;
+	border: 1px solid #7b7b7b;
+	color: #b4b4b4;
+}
+.table_form2 tr td input:focus{
+	background: #474747;
+	color: #fff;
+	box-shadow: none;
+	border: 1px solid #7b7b7b;
+}
+/*共用表格 - 列表顏色*/
+.table.table_from4 tr,
+.table.table_from6 tr,
+.table_from6 tr,
+.table.table_liststyle tr,
+table.dataTable.table_liststyle tbody tr,
+table.dataTable.table_liststyle thead tr,
+.table.stationmail_list tr,
+.announcement_content tr,
+#promotionsTableBody .promotion_row{
+	background: #2d2d2d;
+	border-bottom: 1px solid #4f4f4f;
+	color: #bfbfbf;
+}
+.table tr.no_data{
+	border: none;
+}
+table.dataTable.table_liststyle tbody tr td.dataTables_empty{
+	background: none;
+}
+table.dataTable.table_liststyle.no-footer{
+	border:0!important;
+}
+table.dataTable thead th.sorting_desc {
+	background-image: url(../../../in/datatables/images/sort_top.png);
+}
+table.dataTable thead th.sorting_asc {
+	background-image: url(../../../in/datatables/images/sort_down.png);
+}
+/*共用表格 - 時間顏色*/
+ .table_from4.table-hover tbody tr:hover,
+ .table_from6.table-hover tbody tr:hover{
+	color: #FFF;
+}
+.div_from2input select{
+	height: 40px;
+}
+#testArea .table_form2 a{
+	color: #828282;
+}
+#testArea .table_form2 a:hover{
+	color: #fff;
+}       
+/*.div_from2input>div input[type=text],
+.div_from2input>div input[type=password]{
+	background: #474747;
+	color: #FFF;
+}
+.div_from2input>div input[type=text]::placeholder,
+.div_from2input>div input[type=password]::placeholder{
+	color:#FFF;
+}
+.div_from2input>div input[type=text].form-control:focus,
+.div_from2input>div input[type=password].form-control:focus{
+	background:#FFF;
+	color: #000; 
+}*/
+/*內文標題顏色*/
+#stationmail_mail td h6{
+  color:#767676;
+}
+/*--------------------有連結表格----------*/
+.table_link tr td:first-child{
+  color: #c39d6d;
+}
+.table_link tr td:first-child h6{
+  color: #FFF;
+}
+/*會員中心返回首頁按鈕*/
+
+.nav-pills>li {
+	padding: 5px 0;
+}
+
+li.topreturn a {
+	border-radius: 4px;
+	padding: 5px 20px;
+	display: block;
+	margin-left: 10px;
+	margin-top: 5px;
+	color: #7263ff;
+	text-shadow: 0 1px 0 #fff;
+}
+
+li.topreturn a:hover {
+	border-radius: 4px;
+	display: block;
+	color: #ff6600;
+}
+
+li.topreturn a .glyphicon {
+	color: #7263ff;
+}
+
+li.topreturn a:hover .glyphicon {
+	color: #ff6600;
+}
+
+li.topreturn a {
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fceabb+0,fccd4d+50,f8b500+51,fbdf93+100;Orange+3D+%235 */
+	background: #fceabb;
+	/* Old browsers */
+	background: -moz-linear-gradient(top, #fceabb 0%, #fccd4d 50%, #f8b500 51%, #fbdf93 100%);
+	/* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #fceabb 0%, #fccd4d 50%, #f8b500 51%, #fbdf93 100%);
+	/* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #fceabb 0%, #fccd4d 50%, #f8b500 51%, #fbdf93 100%);
+	/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fceabb', endColorstr='#fbdf93', GradientType=0);
+	/* IE6-9 */
+}
+
+li.topreturn a:hover,
+li.topreturn a:focus,
+li.topreturn a:active,
+li.topreturn a.active
+	{
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffb76b+0,ffa73d+50,ff7c00+51,ff7f04+100;Orange+Gloss */
+	background: #ffb76b;
+	/* Old browsers */
+	background: -moz-linear-gradient(top, #ffb76b 0%, #ffa73d 50%, #ff7c00 51%, #ff7f04 100%);
+	/* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #ffb76b 0%, #ffa73d 50%, #ff7c00 51%, #ff7f04 100%);
+	/* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #ffb76b 0%, #ffa73d 50%, #ff7c00 51%, #ff7f04 100%);
+	/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffb76b', endColorstr='#ff7f04', GradientType=0);
+	/* IE6-9 */
+}
+
+/*footer*/
+
+#footer {
+	background: #222 url("../img/common/bg2.png") repeat fixed center bottom;
+	box-shadow: 4px -4px 5px 0 rgba(0, 0, 0, 0.5);
+	color: #e2e2e2;
+}
+#footer a{
+	color: #b2b2b2;
+}
+#footer a:hover{
+	color: #fff;
+}
+.f_nav {
+	padding-left: 0;
+	padding-top: 10px;
+}
+
+.m_feature {
+	margin-top: 15px;
+}
+/*
+.carousel {
+	height: 400px;
+	overflow: hidden;
+	position: relative;
+}*/
+#header #gNavi li.hot::before, #footer .f_nav li.hot::before, #footer .f_morelink li.hot::before{
+	right: -0.2em;
+	top: -0.5em;
+}
+#header #gNavi>li>a{
+	color: #c39d6d;
+}
+#header #gNavi>li.navi_more a{
+	color: #c39d6d;
+}
+
+/* MODULE */
+
+/* STATE */
+
+/*main menu*/
+#header .hBox{
+	display: flex;
+}
+#header .menu_top .nav-item.dropdown-lang{
+	position: relative;
+}
+#header .menu_admin>li, #header .menu_top>li{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#header #gNavi li{
+	position: relative;
+}
+#header .hLinkBox>div>ul>li>a{
+	color: #c39d6d;
+}
+#header .short_url{
+	color: #c39d6d;
+}
+/* .main-menu ul li a::before {
+	color: #c39d6d;
+	display: inline-block;
+	font-family: "Glyphicons Halflings";
+	font-weight: 400;
+	line-height: 1;
+	padding-right: 10px;
+}
+.main-menu li::after{
+	font-family: "Glyphicons Halflings";
+    content: "\e212";
+    color: #c39d6d;
+    position: absolute;
+    top: 0.5em;
+    font-size: 1.2em;
+} */
+#admin .main-menu li::after{
+    content: "";
+}
+.main-menu .nav-link{
+    margin-left: 5px;
+}
+ul.main-menu .glyphicon {
+	display: inline-block;
+	font-family: "Glyphicons Halflings";
+	font-style: normal;
+	font-weight: 400;
+	line-height: 1;
+	padding-right: 5px;
+	position: relative;
+	top: 1px;
+	color: #c39d6d;
+}
+
+ul.main-menu li:hover .main-drop {
+	transform: scaleY(1);
+}
+
+.firstli {
+	padding-top: 15px;
+}
+
+.lastli {
+	padding-bottom: 9px;
+}
+
+ul.main-drop>li a {
+	color: #333;
+	display: block;
+	font-size: 14px;
+	line-height: 17px;
+	padding: 3px 30px;
+	text-decoration: none;
+	text-transform: capitalize;
+}
+
+ul.main-menu>li {
+	display: inline-block;
+	transition: all 0.3s ease 0s;
+	margin-bottom: 15px;
+}
+.dropdown2 {
+	position: relative;
+}
+
+ul.main-drop>li>a:hover {
+	color: #a08d7c;
+}
+
+.nav>li>a:focus,
+.nav>li>a:hover {
+	background-color: transparent;
+}
+
+.main-menu>li>a {
+	color: #eee;
+	font-weight: 600;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.main-menu li.active>a {
+	border: 0 solid #fff;
+	color: #a08d7c;
+}
+
+.nav .open>a,
+.nav .open>a:focus,
+.nav .open>a:hover {
+	background-color: initial;
+	border-color: #337ab7;
+}
+/*
+.dropdown-menu {
+	border-radius: 0 0 4px 4px;
+	padding: 0;
+}
+
+.h_topnav .dropdown-menu li a {
+	text-shadow: 0;
+	text-shadow: none;
+}
+*/
+.h_topnav .navbar-right {
+	margin-right: 0;
+}
+
+/*end main menu*/
+
+/*-------------------------css for static page---------------------------*/
+
+.static_bg {
+	background-color: #888;
+	padding-top: 20px;
+}
+
+/*-------------------------css for static page---------------------------*/
+
+/* 中間紅色底有文字的選單 */
+
+.dropdown-mid {
+	/*background: rgba(255,255,255,.15);*/
+	border-color: rgba(255, 255, 255, .15);
+	color: #ffffff;
+}
+
+/* 語言切換列, member menu
+
+.dropdown-toggle {
+	color: #ffffff;
+}
+*/
+
+.tooltip-inner {
+	white-space: pre;
+	max-width: none;
+}
+
+.thumbnail {
+	float: left;
+	width: 280px;
+	height: 300px;
+	display: block;
+	padding: 5px;
+	margin-bottom: 3px;
+	line-height: 1.42857143;
+	background-color: rgba(0, 0, 0, 0);
+	border: 1px solid rgba(255, 255, 255, 0.01);
+	border-radius: 4px;
+	-webkit-transition: border .2s ease-in-out;
+	-o-transition: border .2s ease-in-out;
+	transition: border .2s ease-in-out;
+}
+
+/*驗證碼圖片css*/
+
+.captcha {
+	position: absolute;
+	top: 2px;
+	right: 2px;
+	width: auto;
+	width: 35px;
+	height: 28px;
+	-webkit-border-top-right-radius: 3px;
+	border-top-right-radius: 3px;
+	-webkit-border-top-right-radius: 3px;
+	border-bottom-right-radius: 3px;
+	z-index: 2;
+}
+
+.show_captcha_css {
+	position: absolute;
+	right: 6px;
+	z-index: 2;
+	top: 2px;
+}
+
+.show_captcha_img_css {
+	height: 20px;
+	width: 50px;
+}
+
+#box_text {
+	width: 100px;
+	height: 30px;
+	padding: 0 3px;
+	color: #999;
+	font-size: 12px;
+	background-color: transparent;
+	border: 1px solid #666;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+}
+
+/*首頁 input (account password 驗證碼) css*/
+
+.form-control-home {
+	background-color: #fff;
+	border: 1px solid #c39d6d;
+	color: #c39d6d;
+}
+
+/*join us button css*/
+
+.btn-join-us {
+	color: #fff;
+	background: #f50;
+	font-weight: bold;
+}
+
+.btn-join-us:hover {
+	background: #fa0;
+	color: #000;
+}
+
+/*login button*/
+
+.btn-login {
+	background: #c39d6d none repeat scroll 0 0;
+	color: #fff;
+}
+
+.btn-login:hover {
+	opacity: 0.8;
+}
+
+/*forget password button*/
+
+.btn-forget {
+	color: #c39d6d;
+	background: none;
+	border: 1px solid #c39d6d;
+}
+
+.btn-forget:hover {
+	color: #999;
+}
+
+/*歡迎列顯示*/
+
+.weltitle {
+	padding: 10px 0 10px 15px;
+	display: block;
+	color: #c39d6d;
+}
+
+/*nav bar 最上面一條 免費開戶、試玩、語言選擇*/
+
+ul.top-nav {
+	position: absolute;
+	top: 0;
+	right: 2%;
+	text-align: right;
+	z-index: 2;
+	list-style-type: none;
+}
+
+ul.top-nav>li {
+	float: left;
+	line-height: 25px;
+}
+
+ul.top-nav>li+li:before {
+	content: '|';
+	padding: 0 5px;
+	color: #999;
+}
+
+ul.top-nav>li>a:hover {
+	color: #ccc;
+}
+
+ul.top-nav>li>a {
+	color: #999;
+	font-size: 12px;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+ul.footer-nav {
+	padding-left: 30%;
+	padding-right: 20%;
+}
+
+ul.footer-nav>li {
+	float: left;
+	line-height: 25px;
+	list-style: none;
+}
+
+ul.footer-nav>li+li:before {
+	content: '|';
+	padding: 0 5px;
+	color: #999;
+}
+
+ul.footer-nav>li>a:hover {
+	color: #ccc;
+}
+
+ul.footer-nav>li>a {
+	color: #999;
+	font-size: 12px;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+/*end of top nav  最上面一條 免費開戶、試玩、語言選擇*/
+
+/* 登入後的會員狀態列 */
+
+.btn-after-login,  
+#submit_to_chpassword{
+	background-color: #fff;
+	color: #c39d6d;
+	border: 1px solid #c39d6d;
+}
+
+.btn-after-login-logout-change {
+	color: #fff;
+	background-color: #c39d6d;
+	border: 1px solid #c39d6d;
+}
+
+.btn-after-login-logout-change:hover {
+	background: #fa0;
+	color: #000;
+}
+
+/* 下拉式選單 */
+
+.dropdown-menu {
+	left: initial;
+}
+
+/* 全版背景css */
+
+.background-page {
+	background: rgba(0, 0, 0, .3);
+}
+
+/* 上層nav-bar */
+
+.background-nav-menu {
+	background: rgba(0, 0, 0, .4);
+	padding-top: 0px;
+}
+
+/* 中間內文 */
+
+.home-content-background {
+	padding-top: 12px;
+	background: rgba(0, 0, 0, .6);
+	padding-left: 0px;
+}
+
+/* 現金餘額 代幣餘額 兩個button的字體 */
+
+.label {
+	font-size: 100%;
+}
+
+/* 瀏覽信件內容標題 */
+
+/*.mail-detail-title {
+	background-color: #E07A5F;
+	background-color:#c39d6d;
+}*/
+
+/* 瀏覽信件內容標題 文字顏色 */
+
+.mail-detail-title-word {
+	color: #000;
+	font-weight: bold;
+}
+
+/* 瀏覽信件內容 header */
+/*.mail-detail-header {
+	background-color: rgba(242, 222, 191, 0.79);
+	color: #333;
+}*/
+
+/*breadcrumb*/
+
+.breadcrumb {
+	background: none;
+	border:0;
+	padding: 8px 0;
+	line-height: 20px;
+	margin: 20px 0;
+	height: 36px;
+}
+
+.breadcrumb span {
+	font-size: 13px;
+}
+
+.breadcrumb>li {
+	padding: 0 20px;
+	position: relative;
+	white-space: nowrap;
+	line-height: 18.7px;
+	font-size: 12px;
+}
+
+.breadcrumb>li::after {
+	border-bottom: 1px solid #aaa;
+  border-right: 1px solid #aaa;
+	content: "";
+	display: block;
+	position: absolute;
+	right: -5px;
+	top: 5px;
+	transform: rotate(-45deg);
+	width: 10px;
+	height: 10px;
+}
+
+.breadcrumb li:first-child{
+	padding-left: 0;
+}
+
+.breadcrumb a {
+	color: #fff;
+}
+.breadcrumb a:hover{
+	text-decoration: underline!important;
+}
+/*end breadcrumb*/
+
+/*靜態頁面文字排版*/
+
+.panel-body {
+	font-family: "微軟正黑體";
+}
+
+.panel-body h2 {
+	color: #a08d7c;
+	margin-bottom: 20px;
+}
+
+.panel-body h3 {
+	color: #d98808;
+	font-size: 22px;
+	margin: 20px 0;
+}
+
+.panel-body h4 {
+	color: #519288;
+}
+
+.panel-body ol li {
+	line-height: 2;
+}
+
+.panel-body ul {
+	list-style: inside square;
+}
+
+.panel-body ul li {
+	line-height: 2;
+}
+
+.panel-body h5 {
+	color: #ff6600;
+}
+
+/*ann_data*/
+
+.ann_data h3 span {
+	color: #63d0b5;
+	margin-right: 10px;
+}
+
+.ann_data {
+	color: #fff;
+}
+
+.h_return {
+	display: none;
+	float: right;
+	transform: translateY(-50%);
+}
+
+/*會員選單*/
+
+.account-info {
+	align-items: center;
+	background: #c39d6d none repeat scroll 0 0;
+	padding: 1.25rem;
+	min-width: 200px;
+}
+
+.account_img {
+	float: left;
+	margin-right: 5px;
+}
+
+.account-notice {
+	min-height: 10px;
+}
+
+.account-info .row {
+	margin: 0 0 5px 0;
+}
+
+.account-info button {
+	margin: 5px 0;
+}
+
+.account-notice .glyphicon {
+	color: #ffffff;
+	padding: 0;
+}
+
+.account_img .glyphicon {
+	color: #000;
+	background-color: #fff;
+	border-radius: 50%;
+}
+
+@media (max-width: 768px) {
+	.main-menu .alert {
+		display: none;
+	}
+	.dropdown-lang.estime {
+		display: none;
+	}
+	/*#member .container {
+		padding-left: 0;
+		padding-right: 0;
+		width: auto;
+	}*/
+	.h_return {
+		display: initial;
+	}
+	.h_logo img {
+		max-height: 50px;
+	}
+	#member .pull-right {
+		display: none;
+	}
+	#wrapper {
+		margin: 0 auto;
+		min-width: 100%;
+		/*min-height: 100%;*/
+	}
+}
+
+/* 前台-代理中心 */
+#gamelobby .myagencyarea_title{
+	display: none;
+}
+#gamelobby #casinotab{
+	color: #c39d6d;
+}
+#header .headlogin{
+	z-index: 99;
+}
+#header .dropdown-lang .nav-link.dropdown-toggle{
+    background-color: transparent;
+	color: #c39d6d;
+	padding-left: 0;
+}
+#header .short_url{
+	color: #c39d6d;
+}
+.marqueebox{
+	display: flex;
+}
+.marquee a{
+	color: #fff;
+}
+.marquee a span{
+	color: #63d0b5;
+}
+.marqueebox .title{
+	color: #c39d6d;
+}
+.hLinkBox {
+    background: rgba(0, 0, 0, 0.8) none repeat scroll 0 0;
+    border-bottom: 2px solid #c39d6d;
+}
+#footer .f_paylogo{
+	background-color: rgba(255, 255, 255, 0.4);
+}
+#main{
+padding-bottom: 30px;
+}
+h1 a:hover{
+	color: #c39d6d;
+	text-decoration: none;
+}
+#header #gNavi li.navi_more.hot>a, #footer .f_nav li.hot>a, #footer .f_morelink li.hot>a{
+	color: #ffdf3b;
+}
+@keyframes blinklink {
+    from {
+        color: #c39d6d;
+    }
+    to {
+        color: #ffdf3b;
+    }
+}
+#header .account-info .account-notice a{
+	color: #fff;
+}
+/*   三欄式曝光宣傳 --------------  */
+
+.feature {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    margin: 15px 0 10px;
+    float: left;
+}
+
+.feature span {
+    color: #c39d6d;
+    font-size: 50px;
+}
+
+.feature-left {
+    margin-left: 15px;
+    margin-right: 7.5px;
+}
+
+.feature-right {
+    margin-left: 7.5px;
+    margin-right: 15px;
+}
+
+.feature-center {
+    margin-left: 7.5px;
+    margin-right: 7.5px;
+}
+
+.feature.feature-odd {
+    background-color: rgba(138, 138, 138, 0.5);
+    border: 2px solid #c39d6d;
+}
+
+.feature.feature-even {
+    background-color: #33333385;
+    border: 2px solid #c39d6d;
+}
+
+.feature h5 {
+    margin-bottom: 15px;
+    margin-top: 20px;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+}
+
+.feature p {
+    color: #eee;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    line-height: 20px;
+    margin-bottom: 10px;
+}
+
+/* -----------------------------*/
+
+/* NEW ARRIVALS 標題--------------*/
+
+.row.m_title {
+    margin-top: 20px;
+}
+
+.m_title h2 {
+    clear: both;
+    color: #f4e2a1;
+    font-size: 20px;
+    font-weight: 900;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.m_title h2::before,
+.m_title h2::after {
+    border-top: 1px solid #f4e2a1;
+    content: "";
+    left: 0;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    z-index: 1;
+}
+
+.m_title h2 span {
+    background-color: #222;
+    padding: 0 20px;
+    position: relative;
+    z-index: 2;
+}
+/* -----------------------------*/
+
+.m_projects {
+    margin-bottom: 30px;
+}
+
+ul#game-box {
+    margin: 0 0 5px;
+    list-style: none;
+    /* margin-left: 6%;*/
+}
+
+ul#game-box>li.discunt:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    content: '';
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background: url("../img/home/bigwin.png");
+}
+
+ul#game-box>li>a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    font-size: 15px;
+}
+
+ul#game-box>li.discunt>a div {
+    height: 60px;
+    line-height: 30px;
+}
+
+ul#game-box>li.discunt span {
+    display: block;
+    color: #fd0;
+    font-size: 13px;
+}
+
+ul#game-box>li>a div {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 40px;
+    padding: 0 10px;
+    color: #fff;
+    font-size: 15px;
+    line-height: 40px;
+    text-align: left;
+    background: rgba(195, 157, 109, 0.9);
+    display: none;
+}
+
+ul#game-box>li {
+    position: relative;
+    float: left;
+    width: 280px;
+    height: 307px;
+    margin: 5px 10px 5px 0;
+    background-position: center top;
+}
+
+ul#game-box>li[data-img="promo01"] {
+    width: 480px;
+    height: 200px;
+    background-image: url(../img/home/bigwin.jpg);
+}
+
+ul#game-box>li[data-img="promo02"] {
+    width: 480px;
+    height: 200px;
+    background-image: url(../img/home/promo.jpg);
+}
+
+ul#game-box>li[data-img="game_live"] {
+    margin-right: 16.666666px;
+    background-image: url(../img/home/live.png);
+}
+
+ul#game-box>li[data-img="game_lottery"] {
+    margin-right: 16.666666px;
+    background-image: url(../img/home/lottery.png);
+}
+
+ul#game-box>li[data-img="game_sport"] {
+    margin-right: 0;
+    background-image: url(../img/home/fisher.png);
+}
+
+ul#game-box>li[data-img="game_lobby"] {
+    margin-right: 16.666666px;
+    background-image: url(../img/home/game.png);
+}
+/* -----------------------------*/
+/*--------home gamelobby----------*/
+#home .section_gamelobby{
+	margin: 50px 0px 30px 0px;
+	border: #f4e2a1 2px solid;
+	height: 430px;
+}
+#home .section_gamelobby #casino{
+	display: flex;
+	justify-content: center;
+	background: rgba(138, 138, 138, 0.5);
+    border-bottom: #f4e2a1 2px solid;
+    margin-bottom: 1em;
+}
+#home .section_gamelobby #casino .tabUl span{
+	color: #f4e2a1;
+	font-family: 'Microsoft JhengHei';
+}
+#home .section_gamelobby #casino .tabUl li.on{
+	background-color: rgba(43, 43, 43, 0.4);
+}
+#home .section_gamelobby #casino .tabUl li[data-cid="PT"] img{
+	background-color: #fff;
+}
+#home .section_gamelobby #gametable{
+	width: 920px;
+	margin: auto;
+}
+#home .section_gamelobby #gametable>div{
+	margin: 0 15px 10px 15px;
+}
+#casino-tab {
+    width: 100%;
+}
+#casino-next, #casino-pre {
+    height: 83px;
+}
+/*----------table通用黑色欄位--------*/
+.table_list tr {
+  background: rgba(67, 67, 67, 0.47843);
+}
+table.dataTable.table_list tbody tr{
+	background: rgba(67, 67, 67, 0.47843);
+}
+table.dataTable.table_list.table-hover tbody tr:hover{
+	background: rgba(0,0,0,.075);
+}
+/*----------會員登入---------------*/
+#preview_area{
+	color: #000;
+}
+/*讓label浮動在input上方*/
+.panel-body.login2-pc-m-logonbox .form-group >label{
+  color: #FFF;
+}
+/*input高度調整*/
+.panel-body.login2-pc-m-logonbox input{
+	background: #3b3b3b;
+	border-color:var(--gray);
+}
+/*控制input標題文字顏色*/
+.panel-body.login2-pc-m-logonbox input::-webkit-input-placeholder{
+	color: #FFF;
+}
+/*登入介面標題*/
+.panel-body h3.login2-pc-m-h3{
+  color: var(--white);
+  text-shadow: 1px 1px 5px var(--dark);
+}
+/*登入按鈕更改樣式*/
+.panel-body.login2-pc-m-logonbox .btn.btn-primary{
+  background: #c39d6d;
+}
+
+/*提示錯誤*/
+.warning{
+  color: var(--red);
+}
+
+/*帳密錯誤通知文字*/
+.login-table #preview_status{
+ color:var(--red);
+ background: none;
+}
+
+/*-------------註冊頁面---------------*/
+.register_pc_m{
+	background: none;
+	padding: 0;
+	border-radius: 0;
+}
+.register_pc_m.container{
+	width: 700px;
+	min-width: 700px;
+	max-width: 100%;
+	margin: 22px auto;
+}
+
+/*更改標題顏色*/
+#member .register_pc_m  .panel-success th{
+  color: #FFF;
+}
+#member .register_pc_m  .panel-success th i{
+  color: var(--red);
+}
+/*更改會員條款顏色*/
+.register_pc_m .checkbox{
+  color: #FFF;
+}
+/*標題*/
+.register_pc_m h3{
+  color: #FFF;
+} 
+/*修改input底色*/
+.register_pc_m .form-control{
+  background: #3b3b3b;
+  border: solid 1px var(--gray);
+  color: #FFF;
+}
+.register_pc_m .form-control::-webkit-input-placeholder{
+  color: #a3a3a3;
+}
+
+/*修改按鈕顏色*/
+.register_pc_m .btn-success {
+  background: #c39d6d;
+  text-shadow: 1px 1px 5px var(--dark);
+}
+.register_pc_m .btn-success:visited,
+.register_pc_m .btn-success:focus-within,
+.register_pc_m .btn-success:focus,
+.register_pc_m .btn-success.active,
+.register_pc_m .btn-success:hover,
+.register_pc_m .btn-success:active{
+  background: #c39d6d!important;
+}
+/*按鈕被禁止的顏色*/
+.register_pc_m .btn-success:disabled,
+.register_pc_m .btn-success.disabled,
+.register_pc_m .btn-success[disabled]{
+  background: #CCC;
+}
+/*同意條款的位置與顏色調整*/
+.register_pc_m .btn-link{
+  color: var(--red);
+}
+/*同意條款的位置與顏色調整*/
+.register_pc_m .checkbox button{
+	color: #dc3545;
+}
+/*提交送出*/
+.register_pc_m #submit_to_register{
+  background: #c39d6d;
+}
+/*已有帳戶 聯繫客服*/
+.register_pc_m .button_register a{
+	background: #6c757d;
+	color: #FFF;
+}
+/*星號*/
+.register_pc_m table tr th i{
+	color: #dc3545;
+}
+/*---------------優惠活動-------------------*/
+#static .pages .pages-content .promotion_title p{
+	color:#FFF;
+}
+#promotions_Table td{
+  color:#FFF;
+  background: #333333;  
+}
+#promotions_Table tr.border-bottom{
+  border-color:#7a7a7a!important;
+}
+.id_name{
+  background: #1a8081;
+}
+#promotions_Table td i{
+  color:#c39d6d;
+}
+/*清所有admin tml.php 背景*/
+#admin .card{
+	background: none;
+}
+.sidebar_menu li{
+	border:0;
+	background: #353535;
+	position: relative;	
+	padding: 0px 10px;
+}
+.sidebar_menu li:last-child a{
+	border-bottom: none;
+}
+.sidebar_menu li.active a, .sidebar_menu li:hover a{
+	color: #c39d6d;
+}
+/*------會員登入------*/
+#login .card-body input{
+	color: var(--gold);
+}
+/*-----------------li_list---------------*/
+.li_list li{
+  background: #4343437a;
+}
+.li_list li a{
+  color: #FFF;
+}
+.li_list li a i{
+  color: #c39d6d;
+}
+.li_list li a i.head{
+  color: #1a8081;
+}
+/*----table_tr background---*/
+.table_bg_tr tr{
+  background: #4343437a;
+}
+/*共用modal*/
+.modal_contentstyle .modal-time{
+  color: #939393;
+}
+/*---------站內信----------*/
+#stationmail_mail .table_list tr{
+	background: rgba(67, 67, 67, 0.47843);
+	border-color:#222222;
+}
+#stationmail_mail .table_list tr th{
+	color:#FFF;
+}
+#stationmail_mail .table_list tr td a{
+	color:#FFF;
+}
+#stationmail_mail .table_list td a:hover{
+  color: #c39d6d;
+}
+#stationmail_mail .del_bt_inbox{
+  color: #FFF;
+}
+#stationmail_mail .modal-body{
+  color: #333;
+}
+#stationmail_mail .modal_stationmail_diy{
+  background: #000;
+}
+.parner .nav>li.active>a:hover,
+.parner .nav-tabs>li.active>a:focus{
+	background: #c39d6d;
+	border: none;
+	cursor: pointer;
+}
+.nav-tabs .nav-item.active:hover,
+input.spread_input_style:checked+label:hover{
+	border-right: none;
+}
+#inbox_transaction_list td a,
+#sendABackup_transaction_list td a{
+	color: #FFF;
+}
+#inbox_transaction_list td a h6,
+#sendABackup_transaction_list td a h6{
+	color: #c39d6d;
+}
+/*---------代理中心-------------*/
+/*---------邀請碼---------------*/
+.type_menu .form-group div{
+	color: #828282;
+}
+.table-success, 
+.table-success>td, 
+.table-success>th{
+	background-color: #5699656e;
+}
+.table-hover .table-success:hover{
+	background-color: #5699656e;	
+}
+table tr.table-danger td{
+	color: #000;
+}
+#linkDataTable.table-hover tbody tr:hover{
+	color: #fff;	 
+}
+.spread_color{
+	color: #757575;
+}
+/*.spread_add_style>div:nth-child(2) select,
+.spread_add_style>div:nth-child(2) input[type="text"]{
+	background: #474747;
+	color: #FFF;
+	border:0;
+}*/
+.spread_add_style input[type="password"]{
+	background: #474747;
+	color: #818181;
+	border:0;
+	height: 39px;
+}
+/* .spread_add_style input[type="password"].form-control:focus,
+.spread_add_style input[type="password"].form-control:focus{
+	background: #FFF;
+	color:#495057;
+} */
+/* .spread_add_style>div:nth-child(2) input[type="text"].form-control:focus,
+.spread_add_style>div:nth-child(2) select.form-control:focus{
+	background: #FFF;
+	color: #495057;
+} */
+.spread_add_style >div{
+  color: #FFF;
+}
+input.spread_input_style:checked + label{
+	-webkit-filter: none; 
+	-moz-filter: none; 
+	filter: none; 
+}
+.spread_bg.btn:hover{
+	background: #353535;
+	border:#696969 solid 1px;
+}
+.spread_color.btn:hover{
+	color: #c1c1c1;
+}
+/*---------協助開戶--------------*/
+#rg_odds_table a{
+	color: #FFF;
+}
+#rg_odds_table.btn-link{
+	color: #FFF;
+}
+/*-----------充值deposit--------------*/
+#admin .deposit-card{
+	border-radius: .25em;
+}
+.deposit-card .table td,.deposit-card  .table th{
+	border-color: #515151;
+}
+/*---------安全中心----------*/
+/*---------圓弧樣式----------*/
+.arc_style tr td:nth-child(1){ 
+	color: #FFF;
+}
+.arc_style tr td input,
+.arc_style tr td select{
+	background: #474747;
+	color: #FFF;
+}
+.arc_style tr td input::placeholder{
+	color: #818181;
+}
+/*---------個人訊息----------*/
+.member_time_style:hover{
+	color: #c39d6d;
+}
+/*---------投注明細----------*/
+.table_from6 tr td:nth-child(5){
+	color: #a5a5a5;
+}
+/*---------反水----------*/
+#admin .well.well-sm,
+#transaction_list_wrapper th,
+#transaction_list th:nth-child(2),
+#transaction_list th:nth-child(3){
+	color: #828282;
+}
+/*---------暫時補救用----------*/
+#admin .title-index ~ strong,
+#transaction_list_length select,
+.table.table-bordered.small,
+#show_list_length,
+#admin .panel.panel-success table td,
+#admin .panel.panel-success table th,
+#admin .panel-footer{
+	color:#dedede;
+}
+#admin .dataTables_filter label,
+#transaction_list_length label,
+#transaction_list th,
+#transaction_list_info,
+#admin .table-striped tbody tr:nth-of-type(even),
+#member_list td,
+#show_list_info,.table{
+	color: #FFF;
+}
+.slide-up-menu .table,#moa_betlog .modal-body table td,#moa_betlog .modal-body table th,#receiveMoneyDetailModal .table{
+	color: #000;
+}
+.modal-body .table{
+	color: #000;
+}
+
+/*table.dataTable tbody tr{
+	background: none!important;
+}*/
+#admin button.btn-primary a{
+	color: #FFF;
+}
+#promotionsTableBody .title_h2{
+	color:#FFF;
+}
+/*---------暫時補救----------*/
+/*已經設定好的- 會被影響的部分*/
+/*#transactionDataTable.table.dataTable tbody tr{
+  background: none!important;
+}*/
+#transaction_list.agencyarea_table tr{
+	 background: none!important;
+}
+/*#transactionDataTable.table.dataTable tbody tr.table_bg{
+  background: rgba(67, 67, 67, 0.47843)!important;
+}*/
+.table-hover .table-success:hover>td, 
+.table-hover .table-success:hover>th{
+	background-color: rgba(86, 153, 101, 0.5294117647058824);
+}
+	/*充值*/
+.sider-member-infobox p{
+	color: #FFF;
+}
+.deposit_color{
+	color: #FFF;
+}
+.money_package_pc_m h2,
+.money_package_pc_m p{
+	color: #FFF;
+}
+/*申請代理*/
+.application_button p{
+	color: #FFF;
+}
+/*陰影襯底*/
+.recommend_content{
+	padding-top: 0;
+}
+/* .recommend_content:after{
+	content: '';
+	position: absolute;
+	top: -11px;
+	left: 0;
+	height: 20px;
+	width: 100%;
+	background: url('../img/common/transparent_bg_top.png');
+	background-size:100%!important; 
+	height: 30px;
+}
+.recommend_content:before{
+	content: '';
+	position: absolute;
+	bottom: -11px;
+	left: 0;
+	height: 20px;
+	width: 100%;
+	background: url('../img/common/transparent_bg.png');
+	background-size:100%!important; 
+	height: 30px;
+} */
+/*---------財務中心----------*/
+/*現金*/
+/*取款*/
+.game_cu_awal .table.arc_style.gcash_style .text-danger,
+.cash_withdrawals .arc_style.gcash_style tr .text-danger{
+	color: #ff4557!important;
+}
+/* 交易明細 modal */
+.ca_tdcancel:hover{
+	color: #FFF;
+}
+#header .login-table-on #submit_to_logout{
+	width: 72px;
+}
+#header .login-table-on .after-login-info,
+#header .login-table-on{
+ width: 341px;
+}
+/* --------------  log內頁與選單文字漸層  -------------- */
+.main-menu>li>a{
+	font-size: 20px;
+}
+.main-menu>li>a:after{
+	content: '';
+	position: absolute;
+	right: -3px;
+	top: 50%;
+	border-right: #373737 solid 1px;
+	width: 1px;
+	height: 22px;
+	transform: translateY(-50%);
+}
+.main-menu>li>a{
+	background: linear-gradient(white,white, white, #828282, #d4d4d4);
+	-webkit-background-clip: text;
+	color: transparent;
+	font-weight: bolder;
+	transition: .2s;
+}
+.main-menu>li>a:hover{
+	transition: .2s;
+}
+/* 內頁上標題樣式 */
+#admin .logo span{
+	font-weight: 700;
+}
+#member .logo>a,
+#admin .logo >a{
+	position: relative;
+	display: block;
+}
+#admin .logo{
+	margin-top: 22px;
+}
+#member .logo img,
+#admin .logo img{
+	display: none;
+}
+/* 內頁logo span:nth-child(2)的底部 3D立體效果顏色 - 由上而下 */
+/* 設定漸層到各版的 root.css */
+#member .logo span:nth-of-type(2),
+#admin .logo span:nth-of-type(2){
+	text-transform: uppercase;
+	font-size: 1em;
+	font-size: 42px;
+	font-weight: 700;
+	text-shadow: 
+	1px 3px 1px var(--text-shadow-bg-1), 
+	1px 3px 0px var(--text-shadow-bg-2), 
+	1px 4px 1px var(--text-shadow-bg-3), 
+	1px 3px 1px var(--text-shadow-1),
+	1px 5px 5px var(--text-shadow-2), 
+	1px 7px 7px var(--text-shadow-3),
+	1px 7px 14px var(--text-shadow-4);
+	color: #c39d6d;
+}
+/* 內頁logo span:nth-child(1)的金屬漸層效果 - 由上而下 */
+#member .logo span:nth-of-type(1),
+#admin .logo span:nth-of-type(1){
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	font-size: 42px;
+	font-weight: 700;
+	text-transform: uppercase;
+	background: linear-gradient(
+	var(--linear-gradient-1),
+	var(--linear-gradient-2),
+	var(--linear-gradient-3),
+	var(--linear-gradient-4),
+	var(--linear-gradient-5),
+	var(--linear-gradient-6)
+	);
+	-webkit-background-clip: text;
+	color: transparent;
+}
+.main-menu>li>a{
+	background: linear-gradient(
+		var(--linear-gradient-menu-1),
+		var(--linear-gradient-menu-2),
+		var(--linear-gradient-menu-3),
+		var(--linear-gradient-menu-4),
+		var(--linear-gradient-menu-5)
+	);
+	-webkit-background-clip: text;
+	color: transparent;
+}
+.main-menu>li>a:hover ,.main-menu>li>a.active{
+	text-shadow: 1px 2px 10px var(--menu-active-shadow);
+	color: #fff;
+}
+/* END CSS */

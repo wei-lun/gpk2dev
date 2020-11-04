@@ -1,0 +1,139 @@
+/*gametable*/
+#home .section_gamelobby #wrapper{
+	background-color: transparent;
+}
+/*本體*/
+.section_gamelobby{
+	padding:0px 0 10px;
+	position: relative;
+}
+/* 娛樂城標題部分 */
+.section_gamelobby #casino{
+	top:0px;
+	left: 0px;
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+#casino-tab{
+	position: relative;
+	margin-right: auto;
+	margin-left: auto;
+}
+#casino-pre,#casino-next{
+	position: absolute;
+	background-color: #3d3d3d;
+    height: 100%;
+    color: #ffffff;
+    border-radius: 0;
+}
+#casino-pre{
+	left: 0px;
+	top:0;
+	z-index: 1;
+}
+#casino-next{
+	right: 0px;
+	top:0;
+	z-index: 1;
+}
+.section_gamelobby #casino .tabUl{
+	display: flex;
+	max-height: 85px;
+	max-width: 100%;
+	position: relative;
+	transition: all 0.2s;
+} 
+.section_gamelobby #casino .tabUl li{
+	text-align: center;
+	flex: 0 0 auto;
+}
+.section_gamelobby #casino .gameitem-img{
+	max-height: 37px;
+	width: auto;
+	max-width: 120px;
+}
+.section_gamelobby .tabUl li a{
+	position: relative;
+}
+.section_gamelobby #casino .tabUl span{
+	background-color: transparent;
+	color: #684a12 ;
+	display: block;
+	width: 100%;
+	position: absolute;
+	bottom: .7em;
+}
+.section_gamelobby .tabUl li a {
+	display: block;
+	height: 93px;
+	padding: 14px 0 10px;
+	box-sizing: border-box;
+	width: 150px;
+	text-align: center;
+}
+.section_gamelobby .tabUl li span {
+	display: block;
+	margin-top: 5px;
+	color: #684a12 ;
+	font-size: 16px;
+}
+.section_gamelobby .tabUl li.on a,
+.section_gamelobby .tabUl li a:hover {
+	padding-top: 11px;
+	border-top: 3px solid transparent;
+	background-color: transparent;
+}
+/* 遊戲部分 */
+.section_gamelobby #gametable{
+	width: 740px;
+	margin-top: 10px;
+}
+.section_gamelobby #gametable>div{
+	width: 150px !important;
+	max-width: 150px;
+	min-width: 150px;
+	height: 138px;
+	float: left;
+	overflow: hidden;
+	margin: 0 30px 10px 0;/*間隔*/
+}
+.section_gamelobby .gameitem{
+	position: relative;
+	height: 138px !important;
+	background-color: transparent;
+
+}
+.section_gamelobby .gameitem-content{
+	height: 138px !important;
+}
+.section_gamelobby .game-button{
+	margin: 0 !important;
+}
+.section_gamelobby .game-button button{
+	margin-top: 40px !important;
+}
+.section_gamelobby .game-button button .gameitem-img{
+	margin-top: -1px !important;
+
+}
+.section_gamelobby .gameitem-info{
+	bottom: 38px !important;
+    position: absolute;
+}
+.section_gamelobby .info-lbl{
+	position: absolute;
+	width: 150px;
+	height: 38px;
+	top: 0;
+	left: 0;
+	background-color: rgba(0,0,0,0.5);
+	color: #fff;
+	padding: 12px 0;
+
+}
+.section_gamelobby #gametable .gameitem-img{
+	width: 100%;
+}
+.section_gamelobby .gameitem-img img{
+	margin: auto !important;
+}

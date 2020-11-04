@@ -1,0 +1,60 @@
+/*
+----------------------------------------------------------------------------
+// Features:	顏色、圖片相關CSS集中至本檔
+// File Name:	root.css
+// ----------------------------------------------------------------------------
+*/
+/*---------------背景色-------------*/
+body {
+    background-color: var(--main);
+}
+#footer {
+    background-color: var(--sub);
+}
+/*-------------背景圖片---------------*/
+body#home {
+    background:var(--main) url(../img/bg/bg01.png) top;
+}
+#gamelobby {
+    background:var(--main) url(../img/bg/slots_bg.png) center top !important;
+}
+#static {
+    background:var(--main) url(../img/bg/about_bg.png) center top;
+}
+#admin {
+    background:var(--main) url(../img/bg/promotion_bg.png) center top;
+}
+#login2page {
+    background:var(--main) url(../img/bg/live_bg.png) center top;
+}
+#member {
+    background:var(--main) url(../img/bg/promotion_bg.png) center top;
+}
+/*--------morelink-------------*/
+@keyframes blinklink {
+    from {
+        color: var(--font);
+    }
+    to {
+        color: var(--sub);
+    }
+}
+/*-----------footer---------------*/
+#footer a{
+	color: var(--font);
+}
+#footer a:hover{
+	color: var(--font);
+}
+.f_paylogo {
+    background-color: rgba(213, 233, 239, 0.7);
+}
+.f_parlogo {
+    background-color: rgba(41, 58, 87, 0.3);
+}
+.f_morelink {
+    background-color: transparent;
+}
+.footer div[align="right"] {
+    color: rgba(255, 255, 255, 0.4);
+}

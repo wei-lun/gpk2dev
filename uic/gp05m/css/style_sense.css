@@ -1,0 +1,237 @@
+	/*右下角廣告*/
+
+	.float_img {
+		color: #FFF;
+		font-size: x-large;
+		text-decoration: none;
+		/*padding: 2px 9px 2px 9px;*/
+		position: fixed;
+		bottom: 0;
+		right: 1.5%;
+		border-radius: 8px;
+		z-index: 999;
+		max-height: 200px;
+		max-width: 200px;
+	}
+
+	.float_img_close_btn {
+		top: -14px;
+		left: -14px;
+		height: 28px;
+		position: absolute;
+		border: none;
+		display: block;
+		width: 28px;
+		background: url("../img/sensepic/float_img_close.png");
+	}
+
+	div#lb_float_float_close>a div[data-img="01"] {
+		display: inline-block;
+		width: 185px;
+		height: 175px;
+		background-image: url("../img/sensepic/mw_slot.png");
+	}
+
+	div#right_top_float_close>a div[data-img="02"] {
+		display: inline-block;
+		height: 122px;
+		width: 127px;
+		background-image: url("../img/sensepic/mgpk_float.png");
+	}
+
+	div#left_top_float_close>a div[data-img="04"] {
+		display: inline-block;
+		height: 122px;
+		width: 127px;
+		background-image: url("../img/sensepic/mgpk_floatl.png");
+	}
+
+	div#right_bottom_float_close>a div[data-img="03"] {
+		display: inline-block;
+		height: 122px;
+		width: 127px;
+		background-image: url("../img/sensepic/pg_slot.png");
+	}
+
+	.float_lefttop_img_close_btn {
+		background: rgba(0, 0, 0, 0) url("../img/sensepic/float_img_close.png") repeat scroll 0 0;
+		border: medium none;
+		display: block;
+		height: 28px;
+		left: 10px;
+		position: absolute;
+		top: 0;
+		width: 28px;
+	}
+
+	.float_righttop_img_close_btn {
+		background: rgba(0, 0, 0, 0) url("../img/sensepic/float_img_close.png") repeat scroll 0 0;
+		border: medium none;
+		display: block;
+		height: 28px;
+		right: 10px;
+		position: absolute;
+		top: 0;
+		width: 28px;
+	}
+
+	.right_bottom_float_close_btn {
+		background: rgba(0, 0, 0, 0) url("../img/sensepic/float_img_close.png") repeat scroll 0 0;
+		border: medium none;
+		display: block;
+		height: 28px;
+		right: 0;
+		position: absolute;
+		top: 0;
+		width: 28px;
+	}
+
+	/*右下角廣告 END*/
+
+	/*右側廣告*/
+
+	/* 展開內容 */
+
+	.pollSlider {
+		position: fixed;
+		height: 162px;
+		background: #7c7c79;
+		width: 199px;
+		right: 0px;
+		margin-right: -200px;
+		z-index: 999;
+		top: 40%;
+		background-image: url("../img/common/service_r01.png");
+	}
+
+	/* 展開內容超連結處理 */
+
+	.pollSiderContent {
+		list-style: none;
+	}
+
+	.pollSiderContentli {
+		height: 54px;
+		width: 190px;
+		font-size: 16px;
+		display: table-cell;
+		vertical-align: middle;
+		color: #fbe0b1;
+		padding-left: 25px;
+		text-align: center;
+	}
+
+	/* 縮起來的按鈕 */
+
+	#pollSlider-button {
+		position: fixed;
+		width: 40px;
+		height: 163px;
+		right: 0px;
+		top: 40%;
+		z-index: 999;
+		background-image: url("../img/common/service_r02.png")
+	}
+
+	/*右側廣告 END*/
+
+	.float-icon {
+		height: 250px;
+	}
+
+	.float-icon {
+		position: fixed;
+		z-index: 500;
+	}
+
+	.float-icon {
+		background: #11121c none repeat scroll 0 0;
+		bottom: 10px;
+		color: #a37d4a;
+		font-size: 13px;
+		height: 65px;
+		line-height: 105px;
+		position: fixed;
+		right: 50px;
+		text-align: center;
+		width: 65px;
+		border-radius: 5px;
+	}
+
+	.float-icon .icon2 {
+		display: block;
+		height: 66px;
+		width: 65px;
+	}
+
+	.float-icon .icon3 {
+		display: block;
+		height: 66px;
+		width: 65px;
+	}
+
+	.float-icon .icon4:hover {}
+
+	.float-icon .icon4 {
+		display: block;
+		height: 67px;
+		width: 65px;
+	}
+
+	.float-icon a {
+		color: #a37d4a;
+		text-decoration: none;
+	}
+
+	.float-icon {
+		height: 200px;
+	}
+
+	.aside_service {
+		font-size: 0;
+		position: fixed;
+		right: -130px;
+		text-align: right;
+		top: 30%;
+		z-index: 10;
+	}
+
+	.aside_service .service-item {
+		color: #c39d6d;
+		display: block;
+		margin-bottom: 3px;
+		transition: all 0.3s ease 0s;
+	}
+
+	.aside_service .service-item:hover {
+		margin-right: 105px;
+	}
+
+	.aside_service .service-item .fa,
+	.aside_service .service-item .service-info {
+		background-color: #000;
+		display: inline-block;
+		vertical-align: middle;
+	}
+
+	.aside_service .service-item .fa {
+		border: 3px solid #c39d6d;
+		border-radius: 20%;
+		font-size: 30px;
+		height: 55px;
+		line-height: 55px;
+		margin-right: -15px;
+		position: relative;
+		text-align: center;
+		width: 55px;
+	}
+
+	.aside_service .service-item .service-info {
+		border: 1px solid #c39d6d;
+		font-size: 14px;
+		height: 45px;
+		line-height: 43px;
+		padding-left: 30px;
+		text-align: left;
+		width: 150px;
+	}

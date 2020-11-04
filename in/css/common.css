@@ -1,0 +1,534 @@
+/*--------------共通樣式---------------- --*/
+/*----------- 先套用common 再用style--------*/
+/*-----------------------------------------*/
+@import 'for_bootstrap4.css';
+@import 'base.css';
+/*----------------for bootstrap4----------------------*/
+/*-----------------------------*/
+body{
+	min-width: 1100px;
+}
+body#login2page{
+	min-width: auto;
+}
+#header .menu_admin li{
+	/*display: block;*/
+	margin: 0px 10px;
+}
+#header .menu_admin .text-name{
+	color: #fff100;
+}
+#header .menu_admin{
+	align-items: baseline;
+}
+/*
+#header .menu_admin li{
+	display: block !important;	
+}*/
+#header .menu_admin .account_text{
+	display: flex;
+    align-items: center;
+}
+#header .menu_admin .account-info{
+	min-width: 160px;
+}
+#header .account_img span{
+	background-color: #fff;
+    color: #000;
+    border-radius: 50%;
+}
+#header .dropdown-menu .account-info .glyphicon-refresh{
+	color: inherit;
+}
+/*
+#header .dropdown-lang li{
+	display: block !important;
+}*/
+/*#header .dropdown-lang .dropdown-menu.show{
+	padding: 5px 15px 15px 15px;	
+}
+#header .dropdown-menu.show li+li{
+	margin-top: 5px;
+}
+#header .dropdown-menu.show .blinknotice{
+	margin-top: 5px;
+}*/
+#header .menu_top,#header .menu_admin{
+    margin:0;
+}
+#header #gNavi li::before {
+    position: absolute;
+    z-index: 2;
+}
+#header #gNavi {
+	position: absolute;
+}
+.newSection{
+	display: flex;
+}
+/*---------input addon-----------*/
+.input-group-addon {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 4px 12px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1;
+    color: #555;
+    text-align: center;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    line-height: 2;
+}
+.input-group-addon{
+    display: table-cell;
+}
+.input-group-addon, .input-group-btn {
+    white-space: nowrap;
+    vertical-align: middle;
+}
+.input-group .form-control:not(:first-child):not(:last-child), .input-group-addon:not(:first-child):not(:last-child), .input-group-btn:not(:first-child):not(:last-child) {
+    border-radius: 0;
+}
+.input-group-addon:first-child{
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.input-group-addon:first-child {
+    border-right: 0;
+}
+.input-group-addon:last-child {
+    border-left: 0;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+}
+/*------------------------------*/
+/* #static .pages .nav-tabs li a{
+	position: relative;
+    padding: 8px;
+    padding-left: 40px;
+    margin: 0 5px;
+}
+#static .pages .nav-tabs li a::before{
+    font-family: Font Awesome\ 5 Free;
+    font-weight: 900;
+    content: "\f138";
+    font-size: 18px;
+    position: absolute;
+    top: 4px;
+    left: 17px;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+#static .pages .nav-tabs>li.active>a::before{
+	-webkit-transform: rotate(90deg);
+	        transform: rotate(90deg);
+}
+#static .pages .nav-tabs>li.active>a{
+	opacity: 1;
+} */
+#admin input + input{
+	margin-left: 3px;
+}
+#admin input + button{
+	margin-left: 3px;
+}
+#admin .panel-body,#login2page .panel-body,#member .panel-body{
+	background-color: #fff;
+	padding: 10px 10px 1px;
+	padding-bottom: 50px;
+}
+.nav li,.breadcrumb li{
+	list-style: none !important;
+} 
+.breadcrumb>li+li:before {
+    padding: 0 5px;
+    color: #a0a0a0;
+    content: "/\00a0";
+}
+.table>tbody>tr.active>td, .table>tbody>tr.active>th, .table>tbody>tr>td.active, .table>tbody>tr>th.active, .table>tfoot>tr.active>td, .table>tfoot>tr.active>th, .table>tfoot>tr>td.active, .table>tfoot>tr>th.active, .table>thead>tr.active>td, .table>thead>tr.active>th, .table>thead>tr>td.active, .table>thead>tr>th.active {
+    background-color: #f5f5f5;
+}
+/*
+#header [type=reset],#header  [type=submit],#header  button,#header [type=button] {
+    -webkit-appearance: unset;
+}
+.headbottom [type=button], .headbottom [type=reset], .headbottom [type=submit], .headbottom button {
+    -webkit-appearance: unset;
+}
+.login-table-on tbody>tr:nth-child(2)>td:first-child>div>div[type=button]{
+    -webkit-appearance: unset;
+}*/
+/*-------------for bootstrap4 end--------------*/
+
+* {
+	margin: 0;
+	padding: 0;
+}
+.w1000 {
+	width: 1000px;
+	margin: 0 auto;
+}
+.clear {
+	clear: both;
+}
+a {
+	text-decoration: none;
+}
+p{
+	line-height: 1.5;
+}
+html,body {
+	font-size: 12px;
+	font-family: "Microsoft YaHei";
+	/*overflow-x: hidden;*/
+}
+#container {
+	text-align: left;
+}
+.clearfix:after {
+	height: 0;
+	visibility: hidden;
+	content: ".";
+	display: block;
+	clear: both;
+}
+img {
+	vertical-align: top;
+}
+#main .wrap {
+	width: 1000px;
+	margin: 0 auto;
+	position: relative;
+}
+#main{
+    /*padding: 10px 0;*/
+	min-height: 600px;
+}
+#home #main a,#gamelobby #main a{
+    text-decoration: none;
+} 
+#header #gNavi li::before {
+	position: absolute;
+}
+#header .main-menu{
+    display: flex;
+}
+/*-------第一列菜單(含下拉)------*/
+.dropdown-menu>li{
+	float: none !important;
+}
+.dropdown-lang{
+	position: relative;
+}
+.menu_admin{
+	float: right;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+.menu_top{
+	float: left;
+    display: flex;
+    align-items: center;
+}
+#header .dropdown-lang .dropdown-menu.show .dropdown-item:hover{
+    background-color: transparent;
+}
+#header .hBox .hInfo{
+	display: flex;
+	align-items: center;
+}
+#header .hBox .hInfo .menu_admin{
+	margin-left: auto;
+}
+/*------------會員選單------------------*/
+#header .account-info .account_img span:nth-child(2){
+	line-height: 4rem;
+}
+/*---------------按鈕部分----------------*/
+/*
+.login-table-on .btn-after-login-logout-change{
+	background: linear-gradient(0deg, #B0ACA640 0%, #EFECE640 20%) !important;
+	border: 0px;
+	margin: 5px;
+}
+.login-table-on .btn-after-login{
+	background: linear-gradient(0deg, #B0ACA640 0%, #EFECE640 20%) !important;
+	color: #fff;
+	border: 0px;
+	margin: 5px;
+}
+.login-table-on .btn-after-login-logout-change:hover{
+	background: linear-gradient(0deg, #B0ACA640 0%, #EFECE640 20%) !important;
+}
+.login-table-on .btn-after-login:hover{
+	background: linear-gradient(0deg, #B0ACA640 0%, #EFECE640 20%) !important;
+}*/
+/*-------footer-----start--------------*/
+.footer li a {
+	/*color: var(--footer-font);*/
+	font-size: 12px;
+}
+.footer li a:hover {
+	/*color: var(--link-hover);*/
+}
+.footer .nav>li>a:focus,.footer .nav>li>a:hover{
+	background: unset !important;
+}
+.footer div[align="right"]{
+	text-align: right;
+	/*color: var(--footer-dark-font);*/
+}
+.footer ul{
+    flex-direction:row;
+    padding: 20px 0;
+}
+.footer ul li{
+    margin: 0px 10px;
+}
+.f_nav .hot::before {
+    position: absolute;
+    right: -0.5em;
+    top: 0;
+    width: 21px;
+    height: 12px;
+    z-index: 2;
+}
+.f_nav .hot a{
+    color: var(--hot-link);
+}
+.f_paylogo{
+    background-color: var(--paylogo-bg);
+}
+.f_parlogo{
+    background-color: var(--parlogo-bg);
+}
+.f_morelink{
+    background-color: var(--more-link-bg);
+}
+.f_morelink .footer_link{
+    padding: 5px 25px;
+    position: relative;
+}
+.f_morelink .footer_link.hot::before {
+    position: absolute;
+    right: 0px;
+    top: -1em;
+    width: 21px;
+    height: 12px;
+    z-index: 2;
+}
+.f_morelink .footer_link.hot a{
+    color: var(--hot-link);
+}
+/*------------驗證碼------------------------*/
+#show_captcha>img{
+	/*margin-top: 3px;*/
+	background-color: #fff;
+}
+/*-------首頁的會員登入(非頭部)-------------*/
+/*
+.login > .login-table > tbody > tr > td{
+	position: relative;
+	float: left;
+	width: 100%;
+}
+.login > .login-table-on > tbody > tr > td{
+	float: left;
+}*/
+#home .login-table>div{
+	margin-bottom: 1em;
+}
+/*------------頭部的未登入菜單--------------*/
+.headlogin .login-table>tbody>tr>td{
+	padding: 0 5px;;;;
+}
+.headlogin #preview_status{
+	position: absolute;
+    top: 80px;
+    background-color: rgba(208, 50, 45, .8);
+    color: #fff;
+    border-radius: 4px;
+    line-height: 20px;
+    letter-spacing: 1px;
+    z-index: 99;
+}
+#header .login-table{
+	display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+#header .login-table>div{
+	margin-right: 0.5em;
+}
+.login-table-verification-td{
+	position: relative;
+}
+/*驗證碼*/
+.login-table-verification-td>div {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+/*-----------頭部已登入菜單------------------*/
+/*
+.login-table-on tbody>tr:nth-child(2)>td:nth-child(1)>div>div{
+	height: 2.5em;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #4c4c4c;
+}
+.headlogin .login-table-on tbody{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+.headlogin .login-table-on tbody tr{
+	margin: 0px 5px;
+}
+.headlogin .login-table-on tbody tr:nth-child(1) td>div{
+	width: 180px !important;
+}
+.headlogin .login-table-on tbody tr:nth-child(2) td>div{
+	width: 180px !important;
+}
+.headlogin .login-table-on tbody tr:nth-child(2) td:nth-child(1){
+	width: auto !important;
+	padding: 0 !important;	
+	top:0;
+}
+.headlogin .login-table-on tbody tr:nth-child(2) td:nth-child(1) div{
+	width: auto !important;
+    left: 0px;
+}
+.headlogin .login-table-on tbody tr{
+		float: left;
+}
+.login-table-on tbody tr:nth-child(1) .btn-after-login{
+	width: 180px !important;
+}
+.login-table-on button{
+	background-color: rgba(255, 255, 255, .1);
+	color: #fff;
+}*/
+#header .login-table-on,#header .login-table-on .after-login-info{
+	display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+#header .login-table-on>div{
+	margin-right: 1em;
+}
+#header .login-table-on .btn-after-login{
+	width: 150px;
+}
+#header .login-table-on .after-login-info{	    
+    padding: .3em;
+    border-radius: .2rem;
+}
+.tooltip{
+	position: fixed;
+	z-index: 99;
+}
+/*-------------------------marquee-------------------------------*/
+.marquee a>span{
+    color: #63d0b5;
+    letter-spacing: 1px;
+    margin-right: 10px;
+}
+/* --------------------gamelobby------------------------- */
+#gamelobby #wrapper{
+	background: unset;
+}
+#gamelobby #casinotab.nav>li{
+	cursor: pointer;
+    margin-right: 5px;
+}
+#gamelobby #casinotab.nav>li.active>a{
+	background: #7C4D37;
+	color: #d1aa95;
+}
+#gamelobby #casinotab.nav>li>a {
+	background: transparent;
+}
+#gamelobby #casinotab.nav>li#gamesel>a{
+	width: 130px;
+}
+#gamelobby .items span {
+	color: #2E1C13;
+	background-color: rgba(255, 255, 255, .5);
+}
+.items span:hover, .items span.selected {
+    background: #c39d6d none repeat scroll 0 0 !important;
+}
+#gamelobby #main .title{
+	color: #2E1C13;
+}
+/*----------------static---------------------*/
+#static #main p{
+	line-height: 25px;
+}
+#static #main .panel-body ol,#static #main .panel-body ul{
+	padding-left: 35px;
+	margin: 10px 0;
+}
+#static #main li{
+	line-height: 30px;
+}
+#static #main h2,#static #main h3{
+	/*color: var(--highlight) ;*/
+}
+#static .pages table{
+	background-color: #ececec;
+}
+/*----------------promotion-----------------*/
+#static #main .div_show{
+	background: #d6eaf0;
+	padding: 10px 15px;
+}
+#static #main .div_show table{
+	width: 100% !important;
+}
+/*------------------nav tabs--------------------*/
+#static .pages .nav-tabs>li>a{	
+	/*color: #fff;
+	background-color: var(--head-bg);*/
+	border-bottom: 0px;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+}
+#static .pages .nav-tabs {
+    /*border-bottom: 2px solid var(--head-bg);*/
+}
+/*----------------member-----------------*/
+#member .panel{
+	width: auto;
+	background-color: rgba(255, 255, 255, 0.5);
+}
+#member .panel .panel-body{
+	max-width: 700px;
+    margin: auto;
+}
+#member table th{
+	color: inherit;
+}
+#member .checkbox label{
+	color: inherit;
+}
+
+/*cursor:pointer效果*/
+.cl_date, .cl_money, .cl_cate, .cl_casino, .cl_status, .ca_tdcancel, .cl_promotions{
+    cursor: pointer;
+}
+.cl_date:hover, .cl_money:hover, .cl_cate:hover, .cl_casino:hover, .cl_status:hover, .ca_tdcancel:hover, .cl_promotions:hover{
+    color: #555;
+}
+
+
+/* modal */
+.panel-body .modal-content{
+    width: 610px;
+}

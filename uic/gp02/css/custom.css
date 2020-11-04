@@ -1,0 +1,63 @@
+/*
+----------------------------------------------------------------------------
+// Features:	顏色、圖片相關CSS集中至本檔
+// File Name:	root.css
+// ----------------------------------------------------------------------------
+*/
+/*---------------背景色-------------*/
+.hLinkBox{
+	background-color: var(--main);
+}
+#header{
+	background-color: var(--main);
+}
+body {
+    background-color: var(--main);
+}
+#footer {
+    background-color: var(--main);
+}
+/*-----------hLinkBox------------*/
+#header .hLinkBox>div>ul>li>a {
+    color: var(--sub);
+}
+.weltitle {
+   color: var(--sub);
+}
+#header .dropdown-lang .nav-link.dropdown-toggle {
+    color: var(--sub);
+}
+#header .short_url{
+	color: var(--sub);
+}
+/*------------#header------------*/
+.main-menu>li>a {
+    color: var(--font);
+}
+.main-menu>li>a:hover{
+	color: var(--font);
+}
+/*icon*/
+.main-menu li::after{
+	color: var(--sub);
+}
+/*--------morelink-------------*/
+@keyframes blinklink {
+    from {
+        color: var(--font);
+    }
+    to {
+        color: var(--sub);
+    }
+}
+/*-----------footer---------------*/
+#footer a{
+	color: var(--font);
+}
+#footer a:hover{
+	color: var(--font);
+}
+/*-------------物件---------------*/
+.m_title h2 span {
+    background-color: var(--main);
+}

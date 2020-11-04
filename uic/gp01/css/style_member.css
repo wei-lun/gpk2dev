@@ -1,0 +1,27 @@
+.h_topnav a {
+	color: #fff;
+	text-shadow: none;
+}
+
+.nav>li>a:focus,
+.nav>li>a:hover {
+	background-color: rgba(0, 0, 0, 0);
+	text-decoration: none;
+}
+
+.h_topnavb {
+	border-bottom: 0;
+}
+
+.nav .open>a,
+.nav .open>a:focus,
+.nav .open>a:hover {
+	background-color: rgba(0, 0, 0, 0);
+	border-color: #337ab7;
+}
+
+.nav-pills>li {
+	background-color: rgba(195, 157, 109, 0.7);
+	float: left;
+	padding-left: 15px;
+}

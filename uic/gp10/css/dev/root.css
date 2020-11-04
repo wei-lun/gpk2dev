@@ -1,0 +1,72 @@
+/*
+----------------------------------------------------------------------------
+// Features:	顏色、圖片相關CSS集中至本檔
+// File Name:	root.css
+// ----------------------------------------------------------------------------
+*/
+
+:root {
+/*for all*/
+	/*font*/
+	--dark-font: #684a12;/*body*/
+	--highlight: #d60909;/*h2、h3、中間選單強調*/
+	--link-hover:#ffd556;/*footer link*/
+
+/*for haead*/
+	--hSection-bg: #E3D6AE;	/*語言 時間列*/
+	--hInner-bg: #F3EEDB ;/*中間選單*/
+	--marquee-bg: #765103;/*跑馬燈*/
+	--head-bg: #A87B28;/*會員登入*/
+	--item-hover: #E9DCBA;/*中間選單連結hover*/
+
+/*for main (for static)*/
+	--static-bg:#EFECE6;/*main背景(漸層)*/
+ 	--page-bg: #EFECE6;/*文章區塊背景*/
+ 	--page-title: #E1D1B8;/*麵包屑背景*/
+
+/*for footer*/ 	
+ 	--hot-link: #f4d15c;	
+ 	--paylogo-bg:#D1CCC4;
+ 	--parlogo-bg:#80461b;
+ 	--more-link-bg:#321A10;
+ 	--footer-bg:#321A10;
+ 	--footer-font:#ebe3c2;/*footer 連結*/
+ 	--footer-dark-font:#ebe3c2;/*footer 版權聲明*/
+/*-------------static-----------------*/
+    --static-font:#3e0f0f;
+    --static-h2-font:#c83434;
+    --static-h3-font:#c66666;
+    --static-h4-font:#aa1f14;
+}
+/*------------------背景圖片部分-----------------------------*/
+#header #gNavi li::before {
+    position: absolute;
+    top: 5px;
+    right: 0px;
+    z-index: 2;
+}
+#static #main {
+	padding: 50px 0;
+	background: #f0ede6 url(../img/bg/othersbg.jpg) no-repeat center top;
+	background-position-y: -2px;
+}
+#gamelobby #main {
+	padding: 50px 0;
+	background: #f0ede6 url(../img/bg/slotbg.jpg) no-repeat center top;
+	background-position-y: -2px;
+}
+#login2page #main{
+	background: #f0ede6 url(../img/bg/registerbg.jpg) no-repeat center top;
+	padding: 50px 0;
+	background-position-y: -2px;
+}
+#member #main{
+	background: #f0ede6 url(../img/bg/registerbg.jpg) no-repeat center top;
+	padding: 50px 0 10px;
+	background-position-y: -2px;
+}
+#admin #main{
+	background: #f0ede6 url(../img/bg/lotterybg.jpg) no-repeat center top;
+	padding: 50px 0;
+	background-position-y: -2px;
+}

@@ -1,0 +1,133 @@
+@charset "UTF-8";
+body {
+  font-family: 'Microsoft JhengHei';
+  background: #222323; }
+  body.animate {
+    animation: bgshow 120s infinite linear; }
+
+/*維護*/
+body#maintenance {
+    background: url(../img/common/maintenance.png) #222323; }
+
+@keyframes bgshow {
+  0% {
+    background-position-x: 25%;
+    background-position-y: 25%; }
+  50% {
+    background-position-x: 90%;
+    background-position-y: 90%; }
+  80% {
+    background-position-x: 50%;
+    background-position-y: 50%; }
+  100% {
+    background-position-x: 25%;
+    background-position-y: 25%; } }
+
+.description_box {
+  width: 70%;
+  margin: 0 auto;
+  box-shadow: 3px 3px 7px 2px #15151557; }
+
+.title_container {
+  background: #3a4043;
+  color: #b1b6b8;
+  padding: 12px 15px;
+  width: 100%;
+  margin: 0 auto;
+  font-size: 20px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px; }
+
+.description_container {
+  background: #2f3234;
+  color: #b1b6b8;
+  padding: 20px 15px;
+  width: 100%;
+  margin: 0 auto 20px auto;
+  font-size: 20px;
+  min-height: 120px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px; }
+  .description_container span {
+    margin-right: 10px; }
+  .description_container p {
+    margin-bottom: 5px; }
+
+.name_box {
+  width: 70%;
+  margin: 14px auto;
+  display: flex;
+  align-items: center;
+  position: relative; }
+  .name_box h2 {
+    display: flex;
+    color: #FFF;
+    font-size: 2.5rem;
+    margin-bottom: 0; }
+  .name_box img + h2 {
+    display: none; }
+  .name_box span {
+    color: #FFF;
+    margin-bottom: 0;
+    font-size: 2.5rem;
+    margin-left: 5px; }
+  .name_box i {
+    margin-left: 10px;
+    font-style: normal; }
+
+.center_style {
+  position: relative;
+  top: 40%;
+  transform: translateY(-50%);
+  display: block; }
+
+.error, .maintenance, .shutdown {
+  display: none; }
+
+/*維護*/
+#maintenance .title_container {
+  background: #4d452f; }
+  #maintenance .title_container .error {
+    display: none; }
+  #maintenance .title_container .maintenance {
+    display: inline-block; }
+  #maintenance .title_container .shutdown {
+    display: none; }
+
+#maintenance .description_container {
+  background: #3a372f; }
+
+/*關閉*/
+#shutdown .title_container .error {
+  display: none; }
+
+#shutdown .title_container .maintenance {
+  display: none; }
+
+#shutdown .title_container .shutdown {
+  display: inline-block; }
+
+/*錯誤*/
+#error .title_container {
+  background: #4b2327; }
+  #error .title_container .error {
+    display: inline-block; }
+  #error .title_container .maintenance {
+    display: none; }
+  #error .title_container .shutdown {
+    display: none; }
+
+#error .description_container {
+  background: #463536; }
+
+@media screen and (max-width: 500px) {
+  .name_box, .description_box {
+    width: 90%; }
+  .name_box span {
+    font-size: 1.5rem; }
+  .name_box h2 {
+    font-size: 1.5rem; }
+  .title_container, .description_container {
+    width: 100%; }
+  .description_container {
+    padding: 34px 15px; } }

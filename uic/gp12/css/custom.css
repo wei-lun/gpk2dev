@@ -1,0 +1,79 @@
+/*
+----------------------------------------------------------------------------
+// Features:	顏色、圖片相關CSS集中至本檔
+// File Name:	root.css
+// ----------------------------------------------------------------------------
+*/
+/*---------------背景色-------------*/
+.hLinkBox{
+	background-color: var(--main);
+}
+#header{
+	background:var(--main) url(../img/common/bg_head_theme.png);
+}
+#footer {
+    background-color: var(--main);
+}
+#home #main{
+    background:var(--main) url(../img/bg/bg_index.png) center bottom;
+}
+#static #main{
+    background:var(--main) url(../img/bg/banner_dzyy.png) center top;
+}
+#gamelobby #main{
+    background:var(--main) url(../img/bg/bg_games.png) center top;
+}
+#login2page #main{
+    background:var(--main) url(../img/bg/bg_hd.png) center top;
+}
+#member #main{
+    background:var(--main) url(../img/bg/bg_hd.png) center top;
+}
+#admin #main{
+    background:var(--main) url(../img/bg/bg_hd.png) center top;
+}
+/*-----------hLinkBox------------*/
+
+/*------------#header------------*/
+#header #gNavi li a {
+    color: var(--font);
+}
+/*--------morelink-------------*/
+@keyframes blinklink {
+    from {
+        color: var(--font);
+    }
+    to {
+        color: var(--sub);
+    }
+}
+/*-----------footer---------------*/
+#footer a{
+	color: var(--font);
+}
+#footer a:hover{
+	color: var(--font);
+}
+.f_paylogo {
+    background-color: rgba(235, 219, 206, 0.7);
+}
+.f_parlogo {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.f_morelink {
+    background-color: transparent;
+}
+#footer .f_nav{
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.footer div[align="right"] {
+    color: rgba(255, 255, 255, 0.4);
+    background-color:transparent; 
+}
+/*-------------物件---------------*/
+#home .newSection{
+    background-color: rgba(62, 41, 14, 0.6);
+}
+#home .section02{
+    background-color: rgba(241, 233, 226, 0.85);
+}

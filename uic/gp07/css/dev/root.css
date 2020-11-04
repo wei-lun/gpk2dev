@@ -1,0 +1,34 @@
+:root {
+/*for all*/
+	/*font*/
+	--dark-font: #684a12;/*body*/
+	--highlight: #35a46e;/*h2、h3、中間選單強調*/
+	--link-hover:#ffd556;/*footer link*/
+
+/*for haead*/
+	--hSection-bg: #E3D6AE;	/*語言 時間列*/
+	--hInner-bg: #F3EEDB ;/*中間選單*/
+	--marquee-bg: #765103;/*跑馬燈*/
+	--head-bg: #A87B28;/*會員登入*/
+
+	--item-hover: #E9DCBA;/*中間選單連結hover底色*/
+
+/*for main (for static)*/
+	--static-bg:#F3EEDB;/*main背景(漸層)*/
+ 	--page-bg: #F3EEDB;/*文章區塊背景*/
+ 	--page-title: #EDE6C8;/*麵包屑背景*/
+
+/*for footer*/
+	--hot-link: #ffd556;	
+ 	--paylogo-bg:#D5E9EF;
+ 	--parlogo-bg:#293a57;
+ 	--more-link-bg:#293a57;
+ 	--footer-bg:#293a57;
+ 	--footer-font:#ebe3c2;/*footer 連結*/
+ 	--footer-dark-font:#ebe3c2;/*footer 版權聲明*/
+ /*-------------static-----------------*/
+    --static-font:#ccc;
+    --static-h2-font:#dbb516;
+    --static-h3-font:#dbb516;
+    --static-h4-font:#dbb516;
+}

@@ -1,0 +1,102 @@
+#wrapper {
+  background: #222 scroll 0 0;
+}
+
+.selected {
+  background: #c39d6d none repeat scroll 0 0;
+}
+
+#gametype {
+  color: #fff;
+}
+
+/* gameitem */
+
+.gameitem {
+  background-color: #333;
+}
+
+.gameitem-content {
+  background: rgba(51, 51, 51, 0.9);
+}
+
+.info-lb2 {
+  border-top: 0.1em solid #eee;
+}
+
+/* 下排右側icon顯示列 */
+
+.fave-heart span::before {
+  color: #c39d6d;
+}
+
+.fave-heart:hover span::before {
+  color: #c39d6d;
+}
+
+.fave-heart-full span::before {
+  color: #c39d6d;
+}
+
+.fave-heart-full:hover span::before {
+  color: #c39d6d;
+}
+
+.fave-mobile span::before {
+  color: #c39d6d;
+}
+
+.select {
+  background-color: #c39d6d;
+  color: white;
+}
+
+#casinotab.nav>li>a {
+  background: rgba(0, 0, 0, 0.5) none repeat scroll 0 0;
+}
+
+.items span:hover,
+.items span.selected {
+  background: #c39d6d none repeat scroll 0 0;
+  color: #fff;
+}
+
+#casinotab.nav>li.active>a {
+  background: #e69406;
+  border: 2px solid #e69406;
+  color: #fff;
+}
+
+/* gamelobby搜寻筐样式 */
+
+.stylish-input-group .input-group-addon {
+  border-color: #c39d6d;
+}
+
+.stylish-input-group .form-control {
+  border-right: 0;
+  box-shadow: 0 0 0;
+  border-color: #c39d6d;
+}
+
+.stylish-input-group button {
+  border: 0;
+  background: transparent;
+}
+
+.form-control::-moz-placeholder {
+  color: #eee;
+  opacity: 1;
+}
+
+.stylish-input-group .form-control {
+  color: #fff;
+  background-color: #c39d6d;
+  border: 1px solid #c39d6d;
+}
+
+.stylish-input-group .input-group-addon {
+  color: #fff;
+  background-color: #c39d6d;
+  border: 1px solid #c39d6d;
+}

@@ -1,0 +1,121 @@
+/*
+----------------------------------------------------------------------------
+// Features:	顏色、圖片相關CSS集中至本檔
+// File Name:	root.css
+// ----------------------------------------------------------------------------
+*/
+/*---------------背景色-------------*/
+.hLinkBox{
+	background-color: var(--main);
+}
+#header{
+	background-color: var(--main);
+}
+#header .hInner{
+    background-color: rgba(241, 233, 224, 0.15);
+}
+body {
+    background-color: var(--main);
+}
+#footer {
+    background-color: var(--main);
+}
+#static #main{
+    background: var(--main) url(../img/bg/promotion_bg.png) no-repeat center top;
+}
+#gamelobby #main{
+    background: var(--main) url(../img/bg/slots_bg.png) no-repeat center top;
+}
+#login2page #main{
+    background: var(--main) url(../img/bg/register_bg.png) no-repeat center top;
+}
+#member #main{
+    background: var(--main) url(../img/bg/about_bg.png) no-repeat center top;
+}
+#admin #main{
+    background: var(--main) url(../img/bg/about_bg.png) no-repeat center top;
+}
+/*-----------hLinkBox------------*/
+#header .hLinkBox>div>ul>li>a {
+    color: var(--sub);
+}
+#header .hBox{
+    background-color: rgba(62, 41, 14, 0.6);
+}
+#header .dropdown-lang .nav-link.dropdown-toggle {
+    color: var(--sub);
+}
+#header .short_url{
+	color: var(--sub);
+}
+/*------------#header------------*/
+#header #gNavi li a {
+    color: var(--font);
+}
+#header #gNavi li a.on, #header #gNavi li a:hover {
+    color: #fff;
+}
+#header #gNavi li a.on, #header #gNavi li a:hover{
+    background-color: var(--sub);
+}
+#header #gNavi li.hot .txt,
+#header #gNavi li.hot a {
+    color:  #fff;
+}
+#header .headlogin {
+    background-color: rgba(173, 131, 81, 0.5);
+}
+.headlogin input {
+    background-color: rgba(110, 79, 38, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+}
+#header #gNavi.menu_for_member li a::before {
+    color: #fff;
+}
+#header h1 a{
+    color: #fff;
+}
+#header h1 a:hover span{
+    color: #fff;
+}
+/*--------morelink-------------*/
+@keyframes blinklink {
+    from {
+        color: var(--font);
+    }
+    to {
+        color: var(--sub);
+    }
+}
+/*-----------footer---------------*/
+#footer a{
+	color: var(--font);
+}
+#footer a:hover{
+	color: var(--font);
+}
+.f_paylogo {
+    background-color: rgba(235, 219, 206, 0.7);
+}
+.f_parlogo {
+    background-color: transparent;
+}
+.f_morelink {
+    background-color: #5c372480;
+}
+#footer .f_nav{
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.footer div[align="right"] {
+    color: rgba(255, 255, 255, 0.4);
+}
+/*-------------物件---------------*/
+#home .newSection{
+    background-color: rgba(62, 41, 14, 0.6);
+}
+#home .section_gamelobby{
+    background: url(../img/home/bg01.png) no-repeat center top;
+}
+#home .section02{
+    background-color: rgba(241, 233, 226, 0.85);
+}

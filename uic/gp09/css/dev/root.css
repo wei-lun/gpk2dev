@@ -1,0 +1,117 @@
+/*
+----------------------------------------------------------------------------
+// Features:	顏色、圖片相關CSS集中至本檔
+// File Name:	root.css
+// ----------------------------------------------------------------------------
+*/
+:root {
+/*for all*/
+	/*font*/
+	--dark-font: #563726;/*body*/
+	--light-font: #fff;/*menu文字*/
+	--sub-font: #26daa1;/*少部分副標(頭menu會員中心info、歡迎文字)*/
+	--highlight: #14805E;/*h2、h3、中間選單強調(無用)*/
+	--link-hover:#fff535;/*head footer link hover*/
+
+/*for haead*/
+	--dark-bg: #14805E;	/*語言 時間列 背景*/
+	--light-bg: #14805E ;/*中間選單 背景*/
+	--head-bg: #14805E;/*會員登入 背景*/
+	--item-color: #fff;/*中間選單連結(無用)*/
+	--item-hover: #14805E;/*中間選單連結hover底色*/
+	--dropmenu: #717070;/*語言列、會員中心下拉選單 背景色*/
+
+/*for main (for static)*/
+	--static-bg:#323232;/*main背景*/
+ 	--page-bg: #f2f2f2;/*文章區塊背景*/
+ 	--page-border: #f2f2f2;/*文章區塊邊框*/
+ 	--page-line:#f2f2f2;/*文章區塊邊線*/
+
+/*for footer*/ 	
+ 	--hot-link: #fff535;	
+ 	--paylogo-bg:#687d77;
+ 	--parlogo-bg:#2a3e38;
+ 	--more-link-bg:#2B2B2B;
+ 	--footer-bg:#2B2B2B;
+ 	--footer-font:#bdbdbd;/*footer 連結文字色*/
+ 	--footer-dark-font:#eee;/*footer 版權聲明*/
+ /*-------------static-----------------*/
+    --static-font:#ccc;
+    --static-h2-font:#df4f4f;
+    --static-h3-font:#1fa179;
+    --static-h4-font:#1a894f;
+}
+
+/*----------------------------常態中間選單------------------------------*/
+#header #gNavi li a {
+	color:	var(--highlight);
+}
+/*hot*/
+#header #gNavi li::before {
+	position: absolute;
+	top: 5px;
+	right: -3px;
+}
+#header #gNavi li.hot a{
+	color: #fff535;
+}
+/*-------------------------------會員中心頁面之中間選單圖示-------------------------
+.menu_for_member li a::before{
+	font-family: "FontAwesome";
+    content: '';
+    position: absolute;
+    top: 15px;
+    left: 0;
+    font-size: 24px;
+    width: 85px;
+    color: var(--item-color);
+}
+.menu_for_member li a:hover::before{
+	color: #fff;
+}
+.menu_for_member li:nth-child(1) a::before{
+	content: '\f0e0';
+}
+.menu_for_member li:nth-child(2) a::before{
+	content: '\f007';
+}
+.menu_for_member li:nth-child(3) a::before{
+	content: '\f022';
+}
+.menu_for_member li:nth-child(4) a::before{
+	content: '\f07a';
+}
+.menu_for_member li:nth-child(5) a::before{
+	content: '\f00b';
+}
+.menu_for_member li:nth-child(6) a::before{
+	content: '\f09d';
+}
+.menu_for_member li:nth-child(7) a::before{
+	content: '\f009';
+}
+*/
+/*--------------------------各templ背景圖片-----------------------------*/
+#static #main{
+	background:var(--static-bg) url(../img/bg/promotion_bg.jpg) no-repeat center top;
+	background-size: cover;
+}
+#gamelobby #main{
+	background:var(--static-bg) var(--static-bg) url(../img/bg/game_bg.jpg) no-repeat center top;
+}
+#login2page #main{
+	background:var(--static-bg) url(../img/bg/member_bg.jpg) no-repeat center top;
+}
+#member #main{
+	background:var(--static-bg) var(--static-bg) url(../img/bg/promotion_bg.jpg) no-repeat center top;
+}
+#admin #main{
+	background:var(--static-bg) var(--static-bg) url(../img/bg/promotion_bg.jpg) no-repeat center top;
+}
+
+/*----------------------------------------home----------------------------------*/
+/*首頁banner*/
+#home .mainImg {
+	height: 450px;
+	background: url(../img/home/banner01.jpg) no-repeat center top; 
+}

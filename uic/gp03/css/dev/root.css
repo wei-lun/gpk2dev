@@ -1,0 +1,33 @@
+:root {
+/*-------------static-----------------*/
+    --static-font:#ccc;
+    --static-h2-font:#7a6cfe;
+    --static-h3-font:#5e84cc;
+    --static-h4-font:#5e78a3;
+/* --------------  log內頁與選單文字漸層  -------------- */
+    /* 修改方式可以先針對各版顏色用色相調整，如果不合適在細調整 */
+    /* 內頁logo span:nth-child(2)的底部 3D立體效果顏色 - 由上而下 */
+    --text-shadow-bg-1: #10112a;
+    --text-shadow-bg-2: #0e1c81;
+    --text-shadow-bg-3: #0e1781;
+    /* 內頁logo span:nth-child(2)的底部陰影 - 由上而下 */
+    --text-shadow-1: rgba(16,16,16,0.4);
+    --text-shadow-2: rgba(16,16,16,0.2);
+    --text-shadow-3: rgba(16,16,16,0.2);
+    --text-shadow-4: rgba(16,16,16,0.4);
+    /* 內頁logo span:nth-child(1)的金屬漸層效果 - 由上而下 */
+    --linear-gradient-1:#FFF;
+    --linear-gradient-2:#FFF;
+    --linear-gradient-3:#6d93c3;
+    --linear-gradient-4:#6d87c3;
+    --linear-gradient-5:#263965;
+    --linear-gradient-6:#416fc2;
+    /* 內頁主選單樣式 - 漸層 */
+    --linear-gradient-menu-1:#FFF;
+    --linear-gradient-menu-2:#FFF;
+    --linear-gradient-menu-3:#FFF;
+    --linear-gradient-menu-4:#828282;
+    --linear-gradient-menu-5:#262626;
+    /* 內頁主選單被選取 - 光暈 */
+    --menu-active-shadow: #34b1ff;
+}

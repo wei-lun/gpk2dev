@@ -1,0 +1,114 @@
+/*
+Feture: partner.php CSS
+Version: v0.1
+Author: JT_White
+Date: 2017.8.16
+*/
+
+.panel-body {
+  font-family: "微軟正黑體";
+}
+
+.panel-body ol li {
+  margin-bottom: 10px;
+}
+
+.panel-body nav {
+  max-width: 960px;
+  mask-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #ffffff 25%, #ffffff 75%, rgba(255, 255, 255, 0) 100%);
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.panel-body nav ul {
+  text-align: center;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 100%);
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+}
+
+.panel-body nav ul li {
+  display: inline-block;
+}
+
+.panel-body nav ul li a {
+  padding: 18px;
+  font-family: "Microsoft JhengHei";
+  text-transform: uppercase;
+  color: rgba(0, 35, 122, 0.5);
+  font-size: 18px;
+  text-decoration: none;
+  display: block;
+}
+
+.panel-body nav ul li a:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.1);
+  color: rgba(0, 35, 122, 0.7);
+}
+
+.panel-body h2 {
+  color: #a08d7c;
+  margin-bottom: 20px;
+}
+
+.panel-body h3 {
+  color: #d98808;
+  font-size: 22px;
+  margin: 20px 0;
+}
+
+.panel-body h4 {
+  color: #519288;
+}
+
+.panel-body .tag {
+  font-size: 12px;
+  margin-top: 10px;
+  color:#999;
+}
+
+.collapse.in {
+  margin-bottom: 10px;
+}
+
+.backtop {
+  border-bottom: 1px solid #eee;
+  border-top: 1px solid #eee;
+  margin: 20px 0;
+  padding: 20px 0;
+  text-align: right;
+}
+
+.backtop a {
+  background: #ddd none repeat scroll 0 0;
+  padding: 10px;
+  color: #fff;
+  border-radius: 10%
+}
+
+.backtop a:focus,
+.backtop a:hover {
+  color: #a08d7c;
+  text-decoration: underline;
+}
+
+.text-red {
+  color: red;
+  font-weight: bold
+}
+
+.table-bordered > thead > tr > td,
+.table-bordered > thead > tr > th {
+  border-bottom-width: 1px;
+  background-color: #eee;
+}
+
+table .text-right {
+  text-align: right;
+  float: right;
+}
+
+table .text-left {
+  text-align: left;
+  float: left;
+}

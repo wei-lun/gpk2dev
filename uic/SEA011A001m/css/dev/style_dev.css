@@ -1,0 +1,432 @@
+/*----------------全站主要樣式--------------------*/
+/*---作為開發使用時 import root.css 載入色彩變數 --*/
+/*--- 正式上線 請使用CSSnext 轉為 一般CSS檔使用 ---*/
+/*--- 包含外框、陰影、顏色、透明度---*/
+/*----------------------------------------------*/
+a {
+	color: #333333;
+}
+
+body {
+	background-color: #300;
+	color: #333333;
+}
+
+/*會員中心背景*/
+body#member {
+	background-color: #300;
+}
+
+body#login {
+	background-color: #300;
+}
+
+body#admin {
+	background-color: #eeee;
+}
+
+/*標準色設定*/
+.btn-primary{
+	background: #90000E!important;
+	border-color: #90000E!important;
+}
+.bg-primary{
+	background: #90000E!important;
+}
+#header #main-menu .control{
+	background: #90000E;
+}
+
+/*-------------------header---------------------*/
+#header {
+	background-color: #300;
+	color: #ffffff;
+}
+
+#header .navbar {
+	box-shadow: 0 4px 5px 0 rgba(0, 0, 0, .5);
+}
+
+#header .domain {
+	color: #ffffff;
+}
+
+#header .account-info {
+	background: #333333 none repeat scroll 0 0;
+}
+
+#header .account_img {
+	background-color: #ffffff;
+}
+
+#header .account_img span {
+	color: #111111;
+}
+
+#header .navbar-collapse {
+	background-color: #555555;
+}
+
+#header .account-info .account-notice .badge {
+	color: #ffffff;
+}
+
+#header .account-info .account-notice>a {
+	color: #FCD846;
+}
+
+#header .account-info .media-body {
+	color: #FCD846;
+}
+
+#header .dropdown-menu .dropdown-item a {
+	color: #FCD846;
+}
+
+#header .navlog {
+	background-color: #111111;
+}
+
+/*------footer---------------*/
+.footer {
+	background-color: #90000E;
+	color: #ffffff;
+	box-shadow: 0 -4px 5px 0 rgba(0, 0, 0, .5);
+}
+
+/*marqueebox*/
+#header #main-menu,
+.marqueebox {
+	background-color: #333333;
+	;
+}
+
+.marqueebox .title {
+	color: #ffffff;
+	position: absolute;
+	top: 2px;
+}
+
+.marqueebox .marquee a {
+	color: #ffffff;
+}
+
+.marqueebox .marquee .js-marquee li span {
+	color: #63d0b5;
+}
+.newSection{
+	display: flex;
+}
+/*----------元件_滑動選單-----------------------*/
+/* 單一分類 寬度更改*/
+.index_tabmenu>li.widthactive{
+	width: 49%!important;
+}
+.index_tabmenu>li{
+	border-color: #750303;
+}
+.index_tabmenu>li.active,
+.index_tabmenu>li.active>a {
+	background-color: #97000f !important;
+	border: 1px solid #97000f !important;
+	border-bottom-color: #97000f !important;
+}
+
+.swiper-slide {
+	background: #330000;
+	box-shadow: 0 0 10px 0 rgba(0, 0, 0, .5);
+}
+
+.swiper-container #gNavi li a {
+	color: #fff;
+}
+
+.swiper-container #gNavi li a.active {
+	color: #f1e9e0;
+}
+
+.swiper-container #gNavi li.active a {
+	color: #fff;
+}
+
+
+
+/*----------元件_遊戲項目-----------------------*/
+.gameitem {
+	background-color: #333333 !important;
+	border: 2px #C40014 solid !important;
+}
+
+#casinotab{
+	padding-top: 10px;
+	padding-bottom: 5px;
+}
+
+#index .gameitem {
+	border-radius: 10px;
+}
+
+/*----------page_#index-----------------------*/
+#index .index_m_title {
+	box-shadow: 0 0 10px 0 rgba(0, 0, 0, .5);
+	border-left: 5px solid #CB995A;
+	background-color: #333333;
+}
+
+#index .index_m_title.h5,
+#index .index_m_title h5 {
+	color: #ffffff;
+}
+
+/*----------page_#gamelobby-----------------------*/
+#gamelobby #casinotab #gamesel a {
+	color: #ffffff;
+}
+
+#gamelobby #casinotab.nav>li.active>a {
+	background: #FCD846 !important;
+	border: 2px solid #FCD846 !important;
+	color: #111111 !important;
+}
+
+#gamelobby .input-group>.input-group-append>.btn {
+	background-color: #FADD67;
+	color: #fff;
+}
+
+#gamelobby .nav-pills .nav-link {
+	border: 2px #FCD846 solid;
+	color: #FCD846;
+}
+
+#gamelobby .gamesel {
+	color: #ffffff !important;
+}
+
+#gamelobby .items span.selected {
+	color: #111;
+}
+
+#gamelobby .select {
+	background-color: #FCD846;
+}
+
+/**/
+#static #main h2,
+#static #main h3 {
+	color: #FCD846;
+}
+
+#static .pages {
+	background-color: #fff !important;
+	border: 1px solid #999 !important;
+}
+
+/*----------header_logo變化-----------------------*/
+.navbar-brand .logo {
+	background: url(../img/common/logo.png) no-repeat left center;
+	width: 100px;
+	min-height: 50px;
+	background-size: 100px;
+}
+
+/*#admin .navbar-brand .logo {
+	background: url(../img/common/logo_company.png) no-repeat left center;
+	width: 100px;
+	min-height: 50px;
+	background-size: 50px;
+}*/
+
+/*下拉選單區塊顏色*/
+.navblock .nbox {
+	background-color: #111111;
+}
+/*------------會員中心----------------------------*/
+/*會員圖像*/
+.membercenter .glyphicon{
+	color:var(--yellow);
+	border-color:var(--yellow);
+}
+/*------------登入-----------------*/
+/*標題 黑色header*/
+#main .menuheader a i{
+	color: #FFF;
+}
+/*------------財務中心---------------*/
+#main a .deposit_menu_icon span i,
+#main li.deposit_menu_icon a span i{
+	color: #FFF;
+}
+#main a .deposit_icon_btn i{
+	color: #cccccc;
+}
+#main a.deposit_status_btn{
+	color: #FFF;
+}
+#main a.btn-primary{
+	color: #FFF;
+}
+/*------------文字顏色---------------*/
+.table_from4 td:nth-child(4),
+.table.table_from4 td:nth-child(3),
+#announcementmodaldetail,
+.modal_contentstyle.modal-content h6,
+.table_form2 th,
+.table_form2 td,
+#moa_betlog .modal-body table td,
+.moa_betlog_table th,
+.table_from6 td,
+.table.table_from4 td:nth-child(1),
+#member_list_wrapper table.dataTable thead th,
+#linkDataTable.table.table_liststyle tbody tr td,
+.table.table_liststyle th, 
+.table.table_liststyle thead tr th,
+.spread_add_style >div:nth-child(1), 
+.member_table tr th,
+.deposit_p_content p span, 
+.deposit_p p span,
+.modal_contentstyle .modal-time,
+.table.stationmail_list td{
+	color: #222;
+}
+#register #submit_to_register,
+#register table tr th,
+#main .deposit_company_send a {
+	color: #FFF;
+}
+#main a div.deposit_icon_title div p{
+	color: #828282;
+}
+#main .nav-headerbutton a.active,
+.nav-headerbutton input:checked ~ div.active_border,
+.nav-headerbutton a.active, 
+.nav-headerbutton.nav-tabs .nav-link.active{
+  border-bottom: 2px solid #90000E;
+  color: #90000E;
+}
+/* 主色 */
+#static .panel-title,
+#static #main h2,
+#static #main h3,
+.nav-headerbutton input:checked + label,
+.deposit_company_input input:checked + label{
+	color: #90000E;
+}
+.deposit_status_btn{
+	background-color:#90000E;
+}
+#main a#id_href{
+	color:#FFF;
+}
+.authentication_send{
+	background:#90000E;
+}
+#static h2, #static h3{
+	color: #90000e;
+}
+button.send_btn.bg-primary:focus,
+button.send_btn.bg-primary:hover{
+	background: #90000E!important;
+}
+table.dataTable.table_liststyle thead th{
+	border:0!important;
+}
+.div_from2>div:first-child,
+.div_from2>div:nth-child(2), 
+.div_from2input,
+.table_form2 th{
+	background: #FFF;
+}
+body#static{
+	background-color:#eee; 
+}
+/* -----------------------------背景----------------------------- */
+/* 遊戲背景 */
+.gameitem{
+	background-color: #641515 !important;
+	border:0 !important;
+}
+/* 推薦遊戲 */
+#game-exposure .gameitem{
+	margin-bottom: 0!important;
+}
+#game-exposure-container{
+	background: none;
+}
+#game-exposure .gameitem{
+	border:#d93730 solid 1px!important;
+}
+/* -----------------------------文字----------------------------- */
+#register .checkbox label,
+#gamelobby .items span.selected{
+	color: #FFF;
+}
+.member_mobile_menu li a:hover,
+.member_mobile_menu_s li a:hover{
+ color: #333;
+}
+/* -----------------------------共用----------------------------- */
+/* 交易明細按鈕 匯出*/
+#id_href{
+	padding-top: 0;
+	padding-bottom: 0;
+	display: flex;
+	align-items: center;
+}
+a#id_href{
+	color: #FFF;
+}
+a#id_href:not([href]):not([tabindex]) {
+	color: #7c7c7c;
+}
+/* 取消按鈕效果 */
+button:focus{
+	outline: 0;
+}
+.btn-primary:not(:disabled):not(.disabled).active:focus,
+.btn-primary:not(:disabled):not(.disabled):active:focus,
+.show>.btn-primary.dropdown-toggle:focus,
+.btn.focus, .btn:focus{
+	box-shadow: none;
+}
+/* 註冊 *標示 */
+#register table th i{
+	color: #dc3545;
+}
+/* 共用 */
+.main_content ol{
+	margin-left: 25px;
+}
+/* 不共用 */
+.panel-title a{
+	background: #FFF;
+}
+/* ------------ 背景 ------------- */
+#announcementFooter .btn,
+#announcementModal .modal-header{
+	background: #300;
+}
+/* ------------ input ------------- */
+#register table tr td select,
+#register table tr td input,
+#login .card-body input {
+    background: #610e0e;
+	border-color:#ac1e1e;
+	color: #FFF;
+}
+#index .infommobile-lb2{
+	border-color: #6f6f6f;
+}
+/* 推薦遊戲 */
+#game-recommend-container{
+	background: linear-gradient(to right, #330000 0%,#641515 7%,#641515 16%,#641515 51%,#641515 87%,#641515 94%,#330000 100%);
+}
+.gamelike_content div.falike{
+	background:#b70617;
+}
+.falike:after{
+	border-color: transparent transparent #b70617 transparent;
+}
+.gamelike_content{
+	border-color:#b70617;
+}

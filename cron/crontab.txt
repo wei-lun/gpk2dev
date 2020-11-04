@@ -1,0 +1,8 @@
+# redis push監聽程式
+*/5 * * * * /home/deployer/cron/redis_monitor.sh
+
+# 定期壓縮log記錄並保留30天後移除
+59 23 * * * /home/deployer/cron/log_compression.sh
+
+# 定期移除tmp_dl及tmp_jsondata資料夾中超過1天的資料
+59 23 * * * /home/deployer/cron/tmpfileremover.sh

@@ -1,0 +1,56 @@
+/*
+----------------------------------------------------------------------------
+// Features:	顏色、圖片相關CSS集中至本檔
+// File Name:	root.css
+// ----------------------------------------------------------------------------
+*/
+
+:root {
+	/*固定項目：主要色調決定是深底色或暗底色*/
+	--header-bg: #222222;
+	--header-font: #f1e9e0;
+	--account-bg: #7263ff;
+	--account-title: #222222;
+	--account-font: #ffffff;
+	--main-bg: ;
+	--main-font: ;
+	--footer-bg: #222222;
+	--footer-font: #7263ff;
+	--highlight: #f1e9e0;
+	--link: #7263ff;
+	--hover: #7263ff;
+	--marqueebox-bg: #222222;
+	--marqueebox-icon: #f1e9e0;
+	--marqueebox-title: #63d0b5;
+	--marqueebox-font: #f1e9e0;
+	--gameitem-bg: ;
+	--gameitem-border: ;
+	--gameitem-font: ;
+	/*擴展項目：*/
+	--font-dark: #222222;
+	--font-light: #ffffff;
+	/*深色背景通用*/
+	/*淺色背景通用*/
+	/*font*/
+	--font-dark: #222222;
+	--font-light: #f1e9e0;
+	--m-menu-bg: #0d1149;
+	--m-header-bg: #171934;
+	/*識別色*/
+	--min-primary: #d6a94e;
+	--min-secondary: #c39d6d;
+	--min-third: ;
+	/*--highlight*/
+	--highlight-primary: #7263ff;
+	--highlight-secondary: #7263ff;
+	--highlight-third: #7263ff;
+	/*背景  由深到淺*/
+	--bg-primary: #7263ff;
+	--bg-secondary: #333333;
+	--bg-third: ;
+	/*底層選單*/
+	--font-menu-bottom: #eeeeee;
+	--bg-menu-bottom: #222222;
+	/*links*/
+	/*共同色*/
+}

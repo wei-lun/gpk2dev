@@ -1,0 +1,85 @@
+/*
+----------------------------------------------------------------------------
+// Features:	顏色、圖片相關CSS集中至本檔
+// File Name:	root.css
+// ----------------------------------------------------------------------------
+*/
+/*---------------背景色-------------*/
+.hLinkBox{
+	background-color: var(--main);
+}
+#header{
+	background-color: var(--main);
+}
+#header .hInner{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+#footer {
+    background-color: var(--main);
+}
+/*-----------hLinkBox------------*/
+#header .hBox{
+    background-color: rgba(117, 71, 71, 0.5);
+}
+/*------------#header------------*/
+#header #gNavi li a {
+    color: var(--font);
+}
+#header .headlogin {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.headlogin input {
+    background-color: rgba(110, 79, 38, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+}
+#header #gNavi.menu_for_member li a::before {
+    color: #fff;
+}
+#header h1 a{
+    color: #fff;
+}
+#header h1 a:hover span{
+    color: #fff;
+}
+/*--------morelink-------------*/
+@keyframes blinklink {
+    from {
+        color: var(--font);
+    }
+    to {
+        color: var(--sub);
+    }
+}
+/*-----------footer---------------*/
+#footer a{
+	color: var(--font);
+}
+#footer a:hover{
+	color: var(--font);
+}
+.f_paylogo {
+    background-color: rgba(235, 219, 206, 0.7);
+}
+.f_parlogo {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.f_morelink {
+    background-color: transparent;
+}
+#footer .f_nav{
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.footer div[align="right"] {
+    color: rgba(255, 255, 255, 0.4);
+    background-color:transparent; 
+}
+/*-------------物件---------------*/
+#home .newSection{
+    background-color: rgba(62, 41, 14, 0.6);
+}
+#home .section_gamelobby{
+    background:var(--main) url(../img/home/bg01-theme.png) no-repeat center top;
+}
+#home .section02{
+    background-color: rgba(241, 233, 226, 0.85);
+}

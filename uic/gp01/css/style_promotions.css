@@ -1,0 +1,18 @@
+/*
+Feture: promotions.php CSS
+Version: v0.1
+Author: JT_White
+Date: 2017.8.7
+*/
+
+.promotions_text {
+	color: #808080;
+}
+
+.promotions_text span {
+	color: #c39d6d;
+    display:block;
+	font-weight: bold;
+    padding: 5px 0;
+	text-shadow: 1px;
+}

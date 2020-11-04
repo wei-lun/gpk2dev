@@ -1,0 +1,81 @@
+/*
+----------------------------------------------------------------------------
+// Features:	顏色、圖片相關CSS集中至本檔
+// File Name:	root.css
+// ----------------------------------------------------------------------------
+*/
+
+:root {
+/*for all*/
+	/*font*/
+	--dark-font: #684a12;/*body*/
+	--highlight: #ad8351;/*h2、h3、中間選單強調*/
+	--link-hover:#ffd556;/*footer link*/
+
+/*for haead*/
+	--hSection-bg: #E3D6AE;	/*語言 時間列*/
+	--hInner-bg: #F3EEDB ;/*中間選單*/
+	--marquee-bg: #765103;/*跑馬燈*/
+	--head-bg: #A87B28;/*會員登入*/
+
+	--item-hover: #E9DCBA;/*中間選單連結hover底色*/
+
+/*for main (for static)*/
+	--static-bg:#F3EEDB;/*main背景(漸層)*/
+ 	--page-bg: #F3EEDB;/*文章區塊背景*/
+ 	--page-title: #EDE6C8;/*麵包屑背景*/
+
+/*for footer*/
+	--hot-link: #ffd556;	
+ 	--paylogo-bg:#ECE3BE;
+ 	--parlogo-bg:#765202;
+ 	--more-link-bg:#765202;
+ 	--footer-bg:#765202;
+ 	--footer-font:#ebe3c2;/*footer 連結*/
+ 	--footer-dark-font:#ebe3c2;/*footer 版權聲明*/
+/*-------------static-----------------*/
+    --static-font:#3e290f;
+    --static-h2-font:#dc3544;
+    --static-h3-font:#be7218;
+    --static-h4-font:#aa1f14;
+}
+/*-------------navi----------------*/
+#header #gNavi li a.on,
+#header #gNavi li a:hover {
+	padding: 19px 0 22px;
+	color: var(--highlight);
+	border-top:4px solid #DC4900;
+	background-color: var(--item-hover);
+}
+#header #gNavi li a.on .txt,
+#header #gNavi li a:hover .txt {
+	color: var(--highlight);
+}
+#header #gNavi li.hot::before{
+	right: 0;
+    top: 10px;
+}
+#header #gNavi li.hot a{
+	color: var(--highlight);
+}
+/*------------------背景圖片部分-----------------------------*/
+#static #main {
+	padding: 10px 0;
+	background: #F3EEDB url(../img/bg/promotion_bg.jpg) no-repeat center top;
+}
+#gamelobby #main {
+	padding: 10px 0;
+	background: #F3EEDB url(../img/bg/slots_bg.jpg) no-repeat center top;
+}
+#login2page #main{
+	background: #F3EEDB url(../img/bg/about_bg.jpg) no-repeat center top;
+	padding: 10px 0;
+}
+#member #main{
+	background: #F3EEDB url(../img/bg/reg_bg.jpg) no-repeat center top;
+	padding: 10px 0 10px;
+}
+#admin #main{
+	background: #F3EEDB url(../img/bg/about_bg.jpg) no-repeat center top;
+	padding: 10px 0;
+}

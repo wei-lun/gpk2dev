@@ -1,0 +1,60 @@
+/*
+----------------------------------------------------------------------------
+// Features:	顏色、圖片相關CSS集中至本檔
+// File Name:	root.css
+// ----------------------------------------------------------------------------
+*/
+:root {
+/*for all*/
+	/*font*/
+	--dark-font: #563726;/*body*/
+	--light-font: #fff;/*menu文字*/
+	--sub-font: #f4d15c;/*少部分副標(頭menu會員中心info、歡迎文字)*/
+	--highlight: #c83434;/*h2、h3、中間選單強調(無用)*/
+	--link-hover:#f4d15c;/*head footer link hover*/
+
+/*for haead*/
+	--dark-bg: #c83434;	/*語言 時間列 背景*/
+	--light-bg: #c83434 ;/*中間選單 背景*/
+	--head-bg: #c83434;/*會員登入 背景*/
+	--item-color: #fff;/*中間選單連結(無用)*/
+	--item-hover: #c83434;/*中間選單連結hover底色*/
+	--dropmenu: #95201f;/*語言列、會員中心下拉選單 背景色*/
+
+/*for main (for static)*/
+	--static-bg:#fff;/*main背景*/
+ 	--page-bg: #f2f2f2;/*文章區塊背景*/
+ 	--page-border: #f2f2f2;/*文章區塊邊框*/
+ 	--page-line:#f2f2f2;/*文章區塊邊線*/
+
+/*for footer*/
+	--hot-link: #c83434;	
+ 	--paylogo-bg:#f2f2f2;
+ 	--parlogo-bg:#f2f2f2;
+ 	--more-link-bg:#f2f2f2;
+ 	--footer-bg:#c83434;
+ 	--footer-font:#717070;/*footer 連結文字色*/
+ 	--footer-dark-font:#eee;/*footer 版權聲明*/
+/*-------------static-----------------*/
+    --static-font:#3e0f0f;
+    --static-h2-font:#c83434;
+    --static-h3-font:#c66666;
+    --static-h4-font:#aa1f14;
+}
+
+/*----------------------------常態中間選單------------------------------*/
+#header #gNavi li a {
+	color:	var(--highlight);
+}
+/*hot*/
+#header #gNavi li::before {
+	position: absolute;
+	top: 5px;
+	right: -3px;
+}
+/*----------------------------------------home----------------------------------*/
+/*首頁banner*/
+#home .mainImg {
+	height: 450px;
+	background: url(../img/home/banner01.jpg) no-repeat center top; 
+}

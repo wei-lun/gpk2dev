@@ -1,0 +1,161 @@
+/*
+----------------------------------------------------------------------------
+// Features:	顏色、圖片相關CSS集中至本檔
+// File Name:	root.css
+// ----------------------------------------------------------------------------
+*/
+:root {
+/*for all*/
+	/*font*/
+	--dark-font: #333;/*body*/
+	--light-font: #ffead2;/*menu部分*/
+	--sub-font: #c98f69;/*少部分副標*/
+	--highlight: #804907;/*h2、h3、中間選單強調*/
+	--link-hover:#f4d15c;/*head footer link*/
+
+/*for haead*/
+	--dark-bg: #3E290E;	/*語言 時間列*/
+	--light-bg: #F1E9E0 ;/*中間選單*/
+	--head-bg: #AD8351;/*會員登入*/
+	--item-color: #bc9a6d;/*中間選單連結*/
+	--item-hover: #C29866;/*中間選單連結hover底色*/
+	--dropmenu: #3e2a0f;/*語言列、會員中心下拉選單*/
+
+/*for main (for static)*/
+	--static-bg:#EEE3D8;/*main背景*/
+ 	--page-bg: #F8E1CB;/*文章區塊背景*/
+ 	--page-border: #f1d8c0;/*文章區塊邊框*/
+ 	--page-line:#E1C2A4;/*文章區塊邊線*/
+
+/*for footer*/
+	--hot-link: #FEDB29;	
+ 	--paylogo-bg:#EBDBCE;
+ 	--parlogo-bg:#3E290E;
+ 	--more-link-bg:#5C3724;
+ 	--footer-bg:#3E290E;
+ 	--footer-font:#d1aa95;/*footer 連結*/
+ 	--footer-dark-font:#745d43;/*footer 版權聲明*/
+/*-------------static-----------------*/
+    --static-font:#3e290f;
+    --static-h2-font:#dc3544;
+    --static-h3-font:#be7218;
+    --static-h4-font:#aa1f14;
+}
+
+/*----------------------------常態中間選單------------------------------*/
+#header #gNavi li.hot .txt,
+#header #gNavi li.hot a {
+	color:	var(--highlight);
+}
+#header #gNavi li a::before{
+	content: "";
+    position: absolute;
+    top: 7px;
+    left: calc(50% - 15px);
+}
+#header #gNavi li.navi_game a::before{
+	font: normal normal normal 24px/1 "Material Design Icons";
+	font-size: 30px;
+	content: "\f297";
+}
+#header #gNavi li.navi_Live a::before{
+	font-family: 'Font Awesome 5 Free';
+	font-size: 25px;
+	content: "\f3a5";
+	top: 10px;
+}
+#header #gNavi li.navi_Lottery a::before{
+	font: normal normal normal 24px/1 "Material Design Icons";
+	font-size: 30px;
+	content: "\F76D";
+}
+#header #gNavi li.navi_Fishing a::before{
+	font: normal normal normal 24px/1 "Material Design Icons";
+	font-size: 30px;
+	content: "\F23A";
+}
+#header #gNavi li.navi_promotions a::before{
+	font: normal normal normal 24px/1 "Material Design Icons";
+	font-size: 30px;
+	content: "\F2A1";
+}
+#header #gNavi li.navi_service a::before{
+	font-family: 'Font Awesome 5 Free';
+	font-size: 25px;
+	content: "\f086";
+}
+/* hover color */
+#header #gNavi li a.on,#header #gNavi li a:hover{
+	background-color: var(--item-hover);
+}
+/*hot*/
+#header #gNavi li.hot::before {
+	position: absolute;
+	top: 12px;
+	right: 3px;
+	width: 21px;
+	height: 12px;
+	z-index: 2;
+}
+/*-------------------------------會員中心頁面之中間選單圖示-------------------------*/
+#header #gNavi.menu_for_member li a::before{
+	font-family: 'Font Awesome 5 Free';
+    content: '';
+    position: absolute;
+    top: 15px;
+    /* left: 0; */
+    font-size: 24px;
+	width: 29px;
+	text-align: center;
+    color: var(--item-color);
+}
+#header #gNavi.menu_for_member li a:hover::before{
+	color: #fff;
+}
+#header #gNavi.menu_for_member li:nth-child(1) a::before{
+	content: '\f0e0';
+}
+#header #gNavi.menu_for_member li:nth-child(2) a::before{
+	content: '\f007';
+}
+#header #gNavi.menu_for_member li:nth-child(3) a::before{
+	content: '\f022';
+}
+#header #gNavi.menu_for_member li:nth-child(4) a::before{
+	font: normal normal normal 24px/1 "Material Design Icons";
+	content: '\f110';
+}
+#header #gNavi.menu_for_member li:nth-child(5) a::before{
+	font: normal normal normal 24px/1 "Material Design Icons";
+	content: '\f584';
+}
+#header #gNavi.menu_for_member li:nth-child(6) a::before{
+	content: '\f09d';
+}
+#header #gNavi.menu_for_member li:nth-child(7) a::before{
+	content: '\f009';
+}
+
+/*--------------------------各templ背景圖片-----------------------------*/
+#static #main{
+	background: url(../img/bg/promotion_bg.jpg) no-repeat center top;
+}
+#gamelobby #main{
+	background: var(--static-bg) url(../img/bg/slots_bg.jpg) no-repeat center top;
+}
+#login2page #main{
+	background: url(../img/bg/register_bg.jpg) no-repeat center top;
+}
+#member #main{
+	background: var(--static-bg) url(../img/bg/about_bg.jpg) no-repeat center top;
+}
+#admin #main{
+	background: var(--static-bg) url(../img/bg/about_bg.jpg) no-repeat center top;
+}
+
+/*----------------------------------------home----------------------------------*/
+/*首頁banner*/
+#home .mainImg {
+	height: 450px;
+	/*background: url(../img/home/banner01.jpg) no-repeat center top; */
+}

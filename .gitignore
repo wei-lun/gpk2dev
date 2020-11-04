@@ -1,0 +1,13 @@
+doc/*
+trash/*
+log/*
+test/*
+.well-known
+.ftp*
+config.php
+websiteconf.php
+*test.php
+notify_log.txt
+.vscode
+notusing/*
+node_modules/

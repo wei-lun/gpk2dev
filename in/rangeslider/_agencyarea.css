@@ -1,0 +1,39 @@
+.rangeslider--horizontal{
+    width: 100%;
+}
+.rangeslider__handle{
+    width: 23px;
+    height: 23px;
+}
+.rangeslider--horizontal .rangeslider__handle{
+    top: -1px;
+}
+#js-rangeslider-0{
+    text-align: center;
+}
+div.rangeslider__fill{
+    width: 150px;
+}
+div.range{
+    width: 150px;
+    text-align: center;
+}
+
+div.range > output{
+    margin-top: 8px;
+    margin-bottom: 12px;
+}
+
+div.range_buttons > input{
+    padding: 2px 3px;
+    font-size: 1rem;
+}
+
+div.range_buttons > input:nth-child(1){
+    margin-right: 6px;
+}
+
+div.range_buttons > input:nth-child(2){
+    margin-left: 6px;
+}
+

@@ -1,0 +1,60 @@
+/*
+----------------------------------------------------------------------------
+// Features:	顏色、圖片相關CSS集中至本檔
+// File Name:	root.css
+// ----------------------------------------------------------------------------
+*/
+/*---------------背景色-------------*/
+#header{
+    background: var(--main) url(../img/common/promotion_bg2.png) repeat fixed top;    
+}
+body {
+    background: var(--main) url("../img/common/bg.png") repeat fixed center top;
+}
+#footer {
+    background:none;
+    background-color: var(--main);
+}
+/*------------#header------------*/
+.main-menu>li>a {
+    color: var(--font);
+}
+.main-menu>li>a:hover{
+	color: var(--font);
+}
+/*icon*/
+.main-menu li::after{
+	color: var(--sub);
+}
+#gNavi ul.main-menu .glyphicon{
+    color: var(--sub);
+}
+/*--------morelink-------------*/
+@keyframes blinklink {
+    from {
+        color: var(--font);
+    }
+    to {
+        color: var(--sub);
+    }
+}
+/*-----------footer---------------*/
+#footer a{
+	color: var(--font);
+}
+#footer a:hover{
+	color: var(--font);
+}
+#footer .f_paylogo {
+    background-color: rgba(142, 168, 173, 0.5);
+}
+#footer .f_parlogo{
+    background-color: rgba(0, 35, 93, 0.5);
+}
+#footer .f_nav {
+    background-color: rgba(0, 35, 93, 0.5);
+}
+/*-------------物件---------------*/
+.home-content-background{
+    background: none;
+}

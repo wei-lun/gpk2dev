@@ -1,0 +1,114 @@
+/*
+----------------------------------------------------------------------------
+// Features:	顏色、圖片相關CSS集中至本檔
+// File Name:	root.css
+// ----------------------------------------------------------------------------
+*/
+/*---------------背景色-------------*/
+.hLinkBox{
+	background-color: var(--main);
+}
+#header{
+	background-color: var(--main);
+}
+#footer {
+    background-color: var(--main);
+}
+/*-----------hLinkBox------------*/
+#header .hBox {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+#header .hInner{
+    background-color: var(--main);
+}
+/*------------#header------------*/
+#header #gNavi li a {
+    color: var(--font);
+}
+#header #gNavi li a.on, #header #gNavi li a:hover{
+    background-color: var(--sub);
+}
+#header .headlogin {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+#header #gNavi.menu_for_member li a::before {
+    color: #fff;
+}
+#header h1 a{
+    color: #fff;
+}
+#header h1 a:hover span{
+    color: #fff;
+}
+/*--------morelink-------------*/
+@keyframes blinklink {
+    from {
+        color: var(--font);
+    }
+    to {
+        color: var(--sub);
+    }
+}
+/*-----------footer---------------*/
+#footer a{
+	color: var(--font);
+}
+#footer a:hover{
+	color: var(--font);
+}
+.f_paylogo {
+    background-color: rgba(235, 219, 206, 0.7);
+}
+.f_parlogo {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.f_morelink {
+    background-color: transparent;
+}
+#footer .f_nav{
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.footer div[align="right"] {
+    color: rgba(255, 255, 255, 0.4);
+    background-color:transparent; 
+}
+/*-------------物件---------------*/
+#home .newSection{
+    background-color: rgba(62, 41, 14, 0.6);
+}
+#home .section02{
+    background-color: rgba(241, 233, 226, 0.85);
+}
+.section_link {
+    background-color: var(--main);
+}
+.item_casino{
+    background:url(../img/home/g01.png) no-repeat center top;   
+}
+.item_live{
+    background:url(../img/home/g02.png) no-repeat center top;
+}
+.item_sport{
+    background:url(../img/home/g03.png) no-repeat center top;
+}
+.item_lottery{
+    background:url(../img/home/g04.png) no-repeat center top;
+}
+.item_wechat{
+    background:url(../img/home/info01.png) no-repeat center top;    
+}
+.item_mail{
+    background:url(../img/home/info02.png) no-repeat center top;
+}
+.item_qq{
+    background:url(../img/home/info03.png) no-repeat center top;
+}
+.item_online{
+    background:url(../img/home/info04.png) no-repeat center top;
+}
+.section_gamelobby #casino{
+    border-bottom: 1px var(--main) solid;
+}
+.section_gamelobby #casino .tabUl li.on::before, .section_gamelobby #casino .tabUl li:hover::before{
+    border-color: var(--main) transparent transparent transparent;
+}

@@ -1,0 +1,231 @@
+/*----------------全站主要樣式--------------------*/
+/*---作為開發使用時 import root.css 載入色彩變數 --*/
+/*--- 正式上線 請使用CSSnext 轉為 一般CSS檔使用 ---*/
+/*--- 包含外框、陰影、顏色、透明度---*/
+/*----------------------------------------------*/
+a {
+	color: #333333;
+}
+
+body {
+	background-color: #111111;
+	color: #333333;
+}
+
+/*會員中心背景*/
+body#member {
+	background-color: #111111;
+}
+
+body#login {
+	background-color: #111111;
+}
+
+body#admin {
+	background-color: #eee;
+}
+
+/*-------------------header---------------------*/
+#header {
+	background-color: #111111;
+	color: #ffffff;
+}
+
+#header .navbar {
+	box-shadow: 0 4px 5px 0 rgba(0, 0, 0, .5);
+}
+
+#header .domain {
+	color: #ffffff;
+}
+
+#header .account-info {
+	background: #333333 none repeat scroll 0 0;
+}
+
+#header .account_img {
+	background-color: #ffffff;
+}
+
+#header .account_img span {
+	color: #111111;
+}
+
+#header .navbar-collapse {
+	background-color: #555555;
+}
+
+#header .account-info .account-notice .badge {
+	color: #ffffff;
+}
+
+#header .account-info .account-notice>a {
+	color: #FCD846;
+}
+
+#header .account-info .media-body {
+	color: #FCD846;
+}
+
+#header .dropdown-menu .dropdown-item a {
+	color: #FCD846;
+}
+
+#header .navlog {
+	background-color: #111111;
+}
+
+/*------footer---------------*/
+.footer {
+	background-color: #FCD846;
+	color: #111111;
+	box-shadow: 0 -4px 5px 0 rgba(0, 0, 0, .5);
+}
+
+/*marqueebox*/
+.marqueebox {
+	background-color: #333333;
+	;
+}
+
+.marqueebox .title {
+	color: #ffffff;
+	position: absolute;
+	top: 2px;
+}
+
+.marqueebox .marquee a {
+	color: #ffffff;
+}
+
+.marqueebox .marquee .js-marquee li span {
+	color: #63d0b5;
+}
+
+/*----------元件_滑動選單-----------------------*/
+.index_tabmenu>li.active,
+.index_tabmenu>li.active>a {
+	background-color: rgb(236, 166, 15) !important;
+	border: 1px solid rgb(236, 166, 15) !important;
+	border-bottom-color: rgb(236, 166, 15) !important;
+}
+
+.swiper-slide {
+	background: #FCD846;
+	box-shadow: 0 0 10px 0 rgba(0, 0, 0, .5);
+}
+
+.swiper-container #gNavi li a {
+	color: #111111;
+}
+
+.swiper-container #gNavi li a.active {
+	color: #f1e9e0;
+}
+
+.swiper-container #gNavi li.active a {
+	color: #111111;
+}
+
+/*----------元件_遊戲項目-----------------------*/
+.gameitem {
+	background-color: #333333 !important;
+	border: 2px #CB995A solid !important;
+}
+
+#index .gameitem {
+	border-radius: 10px;
+}
+
+/*----------page_#index-----------------------*/
+#index .index_m_title {
+	box-shadow: 0 0 10px 0 rgba(0, 0, 0, .5);
+	border-left: 5px solid #CB995A;
+	background-color: #333333;
+}
+
+#index .index_m_title.h5,
+#index .index_m_title h5 {
+	color: #ffffff;
+}
+
+/*----------page_#gamelobby-----------------------*/
+#gamelobby #casinotab #gamesel a {
+	color: #ffffff;
+}
+
+#gamelobby #casinotab.nav>li.active>a {
+	background: #FCD846 !important;
+	border: 2px solid #FCD846 !important;
+	color: #111111 !important;
+}
+
+#gamelobby .input-group>.input-group-append>.btn {
+	background-color: #FADD67;
+	color: #fff;
+}
+
+#gamelobby .nav-pills .nav-link {
+	border: 2px #FCD846 solid;
+	color: #FCD846;
+}
+
+#gamelobby .gamesel {
+	color: #ffffff !important;
+}
+
+#gamelobby .items span:hover,
+#gamelobby .items span.selected {
+	background: #FCD846 none repeat scroll 0 0;
+	color: #111;
+}
+
+#gamelobby .select {
+	background-color: #FCD846;
+}
+
+/**/
+#static #main h2,
+#static #main h3 {
+	color: #FCD846;
+}
+
+#static .panel-body {
+	background-color: #fff !important;
+	border: 1px solid #999 !important;
+}
+
+/*----------header_logo變化-----------------------*/
+.navbar-brand .logo {
+	background: url(../img/common/logo.png) no-repeat left center;
+	width: 100px;
+	min-height: 50px;
+	background-size: 100px;
+}
+
+/*#admin .navbar-brand .logo {
+	background: url(../img/common/logo_company.png) no-repeat left center;
+	width: 100px;
+	min-height: 50px;
+	background-size: 50px;
+}
+*/
+/*下拉選單區塊顏色*/
+.navblock .nbox {
+	background-color: #111111;
+}
+/*------------會員中心----------------------------*/
+#main a div,#main li a{
+ color:var(--font-dark);
+}
+#main a i{
+	color: var(--font-dark);
+}
+#main a{
+	color: var(--font-dark);
+}
+/*會員圖像*/
+.membercenter .glyphicon{
+	color:var(--yellow);
+	border-color:var(--yellow);
+}

@@ -1,0 +1,552 @@
+.page_btn {
+  background-color: white;
+  border-left: 1px solid #eee;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  padding: 6px 10px;
+}
+
+.page_btn:hover {
+  background-color: #eee;
+}
+
+.selected {
+  background: rgba(51, 55, 255, .9) none repeat scroll 0 0;
+}
+
+#gametype {
+  color: #fff;
+}
+
+/*20180331遊戲選單*/
+
+#gametable {
+  padding: 10px 10px 0;
+}
+
+.gamemenu {
+  list-style: outside none none;
+  margin: 0;
+  padding: 0;
+  right: 0;
+  float: right;
+}
+
+/* gameitem */
+
+.gameitem {
+  background-color: #333;
+  color: #fff;
+  float: left;
+  height: 235px;
+  margin: 0 0 10px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  z-index: 1;
+}
+
+.gameitem-content {
+  background: rgba(51, 51, 51, .9);
+  height: 165px;
+  opacity: 0;
+  position: absolute;
+  -webkit-transition: all 0.35s ease 0s;
+  transition: all 0.35s ease 0s;
+  width: 100%;
+  z-index: 2;
+}
+
+.gameitem-content:hover {
+  opacity: 1;
+}
+
+.gameitem-img {
+  overflow: hidden;
+  width: 150px;
+  height: 136px;
+  position: relative;
+  margin: 10px auto;
+  display: flex;
+  align-items: center;
+}
+
+.gameitem-img img {
+  display: block;
+  max-height: 136px;
+  max-width: 100%;
+  margin: 10px auto;
+  position: relative;
+}
+
+.gameitem-info {
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+  z-index: 3;
+}
+
+.gameitem span.label.label-threesing {
+  max-width: 72.5%;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.info-lbl {
+  bottom: 45px;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+
+.info-lb2 {
+  border-top: 0.1em solid #eee;
+  bottom: 0;
+  padding: 5px;
+  position: absolute;
+  width: 100%;
+}
+
+/* 下排右側icon顯示列 */
+
+.info-lb2-icon {
+  float: right;
+}
+
+.info-lb2-icon span {
+  margin-left: 5px;
+}
+
+.gamename_desc {
+  font-family: \"微軟正黑體\",sans-serif;
+ font-weight: bold;
+}
+
+/* Button style */
+
+.game-button {
+  margin-top: 70px;
+}
+
+.game-button button {
+  background: transparent;
+  border: #1ecd97 solid 2px;
+  border-radius: 40px;
+  color: #1ecd97;
+  display: block;
+  font-family: "微軟正黑體", sans-serif;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin: 0 auto 20px;
+  padding: 5px;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  width: 90%;
+}
+
+.game-button button:hover {
+  background-color: #1ECD97;
+  color: #fff;
+  cursor: pointer;
+}
+
+.game-button button:focus {
+  outline: none;
+}
+
+/* fave-heart style */
+
+.fave-heart {
+  float: left;
+}
+
+.fave-heart span::before {
+  color: #c39d6d;
+  content: "";
+  font-family: Glyphicons Halflings;
+  font-weight: normal;
+}
+
+.fave-heart:hover span::before {
+  color: #c39d6d;
+  content: "";
+  font-family: Glyphicons Halflings;
+  font-weight: normal;
+}
+
+.fave-heart span {
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+/* fave-heart-full style */
+
+.fave-heart-full {
+  float: left;
+}
+
+.fave-heart-full span::before {
+  color: #c39d6d;
+  content: "";
+  font-family: Glyphicons Halflings;
+  font-weight: normal;
+}
+
+.fave-heart-full:hover span::before {
+  color: #c39d6d;
+  content: "";
+  font-family: Glyphicons Halflings;
+  font-weight: normal;
+}
+
+.fave-heart-full span {
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.fave-mobile {
+  float: left;
+}
+
+.fave-mobile span::before {
+  color: #c39d6d;
+  content: "\e145";
+  font-family: Glyphicons Halflings;
+  font-weight: normal;
+}
+
+.fave-mobile span {
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+/* label style */
+/*
+.label-pt {
+  background: rgba(0, 0, 0, 0) -webkit-gradient(linear, left bottom, left top, from(#179d9c), to(#066767)) repeat scroll 0 0;
+  background: rgba(0, 0, 0, 0) linear-gradient(to top, #179d9c, #066767) repeat scroll 0 0;
+}
+
+.label-mg {
+  background: rgba(0, 0, 0, 0) -webkit-gradient(linear, left bottom, left top, from(#cc4064), to(#770b31)) repeat scroll 0 0;
+  background: rgba(0, 0, 0, 0) linear-gradient(to top, #cc4064, #770b31) repeat scroll 0 0;
+}
+
+.label-mega {
+  background: rgba(0, 0, 0, 0) -webkit-gradient(linear, left bottom, left top, from(#c59100), to(#5a4406)) repeat scroll 0 0;
+  background: rgba(0, 0, 0, 0) linear-gradient(to top, #c59100, #5a4406) repeat scroll 0 0;
+}
+
+.label-ig {
+  background: rgba(0, 0, 0, 0) -webkit-gradient(linear, left bottom, left top, from(#3498db), to(#2a6a91)) repeat scroll 0 0;
+  background: rgba(0, 0, 0, 0) linear-gradient(to top, #3498db, #2a6a91) repeat scroll 0 0;
+}
+
+.label-cq9 {
+  background: rgba(0, 0, 0, 0) -webkit-gradient(linear, left bottom, left top, from(#000bc5), to(#0a065a)) repeat scroll 0 0;
+  background: rgba(0, 0, 0, 0) linear-gradient(to top, #000bc5, #0a065a) repeat scroll 0 0;
+}
+
+.label-gpk2 {
+  background: rgba(0, 0, 0, 0) -webkit-gradient(linear, left bottom, left top, from(#ff6500), to(#5a3c06)) repeat scroll 0 0;
+  background: rgba(0, 0, 0, 0) linear-gradient(to top, #ff6500, #5a3c06) repeat scroll 0 0;
+}
+
+.label-nwg {
+  background: rgba(0, 0, 0, 0) -webkit-gradient(linear, left bottom, left top, from(#c700ff), to(#39065a)) repeat scroll 0 0;
+  background: rgba(0, 0, 0, 0) linear-gradient(to top, #c700ff, #39065a) repeat scroll 0 0;
+}
+
+.label-rg {
+  background: rgba(0, 0, 0, 0) -webkit-gradient(linear, left bottom, left top, from(#c700ff), to(#39065a)) repeat scroll 0 0;
+  background: rgba(0, 0, 0, 0) linear-gradient(to top, #c700ff, #39065a) repeat scroll 0 0;
+}*/
+/* gameitem end */
+
+.disable {
+  background-color: #eee;
+  color: #ccc;
+}
+
+.select {
+  background-color: #c39d6d;
+  color: white;
+}
+
+.gt {
+  border-radius: 3px;
+  cursor: pointer;
+  float: left;
+  height: 22px;
+  line-height: 22px;
+  margin-right: 15px;
+  padding: 0 8px;
+  width: auto;
+}
+
+/*#gametable {
+  margin: 0 7.5px;
+}*/
+
+/*.form-control {
+  margin-right: 10px;
+  padding: 6px 70px 6px 25px;
+}
+
+#searchform.form-control {
+  display: inline-block;
+  width: auto;
+}
+
+.nav-tabs.nav-justified>li>a {
+  background-color: #fff;
+  border-bottom: medium none;
+  border-radius: 4px;
+}
+
+#casinotab.nav>li>a {
+  border: 2px solid;
+  font-weight: bold;
+  padding: 6px 15px;
+  background: rgba(0, 0, 0, .5) none repeat scroll 0 0;
+}
+
+#casinotab a {
+  color: #c39d6d;
+}
+*/
+
+.gamesel .title {
+  float: left;
+  height: 22px;
+  line-height: 22px;
+  margin-right: 10px;
+  padding: 0 8px;
+  width: auto;
+  white-space: nowrap;
+}
+
+.allcasinotab i.fas {
+  margin: 0 10px;
+}
+
+/*.gamesel .items {
+  float: left;
+  width: 100%;
+    width: 1040px;
+}*/
+
+.gamepromo>li+li>a {
+  margin-left: 10px;
+}
+
+.gamepromo li a {
+  background-color: #1ecd97;
+  border-radius: 30px;
+  color: #fff;
+  padding: 6px 15px;
+}
+
+.items span {
+  border-radius: 3px;
+  cursor: pointer;
+  float: left;
+  height: 22px;
+  line-height: 22px;
+  margin-right: 10px;
+  padding: 0 8px;
+  width: auto;
+}
+
+.items label {
+  margin-bottom: 0;
+}
+.items span:hover{
+  background: rgba(105, 105, 105, 0.47843) none repeat scroll 0 0;
+}
+.items span.selected {
+  background: #c39d6d none repeat scroll 0 0;
+  color: #fff;
+}
+
+.gamesel {
+  color: #fff;
+  /*  margin: 10px 0 0;*/
+}
+
+.animate {
+  -webkit-transition: all 0.1s ease 0s;
+  transition: all 0.1s ease 0s;
+}
+
+.action-button {
+  border-radius: 8px;
+  color: #fff;
+  float: left;
+  font-family: 微軟正黑體;
+  font-size: 20px;
+  margin: 0 10px 10px 0;
+  padding: 10px 40px;
+  position: relative;
+  text-decoration: none;
+}
+
+.blue {
+  background-color: #3498db;
+  border-bottom: 5px solid #2980b9;
+  text-shadow: 0 -2px #2980b9;
+}
+
+.red {
+  background-color: #e74c3c;
+  border-bottom: 5px solid #bd3e31;
+  text-shadow: 0 -2px #bd3e31;
+}
+
+.green {
+  background-color: #82bf56;
+  border-bottom: 5px solid #669644;
+  text-shadow: 0 -2px #669644;
+}
+
+.yellow {
+  background-color: #f2cf66;
+  border-bottom: 5px solid #d1b358;
+  text-shadow: 0 -2px #d1b358;
+}
+
+.action-button:active {
+  border-bottom: 1px solid;
+  -webkit-transform: translate(0px, 5px);
+  transform: translate(0px, 5px);
+}
+
+.btn-default {
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+
+/*.h1,
+h1 {
+  margin: 10px 0 20px 0;
+  color: #fff;
+}*/
+
+.allcasinotab span.glyphicon {
+  margin-right: 10px;
+}
+
+.nav-tabs.nav-justified>li {
+  float: none;
+  width: 23.8%;
+  display: inline-block;
+}
+
+/*
+a:focus,
+a:hover {
+  color: #c39d6d;
+  opacity: 0.8;
+  text-decoration: none;
+}*/
+
+#casinotab.nav>li.active>a {
+  background: #c39d6d;
+  border: 2px solid #c39d6d;
+  border-radius: .25rem;
+  /* font-weight: bold;*/
+  /*padding: 6px 15px;*/
+  color: #fff;
+}
+
+/*行動化下搜尋按鈕間隔距離
+
+.form-inline button.btn-outline-success,
+.allcasinotab a {
+  margin: 5px 0;
+}
+
+
+.nav-tabs.nav-justified>li>a {
+  margin-right: 5px;
+}
+*/
+
+/*.stylish-input-group .form-control {
+  border-right: 0;
+  -webkit-box-shadow: 0 0 0;
+  box-shadow: 0 0 0;
+}
+
+.stylish-input-group button {
+  border: 0;
+  background: transparent;
+}*/
+
+#gametable .col-md-2,
+#gametable .col-sm-3,
+#gametable .col-xs-6 {
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+@media (max-width: 768px) {
+  .nav-tabs.nav-justified>li>a {
+    margin-right: 0;
+  }
+  /*#gametable>div:nth-child(odd) {
+    padding-right: 5px;
+  }
+  #gametable>div:nth-child(even) {
+    padding-left: 5px;
+  }*/
+  .gameitem {
+    margin: 0 0 10px;
+  }
+  /* .allcasinotab span.glyphicon {
+    margin: 0 10px;
+    display: block;
+  }*/
+  /*行动化下三栏式样式调整*/
+  .gameitem {
+    height: 150px;
+  }
+  .game-button {
+    margin-top: 40%;
+  }
+  .label {
+    padding: .1em .3em .1em;
+    font-size: 75%;
+  }
+  .gameitem-img {
+    width: 80px;
+    height: 80px;
+  }
+  .gameitem-img img {
+    max-height: 80px;
+  }
+  #collapsemenu {
+    /*  font-size: 75%;*/
+    line-height: 100%;
+  }
+  .game-button button {
+    /*   font-size: 75%;*/
+  }
+  .info-lbl {
+    line-height: 1;
+    bottom: 40px;
+  }
+}
+
+.pagination>li:first-child>a,
+.pagination>li:first-child>span {
+  margin-left: 0;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.pagination>li:last-child>a,
+.pagination>li:last-child>span {
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}

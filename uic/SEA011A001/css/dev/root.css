@@ -1,0 +1,186 @@
+/*
+----------------------------------------------------------------------------
+// Features:	顏色、圖片相關CSS集中至本檔
+// File Name:	root.css
+// ----------------------------------------------------------------------------
+*/
+:root {
+/*for all*/
+	/*font*/
+	--dark-font: #563726;/*body*/
+	--light-font: #fff;/*menu部分*/
+	--sub-font: #fff;/*少部分副標*/
+	--highlight: #d33024;/*h2、h3、中間選單強調*/
+	--link-hover:#FCD846;/*head footer link*/
+
+/*for haead*/
+	--dark-bg: #111111;	/*語言 時間列*/
+	--light-bg: #FCD846 ;/*中間選單*/
+	--head-bg: #111111;/*會員登入*/
+	--item-color: #ffacac;/*中間選單連結*/
+	--item-hover: #ffd44a;/*中間選單連結hover底色*/
+	--dropmenu: #606060;/*語言列、會員中心下拉選單*/
+
+/*for main (for static)*/
+	--static-bg:#4D0008;/*main背景*/
+ 	--page-bg: #fff;/*文章區塊背景*/
+ 	--page-border: #E9E9E9;/*文章區塊邊框*/
+ 	--page-line:#D5D5D5;/*文章區塊邊線*/
+
+/*for footer*/
+	--hot-link: #fff;	
+ 	--paylogo-bg:#daaf06;
+ 	--parlogo-bg:#111111;
+ 	--more-link-bg:#111111;
+ 	--footer-bg:#300; 	
+ 	--footer-font:#ffbdbd;/*footer 連結*/
+ 	--footer-dark-font:#606060;/*footer 版權聲明*/
+/*-------------static-----------------*/
+    --static-font:#bcbdbc;
+    --static-h2-font:#daaf06;
+    --static-h3-font:#da815b;
+    --static-h4-font:#e8af96;
+}
+
+/*----------------------------常態中間選單------------------------------*/
+/*#header #gNavi li.navi_game .txt,
+#header #gNavi li.navi_game a {
+	color:	var(--highlight);
+}
+#header #gNavi li.navi_promotions .txt,
+#header #gNavi li.navi_promotions a {
+	color:	var(--highlight);
+}
+#header #gNavi li.navi_home a {
+	background: url(../img/common/g_navi_out.png) no-repeat 21px 14px;
+}
+#header #gNavi li.navi_home.on a,
+#header #gNavi li.navi_home a:hover {
+	background: var(--item-hover) url(../img/common/g_navi_over.png) no-repeat 21px 14px;
+}
+#header #gNavi li.navi_game a {
+	background: url(../img/common/g_navi_out.png) no-repeat -50px 14px;
+}
+#header #gNavi li.navi_game a.on,
+#header #gNavi li.navi_game a:hover {
+	background: var(--item-hover) url(../img/common/g_navi_over.png) no-repeat -50px 14px;
+}
+#header #gNavi li.navi_Live a {
+	background: url(../img/common/g_navi_out.png) no-repeat -138px 14px;
+}
+#header #gNavi li.navi_Live a.on,
+#header #gNavi li.navi_Live a:hover {
+	background: var(--item-hover) url(../img/common/g_navi_over.png) no-repeat -138px 14px;
+}
+#header #gNavi li.navi_sport a {
+	background: url(../img/common/g_navi_out.png) no-repeat -222px 14px;
+}
+#header #gNavi li.navi_sport a.on,
+#header #gNavi li.navi_sport a:hover {
+	background: var(--item-hover) url(../img/common/g_navi_over.png) no-repeat -222px 14px;
+}
+#header #gNavi li.navi_Lottery a {
+	background: url(../img/common/g_navi_out.png) no-repeat -310px 14px;
+}
+#header #gNavi li.navi_Lottery a.on,
+#header #gNavi li.navi_Lottery a:hover {
+	background: var(--item-hover) url(../img/common/g_navi_over.png) no-repeat -310px 14px;
+}
+#header #gNavi li.navi_promotions a {
+	background: url(../img/common/g_navi_out.png) no-repeat -398px 14px;
+}
+#header #gNavi li.navi_promotions a.on,
+#header #gNavi li.navi_promotions a:hover {
+	background: var(--item-hover) url(../img/common/g_navi_over.png) no-repeat -398px 14px;
+}
+#header #gNavi li.navi_Fishing a {
+	background: url(../img/common/g_navi_out.png) no-repeat -486px 14px;
+}
+#header #gNavi li.navi_Fishing a.on,
+#header #gNavi li.navi_Fishing a:hover {
+	background: var(--item-hover) url(../img/common/g_navi_over.png) no-repeat -486px 14px;
+}
+#header #gNavi li.navi_service a {
+	background: url(../img/common/g_navi_out.png) no-repeat -572px 14px;
+}
+#header #gNavi li.navi_service a.on,
+#header #gNavi li.navi_service a:hover {
+	background: var(--item-hover) url(../img/common/g_navi_over.png) no-repeat -572px 14px;
+}*/
+/* hover color */
+#header #gNavi li a.on,#header #gNavi li a:hover{
+	background-color: var(--item-hover);
+	color: #850000;
+	border-radius: 30px;
+}
+/*hot*/
+#header #gNavi li::before {
+	position: absolute;
+	top: 12px;
+	right: 3px;
+}
+/*
+#header #gNavi li.hot a{
+	color: var(--hot-link);
+}*/
+/*-------------------------------會員中心頁面之中間選單圖示-------------------------*/
+/*
+.menu_for_member li a::before{
+	font-family: Font Awesome\ 5 Free;
+    font-weight: 900;
+    content: '';
+    position: absolute;
+    top: 15px;
+    left: 0;
+    font-size: 24px;
+    width: 100px;
+    color: var(--item-color);
+}
+.menu_for_member li a:hover::before{
+	color: #fff;
+}
+.menu_for_member li:nth-child(1) a::before{
+	content: '\f0e0';
+}
+.menu_for_member li:nth-child(2) a::before{
+	content: '\f007';
+}
+.menu_for_member li:nth-child(3) a::before{
+	content: '\f022';
+}
+.menu_for_member li:nth-child(4) a::before{
+	content: '\f07a';
+}
+.menu_for_member li:nth-child(5) a::before{
+	content: '\f00b';
+}
+.menu_for_member li:nth-child(6) a::before{
+	content: '\f09d';
+}
+.menu_for_member li:nth-child(7) a::before{
+	content: '\f009';
+}
+*/
+/*--------------------------各templ背景圖片-----------------------------*/
+#static #main{
+	background: var(--static-bg) url(../img/bg/live_bg.jpg) no-repeat center top;
+}
+#gamelobby #main{
+	background: var(--static-bg) url(../img/bg/promotion_bg.jpg) no-repeat center top;
+}
+#login2page #main{
+	background: var(--static-bg) url(../img/bg/lottery_bg.jpg) no-repeat center top;
+}
+#member #main{
+	background: var(--static-bg) url(../img/bg/about_bg.jpg) no-repeat center top;
+}
+#admin #main{
+	background: var(--static-bg) url(../img/bg/about_bg.jpg) no-repeat center top;
+}
+
+/*----------------------------------------home----------------------------------*/
+/*首頁banner*/
+#home .mainImg {
+	height: 450px;
+	/*background: url(../img/home/banner01.jpg) no-repeat center top;*/ 
+}

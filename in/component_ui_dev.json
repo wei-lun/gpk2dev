@@ -1,0 +1,430 @@
+{
+  "home": {
+    "aside-promote": {
+      "left": [
+        {
+          "switch": 0,
+          "id": "aside_r", 
+          "type": "slide", 
+          "style": "style1", 
+          "title": "線上客服", 
+          "content": [
+            {
+              "txt": "0987654321", 
+              "link": "#", 
+              "title": "在線客服電話", 
+              "target": "_self"
+            }, 
+            {
+              "txt": "aaabbbccc", 
+              "link": "#", 
+              "title": "QQ在線客服", 
+              "target": "_self"
+            }, 
+            {
+              "txt": "654321", 
+              "link": "#", 
+              "title": "澳門專線", 
+              "target": "_self"
+            }
+          ]
+        }
+      ], 
+      "right": [
+        {
+          "switch": 1,
+          "id": "aside_l", 
+          "type": "float", 
+          "style": "style1", 
+          "content": [
+            {
+              "txt": "0987654321", 
+              "link": "#", 
+              "title": "在線客服電話", 
+              "target": "_self"
+            }, 
+            {
+              "txt": "aaabbbccc", 
+              "link": "#", 
+              "title": "QQ在線客服", 
+              "target": "_self"
+            }, 
+            {
+              "txt": "654321", 
+              "link": "#", 
+              "title": "澳門專線", 
+              "target": "_self"
+            }
+          ], 
+          "closeable": "true"
+        }
+      ]
+    }, 
+    "float-promote": {
+      "lb": [
+        {
+          "switch": 1,
+          "id": "float_lb", 
+          "img": "https://orange.jutainet.com/gpk2/ui/gp05/img/home/mobile.png", 
+          "link": "#", 
+          "target": "_self", 
+          "content": ""
+        }
+      ], 
+      "lt": [
+        {
+          "switch": 0,
+          "id": "float_lt", 
+          "img": "https://orange.jutainet.com/gpk2/ui/gp06/img/sensepic/mgpk_floatl.png", 
+          "link": "#", 
+          "target": "_self", 
+          "content": ""
+        }
+      ], 
+      "rb": [
+        {
+          "switch": 1,
+          "id": "float_rb", 
+          "img": "https://orange.jutainet.com/gpk2/ui/gp05/img/sensepic/pg_slot.png", 
+          "link": "#", 
+          "target": "_self", 
+          "content": ""
+        }
+      ], 
+      "rt": [
+        {
+          "switch": 0,
+          "id": "float_rt", 
+          "img": "https://orange.jutainet.com/gpk2/ui/gp05/img/sensepic/mw_slot.png", 
+          "link": "#", 
+          "target": "_self", 
+          "content": ""
+        }
+      ]
+    }, 
+    "popup-promote": [
+      {
+        "switch": 1,
+        "id": "popup-promote-news", 
+        "img": "in/component/popup_promote/01.jpg", 
+        "link": "#", 
+        "style": "style2", 
+        "title": "最新優惠消息", 
+        "target": "_self"
+      }
+    ]
+  }, 
+  "mobile": {
+    "mobile_morelink": [
+      {
+        "link": "321", 
+        "title": "立即註冊DEMO", 
+        "target": "_self"
+      }, 
+      {
+        "link": "test", 
+        "title": "test", 
+        "target": "_self"
+      }
+    ]
+  }, 
+  "static": {
+    "aside-promote": {
+      "left": [
+        {
+          "switch": 0,
+          "id": "s_aside_l", 
+          "type": "float", 
+          "style": "style3", 
+          "content": [
+            {
+              "txt": "0987654321", 
+              "link": "#", 
+              "title": "在線客服電話", 
+              "target": "_self"
+            }, 
+            {
+              "txt": "aaabbbccc", 
+              "link": "#", 
+              "title": "QQ在線客服", 
+              "target": "_self"
+            }, 
+            {
+              "txt": "654321", 
+              "link": "#", 
+              "title": "澳門專線", 
+              "target": "_self"
+            }
+          ], 
+          "closeable": "true"
+        }
+      ], 
+      "right": [
+        {
+          "switch": 1,
+          "id": "s_aside_r", 
+          "type": "slide", 
+          "style": "style3", 
+          "title": "線上客服", 
+          "content": [
+            {
+              "txt": "0987654321", 
+              "link": "#", 
+              "title": "在線客服電話", 
+              "target": "_self"
+            }, 
+            {
+              "txt": "aaabbbccc", 
+              "link": "#", 
+              "title": "QQ在線客服", 
+              "target": "_self"
+            }, 
+            {
+              "txt": "654321", 
+              "link": "#", 
+              "title": "澳門專線", 
+              "target": "_self"
+            }
+          ]
+        }
+      ]
+    }, 
+    "float-promote": {
+      "lb": [
+        {
+          "switch": 0,
+          "id": "s_float_lb", 
+          "img": "https://orange.jutainet.com/gpk2/ui/gp05/img/sensepic/mw_slot.png", 
+          "link": "#", 
+          "target": "_self", 
+          "content": ""
+        }
+      ], 
+      "lt": [
+        {
+          "switch": 1,
+          "id": "s_float_lt", 
+          "img": "https://orange.jutainet.com/gpk2/ui/gp06/img/sensepic/mgpk_floatl.png", 
+          "link": "#", 
+          "target": "_self", 
+          "content": ""
+        }
+      ], 
+      "rb": [
+        {
+          "switch": 1,
+          "id": "s_float_rb", 
+          "img": "https://orange.jutainet.com/gpk2/ui/gp05/img/sensepic/pg_slot.png", 
+          "link": "#", 
+          "target": "_self", 
+          "content": ""
+        }
+      ], 
+      "rt": [
+        {
+          "switch": 1,
+          "id": "s_float_rt", 
+          "img": "https://orange.jutainet.com/gpk2/ui/gp05/img/home/photo02.jpg", 
+          "link": "#", 
+          "target": "_self", 
+          "content": ""
+        }
+      ]
+    }, 
+    "popup-promote": [
+      {
+        "switch": 1,
+        "id": "s_popup-promote-news", 
+        "img": "in/component/popup_promote/01.jpg", 
+        "link": "#", 
+        "style": "style2", 
+        "title": "最新優惠消息", 
+        "target": "_self"
+      }
+    ]
+  }, 
+  "gamelobby": {
+    "aside-promote": {
+      "left": [
+        {
+          "switch": 0,
+          "id": "g_aside_l", 
+          "type": "float", 
+          "style": "style2", 
+          "content": [
+            {
+              "txt": "0987654321", 
+              "link": "#", 
+              "title": "在線客服電話", 
+              "target": "_self"
+            }, 
+            {
+              "txt": "aaabbbccc", 
+              "link": "#", 
+              "title": "QQ在線客服", 
+              "target": "_self"
+            }, 
+            {
+              "txt": "654321", 
+              "link": "#", 
+              "title": "澳門專線", 
+              "target": "_self"
+            }
+          ], 
+          "closeable": "true"
+        }
+      ], 
+      "right": [
+        {
+          "switch": 0,
+          "id": "g_aside_r", 
+          "type": "slide", 
+          "style": "style2", 
+          "title": "線上客服", 
+          "content": [
+            {
+              "txt": "0987654321", 
+              "link": "#", 
+              "title": "在線客服電話", 
+              "target": "_self"
+            }, 
+            {
+              "txt": "aaabbbccc", 
+              "link": "#", 
+              "title": "QQ在線客服", 
+              "target": "_self"
+            }, 
+            {
+              "txt": "654321", 
+              "link": "#", 
+              "title": "澳門專線", 
+              "target": "_self"
+            }
+          ]
+        }
+      ]
+    }, 
+    "float-promote": {
+      "lb": [
+        {
+          "switch": 0,
+          "id": "g_float_lb", 
+          "img": "https://orange.jutainet.com/gpk2/ui/gp05/img/home/mobile.png", 
+          "link": "#", 
+          "target": "_self", 
+          "content": ""
+        }
+      ], 
+      "lt": [
+        {
+          "switch": 0,
+          "id": "g_float_lt", 
+          "img": "https://orange.jutainet.com/gpk2/ui/gp06/img/sensepic/mgpk_floatl.png", 
+          "link": "#", 
+          "target": "_self", 
+          "content": ""
+        }
+      ], 
+      "rb": [
+        {
+          "switch": 0,
+          "id": "g_float_rb", 
+          "img": "https://orange.jutainet.com/gpk2/ui/gp05/img/sensepic/pg_slot.png", 
+          "link": "#", 
+          "target": "_self", 
+          "content": ""
+        }
+      ], 
+      "rt": [
+        {
+          "switch": 1,
+          "id": "g_float_rt", 
+          "img": "https://orange.jutainet.com/gpk2/ui/gp05/img/sensepic/mw_slot.png", 
+          "link": "#", 
+          "target": "_self", 
+          "content": ""
+        }
+      ]
+    }, 
+    "popup-promote": [
+      {
+        "switch": 1,
+        "id": "g_popup-promote-news", 
+        "img": "in/component/popup_promote/02.jpg", 
+        "link": "#", 
+        "style": "style2", 
+        "title": "最新優惠消息", 
+        "target": "_self"
+      }
+    ]
+  }, 
+  "custom_menu": [
+    {
+      "link": "partner.php", 
+      "title": "加盟代理", 
+      "target": "_self"
+    }, 
+    {
+      "link": "gamelobby.php?mgc=game", 
+      "title": "电子18项回馈", 
+      "target": "_self"
+    }, 
+    {
+      "link": "register.php", 
+      "title": "立即註冊DEMO", 
+      "target": "_self"
+    }
+  ], 
+  "footer_menu": {
+    "footer_link": [
+      {
+        "link": "partner.php", 
+        "title": "加盟代理", 
+        "target": "_self"
+      }, 
+      {
+        "link": "321", 
+        "title": "立即註冊DEMO", 
+        "target": "_self"
+      }
+    ], 
+    "footer_casino_logo": [
+      "img/icon/foo_casino/1.png", 
+      "img/icon/foo_casino/2.png", 
+      "img/icon/foo_casino/3.png", 
+      "img/icon/foo_casino/4.png"
+    ], 
+    "footer_payment_logo": [
+      "img/icon/foo_pay/1.png", 
+      "img/icon/foo_pay/2.png", 
+      "img/icon/foo_pay/3.png", 
+      "img/icon/foo_pay/4.png"
+    ]
+  }, 
+  "index_carosel": {
+    "item": [
+      {
+        "img": "", 
+        "link": "#"
+      }
+    ], 
+    "speed": ""
+  }, 
+  "highlight_menu": [
+    [
+      "Fishing", 
+      " style1"
+    ], 
+    [
+      "f_partner", 
+      " style1"
+    ]
+  ], 
+  "index_gamelobby": {
+    "rnd": "1", 
+    "page": "2", 
+    "stype": "3", 
+    "mainct": "4", 
+    "casinoid": "5"
+  }
+}

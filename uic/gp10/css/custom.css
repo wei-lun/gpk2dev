@@ -1,0 +1,102 @@
+/*
+----------------------------------------------------------------------------
+// Features:	顏色、圖片相關CSS集中至本檔
+// File Name:	root.css
+// ----------------------------------------------------------------------------
+*/
+/*---------------背景色-------------*/
+#header{
+	background-color: var(--main);
+}
+#header {
+    background:var(--main) url(../img/common/menu_bg_theme.png) no-repeat bottom;
+}
+body{
+    background-color: var(--main);
+}
+#footer {
+    background-color: var(--main);
+}
+#static #main {
+    padding: 50px 0;
+    background: var(--main) url(../img/bg/othersbg.png) no-repeat center top;
+    background-position-y: -2px;
+}
+#gamelobby #main {
+    padding: 50px 0;
+    background: var(--main) url(../img/bg/slotbg.png) no-repeat center top;
+    background-position-y: -2px;
+}
+#login2page #main{
+    background: var(--main) url(../img/bg/registerbg.png) no-repeat center top;
+    padding: 50px 0;
+    background-position-y: -2px;
+}
+#member #main{
+    background: var(--main) url(../img/bg/registerbg.png) no-repeat center top;
+    padding: 50px 0 10px;
+    background-position-y: -2px;
+}
+#admin #main{
+    background: var(--main) url(../img/bg/lotterybg.png) no-repeat center top;
+    padding: 50px 0;
+    background-position-y: -2px;
+}
+/*-----------hLinkBox------------*/
+
+/*------------#header------------*/
+#header #gNavi li:hover, #header #gNavi li:hover .txt {
+    background:var(--sub) url(../img/common/menu_h_theme.png);
+}
+#header .hLinkBox{
+    background-color: var(--main);
+}
+/*--------morelink-------------*/
+@keyframes blinklink {
+    from {
+        color: var(--font);
+    }
+    to {
+        color: var(--sub);
+    }
+}
+/*-----------footer---------------*/
+#footer a{
+	color: var(--font);
+}
+#footer a:hover{
+	color: var(--font);
+}
+.f_paylogo {
+    background-color: rgba(235, 219, 206, 0.7);
+}
+.f_parlogo {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.f_morelink {
+    background-color: transparent;
+}
+.footer div[align="right"] {
+    color: rgba(255, 255, 255, 0.4);
+    background-color:transparent; 
+}
+/*-------------物件---------------*/
+.section_link{
+    background: rgba(209, 205, 206, 0.85);
+}
+.header_marquee{
+    background-color: rgba(255, 255, 255, 0.7);
+}
+.header_marquee{
+    height: 26px;
+}
+#home .newSection{
+    background: none;
+}
+.section_game {
+    background:var(--main) url(../img/home/gamebg.png) no-repeat top;
+    height: 613px;
+}
+.section_gamelobby .tabUl li.on a, .section_gamelobby .tabUl li a:hover {
+    background: linear-gradient(0deg,rgba(97, 97, 97, 0.9),rgba(51, 51, 51, 0.7) 50%);
+}

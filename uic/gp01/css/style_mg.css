@@ -1,0 +1,157 @@
+/*
+Feture: GPK 通用 CSS 樣板
+Version: v0.1
+Author: mtchang.tw@gmail.com
+Date: 2016.6.11
+// ---------------------------------------------------
+background-image: url("bg.png");
+background-color: #fff;
+background: rgba(250, 250, 251, 0.63);
+background-color: #dfdfdf;
+background-image: url("bg.png");
+// ---------------------------------------------------
+*/
+
+body {
+	/* background-image: url("/CdnRedirect/Web.Portal/AB003-02.Portal/Content/Views/Lobby/Game/bg.png"); */
+	padding-top: 0px;
+	padding-bottom: 0px;
+	background-size: cover;
+	background-repeat: repeat-x;
+	background-position: center bottom;
+	background-attachment: scroll;
+	font-size: small;
+ 	background-color: #000000;
+	height: 800px;
+	background-image: url("/ui/bg.jpg");
+}
+
+.container {
+	padding-top: 10px;
+	background-color: #fff;
+	/* 透明度, 如果太透明需要調整   */
+	background: rgba(0, 0, 0, 0.32);
+
+}
+
+.container-fluid {
+	padding-top: 20px;
+	padding-bottom: 10px;
+}
+
+/* 配色請參考 -- 紅色 for GPK
+http://stackoverflow.com/questions/18529274/change-navbar-color-in-twitter-bootstrap-3
+http://work.smarchal.com/twbscolor/css/fb07078d446becf0f1ffffff1
+*/
+.navbar-default {
+  background-color: rgba(255,255,255,.15);
+  border-color: rgba(255,255,255,.15);
+}
+.navbar-default .navbar-brand {
+  color: #ecf0f1;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: #ffffff;
+}
+.navbar-default .navbar-text {
+  color: #ecf0f1;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #ecf0f1;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #ffffff;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu {
+  background-color: #000000;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu > li > a {
+  color: #ecf0f1;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu > li > a:hover,
+.navbar-default .navbar-nav > li > .dropdown-menu > li > a:focus {
+  color: #ffffff;
+  background-color: #8d446b;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu > li > .divider {
+  background-color: #8d446b;
+}
+.navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+.navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+.navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+  color: #ffffff;
+  background-color: rgba(255,255,255,.15);
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #ffffff;
+  background-color: rgba(255,255,255,.15);
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+  color: #ffffff;
+  background-color: rgba(255,255,255,.15);
+}
+.navbar-default .navbar-toggle {
+  border-color: #8d446b;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: rgba(255,255,255,.15);
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: rgba(255,255,255,.15);
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border-color: #ecf0f1;
+}
+.navbar-default .navbar-link {
+  color: #ecf0f1;
+}
+.navbar-default .navbar-link:hover {
+  color: #ffffff;
+}
+
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #ecf0f1;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #ffffff;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #ffffff;
+    background-color: #8d446b;
+  }
+}
+
+/* 中間紅色底有文字的選單 */
+.dropdown-mid {
+	background: rgba(255,255,255,.15);
+  border-color: rgba(255,255,255,.15);
+	color: #ffffff;
+}
+
+
+/* 語言切換列, member menu */
+.dropdown-toggle {
+	color: #FF9800;
+}
+
+a:focus, a:hover {
+    color: #FF9800;
+    text-decoration: underline;
+}
+
+/* 主內容底色 */
+.panel{
+	/* background-color: #999; */
+}

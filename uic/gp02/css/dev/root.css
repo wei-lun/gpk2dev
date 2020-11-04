@@ -1,0 +1,140 @@
+/*
+----------------------------------------------------------------------------
+// Features:	顏色、圖片相關CSS集中至本檔
+// File Name:	root.css
+// ----------------------------------------------------------------------------
+*/
+:root {
+/*---------------bg---------------*/
+	--hLinkBox-bg:#222;
+	--header-bg:#222;
+	--body-bg:#222;
+	--footer-logo-bg:#555;
+	--footer-bg:#222;
+/*-----------header font-----------*/
+	--hLinkBox-font:#c39d6d;
+	--mainmenu-font:#eee;
+	--mainmenu-hover-font:#eee;
+	--mainmenu-icon:#c39d6d;
+	--morelink-font-1:#c39d6d;
+	--morelink-font-2:#ffdf3b;
+/*---------------foo--------------*/
+	--footer-font:#c39d6d;
+	--footer-hover-font:#eee;
+/*----------首頁物件---------------*/
+	--item-bg-1:#555;
+	--item-bg-2:#343a40;
+	--item-font-1:#fff;
+	--item-font-2:#fff;
+	--item-sec-1:#c39d6d;
+	--item-sec-2:#f4e2a1;
+
+    --hLinkBox-bg: #823a3a;
+    --header-bg: #823a3a;
+    --body-bg: #562a29;
+    --footer-logo-bg: #823a3a;
+    --footer-bg: #823a3a;
+    --hLinkBox-font: #c5aeae;
+    --mainmenu-font: #c5aeae;
+    --mainmenu-hover-font: #c5aeae;
+    --mainmenu-icon: #ca4545;
+    --morelink-font-1: #c37b7a;
+    --morelink-font-2: #e2cdc0;
+    --footer-font: #b77777;
+    --footer-hover-font: #eee;
+/*----------共用色---------------*/
+    --gold: #c39d6d;
+/*-------------static-----------------*/
+    --static-font:#ccc;
+    --static-h2-font:#f4e2a1;
+    --static-h3-font:#98692f;
+    --static-h4-font:#c39d6d;
+/* --------------  log內頁與選單文字漸層  -------------- */
+    /* 修改方式可以先針對各版顏色用色相調整，如果不合適在細調整 */
+    /* 內頁logo span:nth-child(2)的底部 3D立體效果顏色 - 由上而下 */
+    --text-shadow-bg-1: #2a1e10;
+    --text-shadow-bg-2: #814f0e;
+    --text-shadow-bg-3: #814f0e;
+    /* 內頁logo span:nth-child(2)的底部陰影 - 由上而下 */
+    --text-shadow-1: rgba(16,16,16,0.4);
+    --text-shadow-2: rgba(16,16,16,0.2);
+    --text-shadow-3: rgba(16,16,16,0.2);
+    --text-shadow-4: rgba(16,16,16,0.4);
+    /* 內頁logo span:nth-child(1)的金屬漸層效果 - 由上而下 */
+    --linear-gradient-1:#ffe2be;
+    --linear-gradient-2:#ffd7a5;
+    --linear-gradient-3:#c39d6d;
+    --linear-gradient-4:#c39d6d;
+    --linear-gradient-5:#654926;
+    --linear-gradient-6:#c28b41;
+    /* 內頁主選單樣式 - 漸層 */
+    --linear-gradient-menu-1:#FFF;
+    --linear-gradient-menu-2:#FFF;
+    --linear-gradient-menu-3:#FFF;
+    --linear-gradient-menu-4:#828282;
+    --linear-gradient-menu-5:#b8b8b8;
+    /* 內頁主選單被選取 - 光暈 */
+    --menu-active-shadow: #ffae34;
+}
+
+/*---------------背景色-------------*/
+.hLinkBox{
+	background-color: var(--hLinkBox-bg);
+}
+#header{
+	background-color: var(--header-bg);
+}
+body {
+    background-color: var(--body-bg);
+}
+#footer .f_paylogo {
+    background-color: var(--footer-logo-bg);
+}
+#footer {
+    background-color: var(--footer-bg);
+}
+/*---------------文字-------------*/
+/*-----------hLinkBox------------*/
+#header .hLinkBox>div>ul>li>a {
+    color: var(--hLinkBox-font);
+}
+.weltitle {
+   color: var(--hLinkBox-font);
+}
+#header .dropdown-lang .nav-link.dropdown-toggle {
+    color: var(--hLinkBox-font);
+}
+#header .short_url{
+	color: var(--hLinkBox-font);
+}
+/*------------#header------------*/
+.main-menu>li>a {
+    color: var(--mainmenu-font);
+}
+.main-menu>li>a:hover{
+	color: var(--mainmenu-hover-font);
+}
+/*icon*/
+.main-menu li::after{
+	color: var(--mainmenu-icon);
+}
+/*--------morelink-------------*/
+@keyframes blinklink {
+    from {
+        color: var(--morelink-font-1);
+    }
+    to {
+        color: var(--morelink-font-2);
+    }
+}
+/*-----------footer---------------*/
+#footer a{
+	color: var(--footer-font);
+}
+#footer a:hover{
+	color: var(--footer-hover-font);
+}
+/*-------------物件---------------*/
+.m_title h2 span {
+    background-color: var(--body-bg);
+}

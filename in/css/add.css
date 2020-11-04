@@ -1,0 +1,2268 @@
+/*--------------共通樣式---------------- --*/
+/*版面主色調控制*/
+
+/*--------------文字顏色---------------- --*/
+/*深色背景用*/
+/*主要文字顏色 - 用於標題 - 小標題*/
+.main_color_dark{ 
+  color:#FFF;
+}
+/*次級文字顏色*/
+.sec_color_dark{ 
+  color:#c39d6d;
+}
+/*淺色色背景用*/
+/*主要文字顏色 - 用於標題 - 小標題*/
+.main_color_light{ 
+  color:#343a40;
+}
+
+/*--------------背景顏色---------------- --*/
+/*深色背*/
+/*主要背景顏色*/
+.main_bg_color_dark{ 
+  color:#343a40;
+}
+/*--------------共用---------------- --*/
+.card{
+  border: initial;
+  border-radius: initial;
+}
+
+a:active{
+  text-decoration: none;
+}
+a{
+  text-decoration: none!important;
+}
+/*主要<p>*/
+.main_p{
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+/*淺色背景*/
+/*預計的共用樣式*/
+.title_h2{
+  font-size: 1rem;
+  line-height: 1.2rem;
+  font-weight: bolder;
+}
+/*bootstrap 互動視窗顏色*/
+/* .modal-header{
+  background-color: #dedede;
+  color: #000;
+  word-break: break-all;
+} */
+.modal-header.modal-time{
+  color: #000; 
+  border-radius:0;
+}
+.modal-time{
+  background-color: #f5f5f5;
+  color: #000; 
+  border-radius:0;
+}
+/* .modal-body{
+  color: #000;
+} */
+/*tr 背景顏色*/
+.table_bg{
+  background: #f7f7f7;
+}
+time{
+  font-size: 0.75rem;
+  margin: 0.2rem 0;
+  display: block;
+}
+.w-90{
+  width: 90%;
+  margin: 0;
+  padding: 0;  
+}
+.h-100{
+  height: 100%;
+}
+.por-midle{
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+/*按鈕bt*/
+.bt-w-100{
+  width: 100%;
+  display: block;
+}
+.font-1r{
+  font-size: 1rem;
+}
+.line-54{
+  line-height: 54px;
+}
+.line-rem{
+  line-height: 1.5rem;
+}
+.h-31{
+  height: 31px;
+}
+.bt-lg-block{
+  display: inline-block!important;
+}
+.p-0-5{
+  padding:0.5rem; 
+}
+.row.table-mb-3{
+  margin-bottom: 1rem;
+}
+
+.table-fontsize-1rem tr td{
+  font-size: 1rem;
+}
+
+.background-none{
+  background: none;
+}
+.table_link_style tr{
+  background: #EEE;
+}
+/*---------擴充bootstrap--------*/
+.mt-02{
+  margin-top: 0.2rem;
+}
+.mt-03{
+  margin-top: 0.3rem;
+}
+.my-07{
+  margin-top: 0.7rem;
+  margin-bottom: 0.7rem;
+}
+.line-height-15{
+  line-height: 1.5rem;
+}
+.line-height-2{
+  line-height: 2rem;
+}
+.bg-secondary{
+  color:#FFF;
+}
+.py-05{
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+.pt-02{
+  padding-top: 0.2rem;
+}
+.pt-07{
+  padding-top: 0.7rem;
+}
+.px-07{
+  padding-left: 0.7rem;
+  padding-right: 0.7rem;
+}
+.px-05{
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+.px-06{
+  padding-left: 0.6rem;
+  padding-right: 0.6rem;
+}
+.col-12.px-06{
+  padding-left: 0.6rem;
+  padding-right: 0.6rem;
+}
+.px-03{
+  padding-left: 0.3rem;
+  padding-right: 0.3rem;
+}
+.col.px-07{
+  padding-left: 0.7rem;
+  padding-right: 0.7rem;
+}
+.mb-05{
+  margin-bottom: 0.5rem;
+}
+.mt-05{
+  margin-top: 0.5rem;
+}
+.row.mb-05{
+  margin-bottom: 0.5rem;
+}
+.mt-07{
+  margin-top: 0.7rem;
+}
+.row.mt-07{
+  margin-top: 0.7rem;
+}
+.mb-07{
+  margin-bottom: 0.7rem;
+}
+.row.mb-07{
+  margin-bottom: 0.7rem;
+}
+.form-group.mb-07{
+  margin-bottom: 0.7rem;
+}
+.pl-8{
+  padding-left: 8px;  
+}
+.py-07{
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+}
+.line-height-245{
+  line-height: 2.45rem;
+}
+/*---------補救bootstrap modal--------*/
+.modal_click tbody tr{
+  cursor: pointer;
+}
+
+.modal_click a{
+  width: 100%;
+  display: block;
+}
+/*
+.modal_click td{
+  cursor: pointer;
+}
+*/
+.table_paddind_td td{
+  padding-top: 13px;
+  padding-bottom: 13px;
+}
+/*---------驗證碼圖片(全域)--------*/
+.login-table-verification-td{
+  position: relative;
+}
+#show_captcha{
+  position: absolute;
+  right: 11px;
+  z-index: 2;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;  
+}
+.show_captcha_css {
+    position: absolute;
+    right: 3px;
+    z-index: 2;
+    top: 2px;
+}
+.show_captcha_css:hover{
+    opacity: .8;
+  }
+#login2page #show_captcha>img,
+#show_captcha>img {
+    margin-top: 0;
+}
+.label.label-success{
+    padding: 0.5rem;
+}
+.border-radius-27{
+  border-radius: 27px;
+}
+/*--------------------有連結表格----------*/
+.table_link tr td:first-child{
+  font-size: 1rem;
+  color: #000;
+}
+/*-----------------下方彈出視窗---------------*/
+.slide-up {
+    /*bottom: 25vh;*/
+    max-height: 50vh;
+    overflow: auto;
+}
+/*-----------------li_list---------------*/
+.li_list li a h6{
+  width: 89%;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+}
+#static #main ul.li_list li{
+  list-style: none;
+}
+.li_list li{
+  background: #f7f7f7;
+  position: relative;
+  transition: all .2s;
+}
+.li_list li a{
+  color: #000;
+  font-size: 1rem;
+  padding: 1rem;
+  padding-left: 79px;
+  padding-right: 5rem;
+}
+.li_list li a:hover{
+  text-decoration: none;
+}
+.li_list li a i{
+  position: absolute;
+  right: 2%;
+  top: 50%;
+  transform: translateY(-50%);
+  color:#a5a5a5;
+  font-size: 1rem;
+}
+.li_list li a i.head{
+  left: 18px;
+  right:auto;
+  font-size: 2.5rem;
+  color:#949494;
+}
+/*----table_tr background---*/
+.table_bg_tr tr{
+  background: #f7f7f7;
+}
+/*-----------------------共用設定----------------*/
+/*共用表格 - 兩欄位 table_form2 */
+.table_form2.table{
+  margin-bottom: 0;
+}
+/*共用表格 - 4欄位 table_from4 */
+.table.table_from4 tr{
+  display: flex;
+}
+/*除外沒有連結*/
+.table.table_from4#transactionDataTable tr{
+  cursor: auto;
+}
+/*列表用 table_liststyle*/
+/*共用表格 - 換行的外距*/
+.table_form2 tr,
+.table.table_liststyle tr,
+table.dataTable.table_liststyle tbody tr,
+table.dataTable.table_liststyle thead tr,
+.table.table_from4 tr,
+.table.table_from6 tr,
+.stationmail_list tr{
+  cursor: pointer;
+}
+/*datatable box-sizing*/
+table.dataTable.taleb_liststyle, 
+table.dataTable.table_liststyle th, 
+table.dataTable.table_liststyle td{
+  box-sizing: border-box;
+}
+.table.table_liststyle td, 
+.table.table_liststyle th,
+.table.table_liststyle thead tr th{
+  margin: 0;
+  padding: 13px .75rem;
+  overflow:hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+/*文字大小*/
+.contact_list_deposit_p,
+.contact_list_deposit li,
+.deposit_nodata,
+#admin input + button,
+#cooperationAgreementModal .modal-footer button.close_b,
+.register_agent_accordion .title,
+#review_status.form-control,
+#static #main p,
+#receiveAllMoney,
+#id_q_account,
+#register_agenthelp .form-control,
+#update_bankdata,
+.register_agent_accordion input.form-control,
+.menu_admin li,
+#header .hLinkBox a,
+#gamelobby #searchitem,
+#gamelobby .items span,
+#gamelobby #main .title,
+#header .menu_admin .text-name,
+.gamename_desc,
+.browsegame_name,
+.de_companytitle,
+.step_rounded,
+#admin .authentication .step_title p,
+#preview_status,
+#preview_status + a,
+#gamelobby #gametablepage li,
+#header #head_member_menu .btn-logout a,
+.reload_balance .badge,
+#header .hBox li a .icon,
+#header .hBox li a .title,
+#header .account-info .media-body>div:last-child,
+#header .menu_admin .text-name,
+#id_href,
+#show_list thead tr th,
+#show_list_length label,
+#show_list_wrapper .dataTables_filter label,
+.member_management_table .search #search_send,
+.member_management_table .search .form-control,
+.authentication_select select,
+#register .checkbox button,
+.deposit_p p,
+#member_list_wrapper table.dataTable tbody td:nth-child(3),
+table.dataTable.table_liststyle thead th,
+.deposit_company_ps,
+.deposit_status_btn,
+.deposit_list_footer button.description_icon,
+.deposit_p_content p,
+#gtokenrecycling,
+.deposit_header,
+.deposit_header p,
+.deposit_header span,
+.account-notice div,
+.deposit-card a,
+.sider-member-infobox #token-lock-info,
+.spreadadd_btn,
+#bonusTableBody button,
+.help_register,
+.prompt_btn,
+.member_time_style,
+#register .checkbox div,
+.filter_list_input input,
+.filter_list_input button,
+.filter_list_button button,
+.header_description button,
+#deposit_company .card-footer,
+.authentication_select input,
+.de_company_atm tr td input,
+.token_au_content div,
+.deposit_center .title p,
+.deposit_center .deposit_method .card-text,
+.deposit_method a.status,
+.deposit_method a#companymoney,
+#onlinemomey_bt,
+.deposit_center .wallets_content a.btn,
+#gamelobby #casinotab li a,
+.gamename_content,
+.gamelike_content,
+.authentication_send,
+#shut_down_2fa,
+.m_authentication,
+.send_identity_member button,
+.send_identity_member a button,
+.qr_code_authentication,
+.authentication,
+.sep_title p,
+.sep_title span,
+#admin .authentication p,
+.gold_key,
+.authentication_title span,
+.authentication_title,
+.authentication_select select,
+.register_text,
+.withdrawapp_text,
+#show_list tr td,
+.deposit_menu_icon a div,
+.withdrawapplication_list input,
+.withdrawapplication_list,
+#static #act_promotion_number,
+.money_package_pc_m h2,
+#manual_gcashtogtoken_btn,
+#manual_gcashtogtoken,
+.withd_cash,
+.sent-message,
+.modal-body p,
+.modal-body .list-group button,
+.mobile_language_btn,
+.table_form2 td input,
+.table_form2 th,
+.table_form2 td,
+.contact_content,
+.deposit_status_content,
+.wechat_fontsize div,
+.deposit_company_title,
+.deposit_company_prompt,
+.loginpage_bg,
+.deposit_company_step_list input,
+#send_desposit_info,
+.deposit_company_send a,
+.deposit_company_step_text,
+.deposit_company_step_bg,
+.deposit_company_step3,
+.deposit_company_send button,
+.deposit_company_bg ul li,
+.deposit_company_icon span.glyphicon,
+.deposit_company_step1,
+.deposit_icon_title,
+.deposit_title_content,
+.deposit_title,
+#submit_to_login,
+#forgot_password,
+.member_mobile_menu_s li a,
+.member_mobile_menu li a,
+.account_information,
+#deposit_company table td,
+.deposit-card,
+.sider-member-txt,
+.agent_title,
+.application_p,
+.application_input div,
+.application_input div input,
+.register_checkbox label,
+.register_checkbox button,
+.application_button p,
+.application_button button,
+.agent_title,
+#btn-logout,
+.admin_menu_list>li>a,
+.register_qr,
+.no_data_p,
+.table.table_from4 p,
+.register_btn button,
+.register_agenthelpbt button,
+.stationmail_sedletter label,
+.table.stationmail_list th,
+.table.stationmail_list td,
+.spread_add_style div select,
+.spread_add_style div input,
+.spread_add_style div,
+.back_prev,
+.type_menu .form-group div,
+.spread_btn,
+.spread_add_btn,
+.type_menu_style label,
+.member_table tr td input,
+.member_table tr td,
+.member_table tr th,
+.modal-header,
+#member p,
+#register #submit_to_register,
+#register table tr th,
+#register table tr td,
+#register table tr td input,
+.promotion_activity_box,
+.promotions_detail button,
+.title_h2,
+.announcement_title,
+.table_form2 tr td,
+#deposit_company input::placeholder,
+#deposit_company table td,
+#deposit_company table th,
+#step1_bank_select table th,
+#step1_bank_select table td,
+.slide-up-menu table th,
+.slide-up-menu table td,
+.table.stationmail_list tr .title,
+.stationmail_input td label,
+.nodatatext,
+.stationmail_sedletter,
+.stationmail_sedletter input,
+.stationmail_sedletter textarea,
+.stationmail_list tr td p,
+.nav-headerbuttonpc,
+.table.table_from4 td,
+.table_from4 td,
+.table_from6 td,
+.popover-body,
+.nav-headerbutton label,
+.p_act_name p,
+.nav-headerbutton a,
+#stationmail_mail td h6,
+time,
+.li_list li a h6,
+.li_list li a time,
+#stationmail_mail td .detail,
+.modal_contentstyle.modal-content .table tbody tr td,
+.modal_contentstyle.modal-content .modal-footer button,
+.modal_contentstyle.modal-content .modal-body p,
+.modal_contentstyle.modal-content .modal-body,
+.modal_contentstyle.modal-content .modal-header,
+.modal_contentstyle.modal-content .modal-body a,
+.modal_contentstyle.modal-content h6,
+.send_btn,
+.back_btn,
+.div_from2>div label,
+.div_from2>div,
+.div_from2input>div,
+.div_from2input>div input[type=text],
+.div_from2input>div input[type=password],
+.send_btn,
+.table.table_liststyle td, 
+.table.table_liststyle th,
+.table.table_liststyle thead tr th,
+table.dataTable.table_liststyle tbody tr td, 
+table.dataTable.table_liststyle thead td,
+.no_data_style p{
+  font-size: 15px;
+}
+.m_authentication,
+.authentication_send,
+.authentication_select input,
+.authentication_select select,
+.sent-message,
+.modal-body p,
+.modal-body .list-group button,
+.deposit_company_prompt,
+.deposit-card,
+.announcement_title,
+.table.stationmail_list tr .title,
+.nodatatext,
+.stationmail_sedletter,
+.stationmail_sedletter input,
+.stationmail_sedletter textarea,
+.stationmail_list tr td p,
+.nav-headerbuttonpc,
+.table.table_from4 td,
+.table_from4 td,
+.popover-body,
+.nav-headerbutton label,
+.p_act_name p,
+.nav-headerbutton a,
+#stationmail_mail td h6,
+time,
+.li_list li a h6,
+.li_list li a time,
+#stationmail_mail td .detail,
+.modal_contentstyle.modal-content .table tbody tr td,
+.modal_contentstyle.modal-content .modal-footer button,
+.modal_contentstyle.modal-content .modal-body p,
+.modal_contentstyle.modal-content .modal-body,
+.modal_contentstyle.modal-content .modal-header,
+.modal_contentstyle.modal-content .modal-body a,
+.modal_contentstyle.modal-content h6,
+.send_btn,
+.back_btn,
+.div_from2>div label,
+.div_from2>div,
+.div_from2input>div,
+.div_from2input>div input[type=text],
+.div_from2input>div input[type=password],
+.send_btn{
+  line-height: 18px;
+}
+.div_from2input>div input[type=text],
+.div_from2input>div input[type=password],
+.div_from2>div,
+.div_from2input>div,
+.table.table_liststyle td, 
+.table.table_liststyle th,
+.table.table_liststyle thead tr th,
+table.dataTable.table_liststyle tbody tr td,
+table.dataTable.table_liststyle thead th, 
+table.dataTable.table_liststyle thead td{
+  height: 40px;
+}
+.form-group.spread_add_style,
+.member_table tr,
+.table_from6 tr,
+.table.table_from4 tr,
+.table_from4 tr,
+.li_list li,
+.div_from2,
+.div_from2input{
+  margin-bottom: 10px;
+}
+.table.stationmail_list th,
+.table.stationmail_list td,
+.table.stationmail_list tr,
+.slide-up-style.slide-up table th{
+  border:0;
+}
+/*共用div - 類似表格兩欄式 div_from2*/
+.div_from2input>div input[type=text],
+.div_from2input>div input[type=password]{
+  border:0;
+}
+/*共用modal*/
+.modal-body table td{
+  color: #000;
+}
+.modal_contentstyle .modal-header{
+  background: #EEE;  
+}
+.table.table_from6 td,
+.table.table_from4 td,
+.table.stationmail_list td,
+.modal_contentstyle .modal-header,
+.modal_contentstyle .modal-body{
+  word-break: break-all;
+}
+.modal_contentstyle .modal-time{
+  background: #eeeeee61;
+  border-bottom:1px solid #dee2e6;
+}
+.modal_contentstyle .modal-body.row{
+  padding-top: 0;
+  padding-bottom: 0;
+
+}
+.modal_contentstyle.modal-content{
+  border:0;
+}
+.modal_contentstyle.modal-content h6{
+  margin-bottom: 0;
+}
+.modal_contentstyle.modal-content .modal-body a{
+  border-bottom:1px solid #e3e3e3;
+}
+.modal_contentstyle.modal-content .modal-body a:last-child{
+  border:0;
+}
+
+.modal_contentstyle .member_table_ac .row{
+  margin: 0 auto;
+}
+.modal_contentstyle .member_table_ac{
+  margin-top: 14px;
+}
+/*共用按鈕 - 送出*/
+.send_btn{
+  background: #cccccc;
+  border: 1px solid #4d4d4d;
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  padding:.5rem 1rem;
+  line-height: 1.5;
+  border-radius: .3rem;
+  color: #FFF;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 1rem;
+  outline-color: #4d4d4d;
+}
+.send_btn:disabled,
+.send_btn button[disabled]{
+  color:#bbb;
+}
+/*為了控制表格可以正常空出左右 統一做有間距*/
+/*會員管理*/
+#register_agenthelp .layoutblock{
+  border:0;
+}
+.nodatatext{
+  text-align: center;
+}
+/*---------------優惠活動---------------*/
+/*強制內容裡面的圖片-縮成手機後 width 100%*/
+/*麵包*/
+#promotionsTableBody{
+  width: 100%;
+}
+.container.promotionsclass >li:after{
+    width: 10px;
+    height: 10px;
+    top:5px;
+}
+/*隱藏背景*/
+.container.promotionsclass .panel{
+    background: none;
+}
+.container.promotionsclass .panel-default{
+    border:0;
+}
+/*會因為背景變深色或淺色受影響*/
+#static #main .card-body #promotionsTableBody{
+  padding-left: 0;
+}
+#static #main .card-body #promotionsTableBody li{
+  list-style: none;
+}
+#promotionsTableBody .title_h2{
+  color:#1c1c1c;
+}
+#promotionsTableBody li{
+  position: relative;
+  height: 68px;
+  border:0;
+}
+
+#promotionsTableBody li i{
+  position: absolute;
+  right: 14px;
+  top:50%;
+  transform: translateY(-50%);
+  font-size: 1rem;
+  color: #c39d6d;
+}
+.container.promotionsclass .panel-title{
+  display: block;
+}
+.container.promotionsclass .panel-title{
+  color:#c39d6d;
+  text-align: center;
+}
+.img-w img{
+  height:auto!important;
+  max-width: 100%;
+}
+/*金色框*/
+.bg-gold{
+  background: none;
+  border-color: #c39d6d;
+  color: #c39d6d;
+}
+.bg-gold:hover{
+ background: #c39d6d;
+ border-color: #c39d6d;
+ color: #FFF;
+}
+.font-1-5{
+  font-size: 1.5rem;
+}
+/*其他按鈕*/
+.btn-gold{
+ background: #c39d6d;
+ color: #FFF;
+ background-color: #c39d6d;
+}
+/*表格背景與文字顏色*/
+#promotions_Table td{
+  color:#FFF;
+  background: #333333;
+  padding-left: 80px;   
+}
+ /*#promotions_Table tr{
+    margin-bottom: 1rem;
+  }*/
+#promotions_Table tr.border-bottom{
+  border-color:#7a7a7a!important;
+}
+.id_name_box{
+  position: relative;
+  width: 63px;
+  padding-left: 15px;
+}
+.id_name{
+  position: absolute;
+  width: 46px;
+  height: 46px;
+  background: #1a8081;
+  text-align: center;
+  color: #FFF;
+  display: flex;
+  align-items: center;
+  border-radius: 100%;
+  top:50%;
+  transform: translateY(-50%);
+}
+.id_name span{
+  text-align: center;
+  display: block;
+  width: 100%;
+}
+#promotions_Table td .title_h2{
+  display: inline-block;
+  font-size: 1.2rem;
+  position: relative;
+}
+#promotions_Table td i{
+  font-size: 1.2rem;
+  color:#c39d6d;
+  position: absolute;
+  top: 50%;
+  right: 14px;
+  transform: translateY(-50%);
+}
+/*--優惠活動兌換優惠碼-promotion_activity.php--*/
+.promotion_color{
+  color: #FFF;
+}
+#static .promotion_activity{
+  margin-bottom: 1rem;
+}
+/*
+#static .breadcrumb{
+  background: none;
+  border: 0;
+}
+#static .breadcrumb a{
+  color: #c39d6d;
+}
+#static .breadcrumb>li{
+  text-shadow: none;
+}
+#static .breadcrumb>li.active{
+  color: #c39d6d;
+}
+#static .breadcrumb>li:after{
+  border-bottom: 1px solid #c39d6d;
+  border-right: 1px solid #c39d6d;
+  width: 10px;
+  height: 10px;
+  top: 5px; 
+}*/
+#static .panel-title{
+  text-align: center;
+  color: #c39d6d;
+}
+#static .panel{
+  background: none;
+}
+#static .panel-default{
+  border:0;
+}
+.pages{
+  padding: 1em 0;
+  border-radius: .25em;
+}
+/* #static .panel-body{
+  color: #c39d6d;
+} */
+#static .promotion_title{
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  height: 44px;
+}
+#static .promotion_title p{
+  font-size: 1rem;
+  text-align: center;
+  padding: 0.7rem 0;
+  margin-bottom: 0;
+}
+#static .promotion_detail{
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px; 
+  height: 44px; 
+}
+#static .promotion_detail p{
+  font-size: 1rem;
+  text-align: left;
+  padding: 0.7rem 0;
+  margin-bottom: 0;
+  color:#FFF;
+  padding-left: 1rem;
+}
+#static .promotion_detail span{
+  color: #c39d6d;
+}
+#static .promotion_detail{
+  color: #FFF;
+}
+
+#static #submit{
+  width: 100%;
+  border-radius: 25px;
+  display: block;
+  height: 44px; 
+}
+
+#static .qualifications_list{
+  color: #FFF;
+  position: relative;
+  font-size: 1rem;
+  padding: .7rem 1rem;
+}
+
+#static .qualifications_list span.text-success{
+  padding: 0.1rem .9rem;
+  background: #28a745!important;
+  color:#FFF!important;
+  border-radius: 25px; 
+  margin-right: 0.5rem;
+  margin-top: 0.2rem;
+}
+#static .qualifications_list span.text-primary{
+  padding: 0.1rem .9rem;
+  background: #007bff!important;
+  color:#FFF!important;
+  border-radius: 25px; 
+  margin-right: 0.5rem;
+}
+#static #login_member{
+  width: 100%;
+  margin: 1rem auto;
+  border-radius:25px;
+  height: 45px;
+}
+
+#static #login_member a{
+  color: #FFF;
+  display: block;
+  width: 100%;
+}
+/*---------------------------登入-------------------------------*/
+#login2page .panel-body{
+  background: none!important;
+  width: 500px;
+  max-width: 90%;
+  margin: 70px auto;
+}
+#login2page .panel-body h3 ~ .alert.alert-info{
+  display: none;
+}
+/*隱藏多於文字*/
+#login2page .panel{
+ background: none!important;
+}
+
+#login2page input{
+  height: 49px;
+  border-radius: 6px;
+  background: #3b3b3b;
+  border: solid 1px #6c757d;
+  color: #c39d6d;
+  padding-left: 32px;
+  font-size: 14px;  
+}
+
+#login2page .form-group{
+  position: relative; 
+}
+
+#login2page .form-group  label{
+  color: #FFF;
+  position: absolute;
+  z-index: 9;
+  top: 17px;
+  left: 12px;
+  font-size: 15px;  
+}
+
+#login2page .form-group  label span{
+  display: none;
+}
+
+#login2page input::-webkit-outer-spin-button,
+#login2page input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+#login2page .login-table>div input{
+ width: 141px;
+}
+
+#login2page .login-table{
+  width: 550px!important;
+}
+#login2page  .panel{
+  border:0;
+}
+#login2page .login-table>div input{
+ width: 141px;
+}
+#login2page .headlogin{
+  padding-right: 0!important;
+}
+#login2page .login-table>div:nth-child(4){
+  margin-right: 0!important;
+}
+#login2page .btn-sm{
+  margin-right: 3px;
+}
+#login2page .login-table>div.preview_status{
+  margin-right: 0;
+}
+#forgot_password{
+    margin-right: 10px;
+  }
+#login2page input[type='number'] {
+    -moz-appearance:textfield;
+}
+#login2page .panel-body h3{
+  text-align: center; 
+  color: #fff;
+}
+#login2page .bg-a{
+  background: #6c757d;
+}
+#login2page .loginpage_bg.btn{
+  padding: 11px 0;
+  height: 46px; 
+}
+#login2page .bg-a:hover{
+  background: #4e545a;
+}
+
+/*控制input標題文字顏色*/
+#login2page  input::-webkit-input-placeholder{
+  color: #FFF;
+}
+
+#login2page #submit_to_login{
+  display: block;
+  width: 100%;
+  border-radius: 27px;
+  font-size: 16px;
+  padding: 11px 0;
+  background: #c39d6d;
+  border: 0;
+  font-weight: bolder;
+  text-shadow: 1px 1px 5px #343a40;
+  height: 46px; 
+}
+#login2page #submit_to_login:hover{
+  height: 46px; 
+  background: #cd8f42;
+}
+
+/*PC登入按鈕大小修正*/
+.login2-pc-m .col-12,.login2-pc-m .col-6{ padding: 0; }
+.login2-pc-m .col-6{ max-width: 49%; margin-right: 2%; }
+.login2-pc-m .col-6:last-child{ margin-right: 0; }
+/*取消原本樣式*/
+#login2page .panel-body .btn-outline-danger:visited,
+#login2page .panel-body .btn-outline-danger:focus-within,
+#login2page .panel-body .btn-outline-danger:focus,
+#login2page .panel-body .btn-outline-danger.active,
+#login2page .panel-body .btn-outline-danger:hover,
+#login2page .panel-body .btn-outline-danger:active,
+#login2page .panel-body .btn.btn-primary:visited,
+#login2page .panel-body .btn.btn-primary:focus-within,
+#login2page .panel-body .btn.btn-primary:focus,
+#login2page .panel-body .btn.btn-primary.active,
+#login2page .panel-body .btn.btn-primary:hover,
+#login2page .panel-body .btn.btn-primary:active{
+  border-color:none;
+  border:0;
+  box-shadow: none!important;
+}
+#login2page .checkbox {
+  display: none;
+}
+.panel-body.login2-pc-m-logonbox .btn-outline-danger:active{
+  display: block;
+  width: 100%;
+  border-radius: 27px;
+  font-size: 16px;
+  padding: 11px 0;
+  background: #6c757d;
+  border: 0;
+  font-weight: bolder;
+  text-shadow: 1px 1px 5px #343a40;
+  letter-spacing: 4px;
+  color: #FFF; 
+}
+.panel-body.login2-pc-m-logonbox .btn-outline-danger:hover{
+  background: #4e545a;
+}
+.panel-body.login2-pc-m-logonbox .btn.btn-primary:hover{
+  background: #cd8f42;
+}
+/*----------會員登入---------------*/
+/*隱藏語系的icon mobile才出現*/
+.mobile_language{
+  display: none
+}
+/*清除背景與線條*/
+.panel.login2-pc-m{
+  background: none!important;
+  border: 0!important;
+  width: 500px;
+  max-width: 90%;
+  margin: 70px auto ;
+}
+/*清除背景*/
+#login2page .panel-body.login2-pc-m-logonbox{
+  background: none!important;
+}
+/*隱藏不必要文字*/
+.panel-body.login2-pc-m-logonbox .alert{
+  display: none;
+}
+/*讓label浮動在input上方*/
+.panel-body.login2-pc-m-logonbox .form-group >label{
+  color: #FFF;
+  position: absolute;
+  z-index: 9;
+  top: 17px;
+  left: 12px;
+  font-size: 15px;  
+}
+/*隱藏多餘的input標題*/
+.panel-body.login2-pc-m-logonbox .form-group >label span{
+  display: none;  
+}
+/*input高度調整*/
+.panel-body.login2-pc-m-logonbox input{
+  height: 49px;
+  border-radius: 6px;
+  background: #3b3b3b;
+  border: solid 1px  #6c757d;
+  color: #c39d6d;
+  padding-left: 32px;
+  font-size: 14px;
+}
+
+/*給予父元素*/
+.panel-body.login2-pc-m-logonbox .form-group {
+  position: relative;
+}
+/*登入介面標題*/
+.panel-body h3.login2-pc-m-h3{
+  text-align: center; 
+  font-size: 22px;
+  color: #fff;
+  text-shadow: 1px 1px 5px #343a40;
+}
+/*登入按鈕更改樣式*/
+.panel-body.login2-pc-m-logonbox .btn.btn-primary{
+  display: block;
+  width: 100%;
+  border-radius: 27px;
+  font-size: 16px;
+  padding: 11px 0;
+  background: #c39d6d;
+  border: 0;
+  font-weight: bolder;
+  text-shadow: 1px 1px 5px #343a40;
+  letter-spacing: 8px;
+}
+/*登隱藏取消按鈕*/
+.panel-body.login2-pc-m-logonbox .btn.btn-warning{
+  display: none;
+}
+/*驗證碼調整位置*/
+.panel-body.login2-pc-m-logonbox .show_captcha_css{
+  position: absolute;
+  top: 50%;
+  right: 11px;
+  width: 65px;
+  transform: translateY(-50%);
+  cursor: pointer;
+
+}
+/*--------------註冊--------------*/
+#preview_area ~ .panel.panel-success{
+  border:0;
+}
+.table-align-middle th,.table-align-middle td{
+  vertical-align: middle;
+}
+
+/*提示錯誤*/
+.warning{
+  font-size: 16px;
+  position: absolute;
+  right: 13px;
+  top: 15px;
+  z-index: 9;
+  color: #dc3545;
+  display:none;
+}
+/*提示錯誤開啟*/
+.warning.active{
+  display: block;
+}
+/*帳密錯誤通知文字*/
+.login-table #preview_status{
+ color:#dc3545;
+ background: none;
+}
+
+#submit_to_register .btn-success:visited,
+#submit_to_register .btn-success:focus-within,
+#submit_to_register .btn-success:focus,
+#submit_to_register .btn-success.active,
+#submit_to_register .btn-success:hover,
+#submit_to_register .btn-success:active{
+  background: #c39d6d!important;
+  border-color:none;
+  border:0;
+  box-shadow: none!important;
+}
+/*按鈕被禁止的顏色*/
+#submit_to_register .btn-success:disabled,
+#submit_to_register .btn-success.disabled,
+#submit_to_register .btn-success[disabled]{
+  background: #CCC;
+}
+/*---------------------------會員註冊-------------------------------*/
+
+/*----------#會員中心下拉顯示-----------------------*/
+.account-info span,
+.account-notice span {
+    margin: 0;
+    /*移除reset.css span的margin設定*/
+}
+
+#header .account_img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: block;
+    background-color: #fff;
+    align-self: center;
+    /*頭像顯示底圓圈*/
+}
+
+#header .account_img span {
+    line-height: 50px;
+    width: 100%;
+    text-align: center;
+    font-size: 25px;
+    /*頭像顯示圖示大小*/
+}
+
+#header .account-info .media-body {
+    align-self: center;
+    /*firefox下右側文字垂直置中*/
+}
+
+#header .account-info .media-body>div {
+    padding-bottom: 5px;
+    /*會員資訊項目間距*/
+}
+
+#header .account-info .media-body>div:last-child {
+    padding-bottom: 0;
+    /*會員資訊最後項無間距*/
+}
+
+/*會員下拉選單閃爍*/
+.blinknotice a {
+    animation-duration: 1s;
+    animation-name: blink;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+
+#header .blinknotice {
+    position: relative;
+}
+/*
+#header .blinknotice::before {
+    content: url(../img/common/hot.gif);
+    position: absolute;
+    left: 7em;
+    top: 0;
+    z-index: 2;
+}
+*/
+@keyframes blink {
+    0% {
+        opacity: 1;
+        color: green;
+    }
+
+    50% {
+        opacity: 0.5;
+        color: #ff6600;
+    }
+
+    80% {
+        opacity: 1;
+        color: red;
+    }
+
+    100% {
+        opacity: 0.5;
+        color: blue;
+    }
+}
+
+/*代理中心 -會員管理*/
+#register_agenthelp .show_captcha_css{
+  top:50%;
+  transform: translateY(-50%);
+}
+  /*帳務中心 - 提款*/
+.wallets_content .h5, .card-body .alert-warning .h5{
+  margin: 0;
+}
+.wallets_content .h5 p{
+  margin-bottom: 0;
+}
+.wallets_content .card-body .row{
+  align-items: center;
+}
+.card-body .alert-warning{
+  align-items: center;
+}
+.card-body .alert-warning .btn{
+  margin-left: 10px;
+}
+table.dataTable.mt-02{
+  margin-top: 0.2rem;
+}
+/*財務中心 - 線上支付*/
+#onlinemomey_bt{
+  cursor: pointer;
+}
+#step1_bank_select table td{
+  border:0;
+  border-bottom: 1px solid #dee2e6;
+}
+/*------------說明icon----------------*/
+.money_package_pc_m label{
+    margin-bottom: 0;
+  }
+/*.description_label{
+    padding: 0 5px;
+  }*/
+.description_label{
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 0;
+  }
+.description_i{ 
+  margin: 0 5px;
+  vertical-align: middle;
+  position: relative;
+  cursor: pointer;
+  color: #c0c0c0;
+  font-size: 1rem;
+}
+/*說明icon color*/
+.description_color_gray{
+  color: #c39d6d;
+}
+.description_color_gray:hover{
+  color: #6c757d;
+  transition: .2s;
+}
+/*說明控制*/
+.description_div{
+   position: absolute;
+   background:#343a40;
+   width: 154px;
+   left:50%;
+   transform: translateX(-50%);
+   z-index: 9;
+   border-radius: 5px;
+   padding:5px;
+}
+.description_div:after{
+   content: '';
+   width: 0px;
+   height: 0px;
+   position: absolute;
+   top: -19px;
+   left: 50%;
+   border: 12px solid red;
+   border-color: transparent transparent #343a40 transparent;
+   transform: translateX(-50%);
+}
+.description_div p{
+  line-height:1.4rem; 
+  font-size: 0.9rem;  
+  color: #FFF;
+  padding: 0 0.5rem;
+  font-weight: normal;
+  margin-bottom: 0;
+}
+.description_div.center{
+ text-align: center;
+}
+.description_off{
+  display: none;
+}
+.description_off + .description_div{
+ display: none;
+}
+
+/*click 打開說明*/
+.description_off:checked + .description_div{
+  display: block;
+  opacity: 0;
+  animation: descriptionshow .5s 1 linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes descriptionshow {
+ from {
+  opacity: 0;
+ }
+ to {
+  opacity: 1;
+ }
+ }
+ /*控制說明的顯示位置*/
+ /*用法 class="description_div bottom" */
+.description_div.top{
+  bottom: 28px;
+}
+.description_div.top:after{
+  top:auto;
+  bottom: -19px;
+  border-color: #343a40 transparent transparent transparent;
+}
+.description_div.bottom{
+  top: 28px;
+}
+.description_div.right{
+  left: 28px;
+  transform: translateX(0);
+  top:50%;
+  transform: translateY(-50%);
+}
+.description_div.right:after{
+  border-color: transparent #343a40 transparent transparent;
+  left: -19px;
+  top: 50%; 
+  transform: translate(0,-50%);
+}
+/*--------會員中心 - 系統公告-------*/
+.no_data_style,
+.no_data_style p{
+  text-align: center; 
+}
+/*優惠活動*/
+#testArea .table_form2 td a{
+  display: flex;
+  align-items: center;
+}
+#testArea .table_form2 td .col-1{
+  text-align: right;
+}
+.announcement_title{
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  height: 20px;
+}
+#announcementBody{
+  word-break: break-all;
+}
+/*------浮動盒子-----*/
+/*浮動的時候關閉葉面上的滑動*/
+body.fly_window_stop{
+  position: fixed;
+  width: 100%;
+}
+.back_bt{
+  position: absolute;
+  left: 17px;
+  top: 13px;
+  font-size: 1rem;
+  padding: 5px 15px 5px 0;
+}
+.fly_window{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: #0000007d;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  display:none;
+  color: #333;
+}
+/*css3 animate*/
+.fly_window.active{
+  display: block;
+  opacity: 0;
+  animation: flywindow .5s 1 ease-in-out;
+  animation-fill-mode: forwards;
+}
+@keyframes flywindow {
+  0%{
+    opacity: 0;
+  }
+  50%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+/*關閉版面範圍的控制 -點空白處可以關閉 .fly_window*/
+.close_window_box{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+/*內容版面*/
+.fly_window_box{
+  width: 600px;
+  max-width: 90%;
+  position: relative;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background: #FFF;
+  padding: 1rem;
+  border-radius: .3rem;
+  min-height: 200px;
+  display: none;
+}
+.fly_window_box.active{
+  display: block;
+  top:0%;
+  /*正常彈跳*/
+  /*animation: flywindowbox .7s 1  cubic-bezier(0.19, 1, 0.22, 1);*/
+  /*瘋狂彈跳*/
+  animation: flywindowbox .5s 1  cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  animation-fill-mode: forwards;
+}
+@keyframes flywindowbox {
+  0%{
+    top:0%;
+  }
+  80%{
+    top:50%;
+  }
+  100%{
+    top:50%;
+  }
+}
+.fly_window_box .close_bt{
+  position: absolute;
+  right: 8px;
+  top: 6px;
+  color: #6c757d;
+  display: block;
+  padding: 1rem;
+  background: none;
+  border:0;
+  cursor: pointer;
+}
+.fly_window_box>.title_h2{
+  border-bottom: 1px solid rgba(0,0,0,.1);
+  padding-bottom: 1rem;
+  padding-right: 4%;
+}
+.fly_window_box .close_bt:hover{
+  color: #343a40;
+}
+.fly_window_content{  
+  max-height: 111px;
+  overflow-y: auto;
+  padding-bottom: 0.5rem;
+}
+.fly_window_content p{
+  font-size: 0.9rem;
+  line-height: 1.1rem;
+}
+.fly_window_content time{
+  margin-top: 0.7rem;
+}
+.fly_window.list .fly_window_content{
+  max-height: 400px;
+}
+.fly_window.list .fly_window_content ul li a{
+  font-size: 1rem;
+  display: block;
+  width: 100%;
+  padding: .75rem;
+  border-bottom: 1px solid #ddd;
+}
+.fly_window.list .fly_window_content ul li a h2{
+  font-size: 1rem;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  line-height: 1.5rem;
+  height: 20px;
+}
+.fly_window_box.detail .title_h2{
+  padding-left: 28px;
+}
+.fly_window_box.detail{
+  display: inline-block;
+}
+/*----------#未讀/彩金通知顯示-----------------------*/
+/*.account-notice {
+    display: inline-block;
+}*/
+/*.account-notice .notice_unread:before {
+    content: "\f1f0";
+    font: normal normal normal 14px/1 Material Design Icons;
+    font-size: 20px;
+    position: absolute;
+    未讀信件
+}*/
+/*新頁籤*/
+.navnewstyle a.nav-link.d-line{
+  display: inline-block;
+}
+.navnewstyle a{
+  background: #252525;
+}
+.account-notice>a{
+    position: relative;  
+}
+.account-notice .mdi-email-outline {
+    font-size: 20px;
+}
+/*.account-notice .notice_receiv:before {
+    content: "\f2a1";
+    font: normal normal normal 14px/1 Material Design Icons;
+    font-size: 18px;
+    position: absolute;
+    未讀彩金通知
+}
+*/
+.account-notice .mdi-gift {
+    font-size: 18px;
+}
+.account-notice .notice_language:before {
+    content: "\f1e7";
+    font: normal normal normal 14px/1 Material Design Icons;
+    font-size: 18px;
+    position: absolute;
+    /*語言選單*/
+}
+
+.account-notice .badge {
+    padding: 0;
+    /*還原bootstrap內badge設定*/
+}
+
+.account-notice .badge {
+    background-color: #FF6600;
+    border-radius: 50%;
+    color: #fff;
+    display: inline-block;
+    line-height: 15px;
+    height: 15px;
+    width: 15px;
+    text-align: center;
+    position: absolute;
+    top: -5px;
+    right: -8px;
+}
+
+/*----------#桌機會員下拉帳戶餘額區域-----------------------*/
+.account-balance {
+    background-color: #555;
+    text-align: center;
+}
+
+.dropdown-menu .account-balance .glyphicon-refresh {
+    color: #ffffff;
+    /*跟預設文字同色，iconfont化後可拔除此段*/
+}
+
+/*----------#會員中心------------------*/
+/*標題列*/
+/* #admin .card-title {
+    border-left: 7px solid #c39d6d;
+    border-bottom: 1px solid #999;
+}
+
+#admin .card-title h4 {
+    margin-left: 10px;
+    color: #c39d6d;
+    font-weight: bold;
+} */
+/* -----------雙重驗證--------------- */
+#admin .authentication .title{
+	border-left: 7px solid #c39d6d;
+	border-bottom: 1px solid #999;
+}
+#admin .authentication p{
+	margin-bottom: 0;
+	line-height: 2rem;
+}
+/*------------交易明細----------------*/
+.modal_contentstyle.modal-content .modal-body .mo_translog_query_table th button{
+  border:0;
+}
+.mo_translog_query_table th{
+  color: #000;
+  vertical-align: middle;
+}
+.mo_translog_query_table td{
+  vertical-align: middle;
+}
+.mo_translog_query_table th button{
+  display: inline-block;
+  vertical-align: middle;
+  padding-right: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.mo_translog_query_table th span{
+  display: inline-block;
+  vertical-align: middle;  
+}
+.modal_contentstyle .table-striped tbody tr:nth-of-type(odd) {
+    background: none;
+}
+.modal_contentstyle .table-striped tbody tr:nth-of-type(even) {
+    background-color: rgba(0,0,0,.05);
+}
+
+/*交易明細*/
+.table_from6.table-hover tbody tr.no_data:hover,
+.table-hover tbody tr.no_data:hover{
+    color: #bfbfbf;
+}
+.filter_list_button div:last-child button{
+  display: inline-block;
+  vertical-align: middle;
+}
+.filter_list_button div:last-child{
+  text-align: right;
+}
+.inner-addon .glyphicon{
+  display: none;
+}
+/*修改提款密碼*/
+.table.s_middle>tbody>tr>td{
+  vertical-align: middle;
+}
+.motransaction_layout{
+  background-color: #00000080;
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  display: none;
+}
+/*---交易明細與投注明細樣板共用----*/
+.moa_betlog_table th{
+  color: #000;
+}
+.query_failed{
+  position: absolute; 
+  width: 400px;
+  max-width: 90%;
+  left:50%;
+  top:50%;
+  transform: translate(-50%,-50%);
+  display: none;
+  z-index:10;
+  color:#856404;
+  border: 2px solid #ffeeba;
+  border-radius: 33px;
+  background-color:#fff3cd;  
+}
+.query_failed p{
+  margin: 0; 
+  padding: 0.4em; 
+  text-align: center;
+  font-size: 1.5rem;   
+}
+/*------------------會員專區---------------*/
+/*充值*/
+.cash_balance{
+  background: #EEE;
+  font-size: 1rem;
+}
+.btn-css button{
+  display: inline-block;
+  vertical-align: middle;
+}
+.money_package_box {
+    padding: 1.25rem;
+}
+.select_box {
+    margin-bottom: 1.25rem;
+}
+#main .money_package_box .btn-primary {
+    min-width: 100%;
+}
+.mobile_only{
+  display: none;
+}
+
+/*-------------------*/
+.navblock .nbox,
+.navblock .nbox .icon .fa,
+.navblock .nbox .icon .fas,
+.navblock .nbox .title {
+    -webkit-transition: all .3s;
+    transition: all .3s;
+}
+
+.navblock:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.navblock {
+    width: 100%;
+    padding: 5px 0;
+}
+
+.navblock .nbox {
+    display: block;
+    background-color: #c39d6d;
+    width: 30.3030303030303%;
+    height: 0;
+    padding-bottom: 25%;
+    float: left;
+    border: 2px solid transparent;
+    color: #fff;
+    position: relative;
+}
+
+.navblock .navi_more {
+    padding-bottom: 10%;
+}
+
+.navblock .nbox .icon {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.navblock .nbox .icon .fa,
+.navblock .nbox .icon .fas,
+.navblock .nbox .icon .fab,
+.navblock .nbox .icon .far {
+    font-size: 25px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-backface-visibility: initial;
+    backface-visibility: initial;
+}
+
+.navblock .nbox .title {
+    padding-bottom: 10px;
+    font-size: 12px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    text-align: center !important;
+    width: 100%;
+}
+
+.navblock .nbox:hover {
+    border-color: #fff;
+    text-decoration: none;
+}
+
+.navblock .nbox:not(:nth-child(3n+3)) {
+    margin-right: 4.54545454545455%;
+}
+
+.navblock .nbox:nth-child(n+4) {
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 370px) {
+    .navblock .nbox .icon .fa {
+        font-size: 20px;
+    }
+
+    .navblock .nbox .title {
+        font-size: 11px;
+    }
+}
+
+.flipy {
+    transform: rotate(180deg);
+}
+
+.navlog {
+    text-align: center;
+}
+
+.navlog a.btn {
+    width: 40%;
+}
+
+.reload_balance .badge {
+    font-size: 100%;
+    font-weight: 500;
+}
+
+.account-top .account-notice {
+    float: right;
+}
+
+.account-top .account-language {
+    float: right;
+}
+
+.account-top .dropdown-menu.show {
+    left: unset;
+    right: 0;
+    padding: unset;
+}
+
+.account-top .dropdown-menu .dropdown-item {
+    border-top: 1px solid #e9ecef;
+    padding: 10px;
+}
+
+.account-top .dropdown-menu .dropdown-item:first-child {
+    border-top: 0;
+}
+
+/*會員下拉選單閃爍*/
+#header a.nbox .blinknotice {
+    position: absolute;
+}
+
+a.nbox .blinknotice i {
+    animation-duration: 1s;
+    animation-name: blink;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+/*
+#header a.nbox .blinknotice::before {
+    content: url(../img/common/hot.gif);
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 2;
+    left: unset;
+}
+*/
+@keyframes blink {
+    0% {
+        opacity: 1;
+        color: green;
+    }
+
+    50% {
+        opacity: 0.5;
+        color: #ff6600;
+    }
+
+    80% {
+        opacity: 1;
+        color: red;
+    }
+
+    100% {
+        opacity: 0.5;
+        color: blue;
+    }
+}
+
+/*桌機板會員下拉選單修正*/
+#head_member_menu .icon {
+    display: inline-block;
+    padding-right: 10px;
+    width: 20px;
+}
+
+#head_member_menu .account-notice>a,
+.headlogin .account-notice>a,
+.after-login-info .account-notice>a {
+    padding: 0;
+    border-right: 0;
+    margin-right: 15px;
+}
+.after-login-info .account-notice>a{
+  margin: 5px 15px 5px 0;
+}
+
+.headlogin .account-notice {
+    margin-right: 10px;
+}
+
+#head_member_menu a.nbox {
+    display: block;
+    padding: 5px 10px;
+}
+
+#head_member_menu a.nbox .blinknotice {
+    position: relative;
+}
+/*
+#header #head_member_menu .blinknotice::before {
+    content: url(../img/common/hot.gif);
+    position: absolute;
+    left: 7em;
+    top: 0;
+    z-index: 2;
+}*/
+#header #head_member_menu .nbox .hot{
+  position: relative;
+}
+#header #head_member_menu .nbox .hot::before{
+  content: url(../img/common/hot.gif);
+  position: absolute;
+  right: -2em;
+  top: 0;
+  z-index: 2;
+}
+/*----------跑馬燈--------------------*/
+.marquee li span{
+  color:#63d0b5;
+}
+.marquee li button{
+  color:#FFF;
+}
+.marquee li button:hover{
+  color:#FFF;
+  text-decoration: none;
+}
+.marquee li button:focus{
+  text-decoration: none;
+}
+.marqueebox.marquee_down{
+  background: none;
+}
+.marquee_down .marquee li{
+  display: block;
+  text-align: left;
+}
+.marquee_down .marquee li button.btn{
+  width: 100%;
+  text-align: left;
+  font-size: 0.5rem;
+  white-space: normal;
+  padding: 0;
+  color:#03004c;
+}
+#announcementModal .modal-header{
+  background: #333;
+  color: #fff
+}
+#announcementFooter{
+  background: #f1f1f1;
+}
+#announcementFooter .btn{
+  width: 100px;
+  background: #1f1f1f;
+  color: #fff;
+}
+/*---------會員頭像----------*/
+.membercenter span{
+  width: 32px;
+  height: 32px;
+  display: block;
+  /* padding: 0; */
+  text-align: center;
+  line-height: 1.4rem;
+  font-size: 1.3rem;
+  border: #838383 2px solid;
+  border-radius: 100%;
+  padding: 5px;
+  color: #838383;  
+}
+/*---------站內信----------*/
+.stationmail_list tbody tr.no_data td p{
+  text-align: center;
+  margin-bottom: 0;
+}
+.stationmail_list tr td p{
+  margin-bottom: 0;
+}
+.stationmail_sedletter .form-group,
+.stationmail_sedletter label{
+  margin-bottom: 10px;
+}
+/*---------投注明細----------*/
+.table.table_from4 td.dataTables_empty:nth-child(1),
+.table.table_from6 td.dataTables_empty:nth-child(2){
+  width: 100%;
+}
+#moa_betlog .modal-body table td{
+  color: #000;
+} 
+/*---------彩金領取----------*/
+.table.table_from4,
+.table.table_from6,
+.table_from4,
+.table_from6{
+  margin-bottom: 0;
+}
+.table.table_from6 td,
+.table.table_from6 td,
+.table_from4 td,
+.table_from6 td{
+  border:0;
+}
+.table.table_from4 td:nth-child(1),
+.table_from4 td:nth-child(1){
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4; 
+  padding-right: 0;
+}
+.table.table_from4 td:nth-child(1),
+.table.table_from4 td:nth-child(2),
+.table_from4 td:nth-child(1),
+.table_from4 td:nth-child(2),
+.table_from6 td:nth-child(1),
+.table_from6 td:nth-child(2),
+.table_from6 td:nth-child(3),
+.table_from6 td:nth-child(4){
+  padding-bottom: 0;
+}
+.table.table_from4 tr.no_data td:nth-child(1),
+.table.table_from6 tr.no_data td:nth-child(1){
+  padding: .75rem;
+}
+.table.table_from4 tr.no_data,
+.table_from4 tr.no_data,
+.table.table_from6 tr.no_data,
+.table_from6 tr.no_data{
+  background: none;
+  box-shadow: none;
+  text-align: center;
+}
+.table.table_from4 td:nth-child(2),
+.table.table_from4 td:nth-child(4),
+.table_from4 td:nth-child(2),
+.table_from4 td:nth-child(4),
+.table_from6 td:nth-child(2),
+.table_from6 td:nth-child(4),
+.table_from6 td:nth-child(6){
+  text-align: right;
+}
+.table.table_from4 td:nth-child(3),
+.table.table_from4 td:nth-child(4),
+.table_from4 td:nth-child(3),
+.table_from4 td:nth-child(4){
+  padding-top: 0;
+}
+
+/*---------財務中心----------*/
+/* #sider-deposit-center{
+  padding: 0 1em;
+} */
+/*
+.roleicon-circle{
+  font-size: 4em;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  padding: .15em .35em;
+}*/
+.roleicon-circle{
+  font-size: 36px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  padding: 10px 15px;
+}
+.sider-roleicon{
+    margin-bottom: 2.5em;
+    margin-top: 2em;
+    text-align: center;
+}
+.sider-member-infobox{
+  display: block;
+  transform: translateX(12%);
+}
+.sider-member-infobox #token-lock-info{
+  padding-left: 0%;
+  text-align: center;
+
+}
+.spread_register_filter{
+  margin-bottom: 0.5em;
+  background: #cccccc42;
+  border-top-left-radius: .25rem;
+  border-top-right-radius: .25rem;
+}
+/*---------代理中心----------*/
+/*---------邀請碼----------*/
+.table_col3 td{
+  width: calc(100%/3);
+/*  padding-top: 18px;
+  padding-bottom: 18px;*/
+}
+/*---------暫時補救----------*/
+.list-group-item{
+  background-color: #ffffff2b!important;
+}
+/*.table.dataTable tbody tr{
+  background: #ffffff17!important;
+}*/
+/*---------占成比例----------*/
+#__V2 table td{
+  color: #000;
+}
+/*---------彩金領取----------*/
+#expiredBonusTable tr,
+#receivedBonusTable tr,
+#bonusTable tr{
+  cursor: pointer;
+}
+/*交易紀錄*/
+.slide-up-style.slide-up table{
+  margin-bottom: 0;
+}

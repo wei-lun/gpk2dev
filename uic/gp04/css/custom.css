@@ -1,0 +1,47 @@
+/*
+----------------------------------------------------------------------------
+// Features:	顏色、圖片相關CSS集中至本檔
+// File Name:	root.css
+// ----------------------------------------------------------------------------
+*/
+/*---------------背景色-------------*/
+#header{
+	background-image: url(../img/common/header.png),url(../img/common/header_bg.png),linear-gradient(180deg,var(--main),hsla(0, 0%, 0%, 0.5));
+}
+body {
+    background-color: var(--main);
+}
+#footer {
+    background-color: var(--main);
+}
+/*------------#header------------*/
+.main-menu>li>a {
+    color: var(--font);
+}
+.main-menu>li>a:hover{
+	color: var(--font);
+}
+/*icon*/
+.main-menu li::after{
+	color: var(--sub);
+}
+/*--------morelink-------------*/
+@keyframes blinklink {
+    from {
+        color: var(--font);
+    }
+    to {
+        color: var(--sub);
+    }
+}
+/*-----------footer---------------*/
+#footer a{
+	color: var(--font);
+}
+#footer a:hover{
+	color: var(--font);
+}
+/*-------------物件---------------*/
+.m_title h2 span {
+    background-color: var(--main);
+}

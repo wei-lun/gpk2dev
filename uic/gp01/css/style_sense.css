@@ -1,0 +1,81 @@
+	/*右下角廣告*/
+
+	.float_img {
+		color: #FFF;
+		font-size: x-large;
+		text-decoration: none;
+		padding: 2px 9px 2px 9px;
+		position: fixed;
+		bottom: 3%;
+		right: 1.5%;
+		border-radius: 8px;
+		z-index: 999;
+	}
+
+	.float_img_close_btn {
+		top: -14px;
+		left: -14px;
+		height: 28px;
+		position: absolute;
+		border: none;
+		display: block;
+		width: 28px;
+		background: url("../img/sensepic/float_img_close.png");
+	}
+
+	div#float_close>a div[data-img="01"] {
+		display: inline-block;
+		width: 185px;
+		height: 175px;
+		background-image: url("../img/sensepic/mw_slot.png");
+	}
+
+	div#float_close>a div[data-img="02"] {
+		display: inline-block;
+		width: 185px;
+		height: 175px;
+		background-image: url("../img/sensepic/mw_slot.png");
+	}
+	/*右下角廣告 END*/
+	/*右側廣告*/
+	/* 展開內容 */
+
+	.pollSlider {
+		position: fixed;
+		height: 162px;
+		background: #7c7c79;
+		width: 199px;
+		right: 0px;
+		margin-right: -200px;
+		z-index: 999;
+		top: 40%;
+		background-image: url("../img/common/service_r01.png");
+	}
+	/* 展開內容超連結處理 */
+
+	.pollSiderContent {
+		list-style: none;
+	}
+
+	.pollSiderContentli {
+		height: 54px;
+		width: 190px;
+		font-size: 16px;
+		display: table-cell;
+		vertical-align: middle;
+		color: #fbe0b1;
+		padding-left: 25px;
+		text-align: center;
+	}
+	/* 縮起來的按鈕 */
+
+	#pollSlider-button {
+		position: fixed;
+		width: 40px;
+		height: 163px;
+		right: 0px;
+		top: 40%;
+		z-index: 999;
+		background-image: url("../img/common/service_r02.png")
+	}
+	/*右側廣告 END*/

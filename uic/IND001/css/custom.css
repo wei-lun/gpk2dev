@@ -1,0 +1,94 @@
+/*
+----------------------------------------------------------------------------
+// Features:	顏色、圖片相關CSS集中至本檔
+// File Name:	root.css
+// ----------------------------------------------------------------------------
+*/
+/*---------------背景色-------------*/
+.hLinkBox{
+	background-color: var(--main);
+}
+body{
+    background-color: var(--main);
+}
+#main, #wrapper {
+    background-color: rgba(50, 50, 50, 0.5);
+}
+#header{
+	background-color: var(--main);
+}
+#header .hInner{
+    background: linear-gradient(0deg,rgba(0, 0, 0, 0.2),var(--main) 7%);
+}
+#footer {
+    background-color: var(--main);
+}
+/*-----------hLinkBox------------*/
+#header .hBox{
+    background: linear-gradient(180deg,rgba(255, 255, 255, 0.3),var(--main) 15%);
+    border-top: 1px solid transparent;
+}
+/*------------#header------------*/
+#header #gNavi li a {
+    color: var(--font);
+}
+#header .headlogin {
+    background-color: var(--main);
+}
+#header #gNavi li a.on, #header #gNavi li a:hover{
+    background: linear-gradient(0deg,rgba(248,250,45,.74118),var(--sub) 15%);
+}
+#header #gNavi.menu_for_member li a::before {
+    color: #fff;
+}
+#header h1 a{
+    color: #fff;
+}
+#header h1 a:hover span{
+    color: #fff;
+}
+/*--------morelink-------------*/
+@keyframes blinklink {
+    from {
+        color: var(--font);
+    }
+    to {
+        color: var(--sub);
+    }
+}
+/*-----------footer---------------*/
+#footer a{
+	color: var(--font);
+}
+#footer a:hover{
+	color: var(--font);
+}
+.f_paylogo {
+    background-color: rgba(235, 219, 206, 0.7);
+}
+.f_parlogo {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.f_morelink {
+    background-color: transparent;
+}
+#footer .f_nav{
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.footer div[align="right"] {
+    color: rgba(255, 255, 255, 0.4);
+    background-color:transparent; 
+}
+.footer{
+    border-top: 2px solid transparent;
+}
+/*-------------物件---------------*/
+#home .sense_banner01{
+    background: rgba(80, 80, 80, 0.6);
+}
+#home .link_item:nth-child(odd){
+    background-color: rgba(71, 71, 71, 0.6);
+}
+#home .link_item:nth-child(2n) {
+    background-color: rgba(53, 53, 53, 0.6);
+}

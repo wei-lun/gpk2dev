@@ -1,0 +1,1970 @@
+/*----------------全站主要樣式--------------------*/
+/*---作為開發使用時 import root.css 載入色彩變數 --*/
+/*--- 正式上線 請使用CSSnext 轉為 一般CSS檔使用 ---*/
+/*----------------------------------------------*/
+@import 'root.css';
+/*共通樣式*/
+@import '../../../../in/css/common.css';
+/*外掛*/
+@import '../../../../ui/component/gametab_gp05/gametab_gp05.css';
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/*標準色設定*/
+.btn-primary{
+	border-color: #bc9a6d!important;
+}
+.bg-primary{
+	background: #ad8351!important;
+	border-color: #bc9a6d!important;
+}
+.btn-primary.disabled, .btn-primary:disabled,
+.btn-primary.disabled:hover, .btn-primary:disabled:hover{
+	background: #ad8351;
+
+}
+
+.send_btn,
+.gold_key button.btn,
+.authentication_send,
+.btn-primary,
+.send_btn.de_com_bt{
+	background: #ad8351;
+	border-color: #bc9a6d;
+}
+a.bg-primary:focus, a.bg-primary:hover, 
+button.bg-primary:focus, 
+button.bg-primary:hover,
+.btn-primary:hover,
+.btn-primary:focus{
+    background-color: #bc9a6d!important;
+}
+.authentication_send:hover,
+.send_btn:hover{
+	background-color: #bc9a6d;
+}
+.w1110 {
+	width: 1110px;
+	margin: 0 auto;
+}
+.clear {
+	clear: both;
+}
+a {
+	text-decoration: none;
+	color: var(--dark-font);
+}
+p{
+	line-height: 1.5;
+}
+body {
+	font-size: 14px;
+	font-family: "Microsoft YaHei";
+	background-color: var(--light-bg);
+	color: var(--dark-font);
+	/*overflow-x: hidden;*/
+}
+#container {
+	text-align: left;
+}
+.clearfix:after {
+	height: 0;
+	visibility: hidden;
+	content: ".";
+	display: block;
+	clear: both;
+}
+img {
+	vertical-align: top;
+}
+.marquee a,.marqueebox .title{
+	color: #fff ;
+}
+#main .wrap {
+	width: 1000px;
+	margin: 0 auto;
+	position: relative;
+}
+#main{
+	margin-top: 165px;
+    padding: 10px 0;
+	min-height: 600px;
+}
+#home #main{
+	margin-top: 0px;
+	padding:0;
+}
+/*-------------------header---------------------*/
+#header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 999;
+}
+#header .hBox {
+	padding: 10px 0 10px;
+	background-color: var(--dark-bg);
+	z-index: 999;
+	position: relative;
+}
+#header .hBox .hInfo {
+	/* width: 1110px; */
+	width: 1200px;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin: 0 auto;
+}
+#header .hBox .hLink {
+	float: right;
+	z-index: 1000;
+	position: relative;
+	margin-top: 3px;
+}
+#header .hBox li {
+	margin-right: 10px;
+	/*float: left;修改*/
+	color: var(--sub-font);
+}
+#header .hBox li a {
+	margin-right: 10px;
+	color: var(--light-font);
+}
+#header .hBox li a:hover {
+	color: var(--link-hover);
+}
+#header .menu_admin .account-info{
+	min-width: 200px;
+    background-color: #887151;
+}
+#header .account_img span{
+	background-color: #fff;
+    color: #000;
+    border-radius: 50%;
+}
+#header .hInner {
+	background: var(--light-bg);
+}
+#header .hInner.home {
+	width:100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1000;
+}
+#header h1 {
+	margin: 0px 50px 0 0;
+    float: left;
+    height: 81px;
+    display: flex;
+    align-items: center;
+}
+#header h1 a{
+	display: flex;
+	align-items: center;
+}
+#header h1 a span{
+	margin-left: 5px;
+}
+#header h1 a:hover{
+	color: #000;
+}
+
+#header #gNavi {
+	/* float: right; */
+    /* width: 670px; */
+    margin: 0 -10px 0 220px;
+    flex-wrap: nowrap;
+}
+/* #header #gNavi.menu_for_member {
+	width: 670px;
+} */
+#header #gNavi li {
+	/*width: 85px;*/
+	float: left;
+	font-size: 14px;
+	text-align: center;
+	position: relative;
+}
+#header #gNavi li.navi01 {
+	width: 70px;
+}
+#header #gNavi li.navi08 {
+	margin-right: 0;
+}
+#header #gNavi li a {
+	padding: 50px 10px 15px;
+	display: block;
+	color: #382814;
+}
+#header #gNavi li a .txt {
+	margin-top: 7px;
+	display: block;
+	font-size: 12px;
+	color: #a0a0a0;
+}
+#header #gNavi li a.on,
+#header #gNavi li a:hover {
+	color: #fff;
+}
+#header #gNavi li.navi_more{
+	display: flex;
+	align-items: flex-end;
+	width: auto;
+}
+#header #gNavi li.navi_more a{
+	width: 100%;
+	padding: 0 10px;
+	margin-bottom:15px; 
+}
+#header #gNavi li.navi_more a:hover{
+	background-color: transparent !important;
+	text-decoration: underline; 
+}
+#header #gNavi>li.navi_more+.navi_more a{
+	border-left: 1px #382814 solid;
+}
+@keyframes blinklink {
+    from {
+        color: #382814;
+    }
+    to {
+        color: #d33024;
+    }
+}
+/*-----中間選單-----*/
+.main-menu li a:hover{
+	text-decoration: none;
+}
+#header .hInner{
+	height: 91px;/*INNER高度*/
+	overflow: hidden;
+}
+.logo img{
+	max-height: 65px;
+}
+.logo a:hover{
+	text-decoration:none;
+}
+/*-----登入後的會員中心 中間選單-----*/
+.menu_for_member li a span:nth-child(1){
+	display: none;
+}
+.menu_for_member li a{
+	position: relative;
+}
+.menu_for_member li a:hover{
+	background: var(--item-hover);
+}
+
+/*-----右上菜單 會員中心-----*/
+.account-info .account_img{
+    color: #fff;
+}
+/*--------右上菜單----------*/
+.menu_admin{
+	display: flex;
+	justify-content:flex-end;
+}
+.dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover{
+	background: none;
+}
+/*---------左上菜單-------*/
+.menu_top>li{
+	float: left;
+}
+#header .menu_top li{
+	display: flex;
+	align-items: center;
+}
+.dropdown-lang{
+	position: relative;
+}
+#header #head_member_menu{
+	border: 1px #ffffff57 solid;
+	background-color: var(--dropmenu);
+}
+.menu_language{
+	display: flex;
+	float: left;
+}
+.dropdown-lang{
+	float: left;
+}
+/*-------非首頁header登录---start----------------*/
+.headlogin {
+	background-color: var(--head-bg);
+}
+#login2page .headlogin{
+	background: none;
+}
+#login2page #main{
+	margin-top: 133px;
+}
+.headlogin .newSection {
+	width: 400px; /*修改*/
+	float: left;
+	background: none;
+	position: absolute;
+	top:0;
+	left: 0;
+	height: 40px;
+	overflow: hidden;
+	/*margin-left: -300px;修改*/
+}
+.headlogin .login-table-on,.headlogin .login-table{
+	margin-left: 400px;
+}
+.headlogin .newSection .newsBox {
+	margin: 0;
+	width: 250px;
+}
+.headlogin .newSection .newsBox dt {
+	font-weight:normal;
+}
+.headlogin .newSection .newsBox dd {
+	padding: 0 0 0 90px;
+}
+.headlogin .newSection dt {
+	line-height: 42px;
+}
+.headlogin .newSection dd li {
+	line-height: 42px;
+}
+.headlogin .rform {
+	margin: 5px 0;/*修改*/
+	position: relative;
+}
+.headlogin input {
+ 	background-color: #6E4F26;
+    border: 1px solid #6E4F26;
+	width: 110px;
+	height: 30px;
+	line-height: 24px;
+	color: #fff;
+	padding-left: 10px;
+	float: left;
+	font-size: 12px;
+}
+.headlogin input::-webkit-input-placeholder{color:#818181;}
+.headlogin input::-moz-placeholder{color:#818181;opacity:1;}
+.headlogin input:-moz-placeholder{color:#818181;opacity:1;}
+#login2page input::placeholder,
+.form-control::placeholder{
+	color: #818181;
+}
+.headlogin input:focus {
+	border: 1px solid #ffd053;
+	transition: all 0.4s;
+}
+.headlogin .formUl{
+	margin-bottom: 0;
+}
+.headlogin .formUl li {
+	float: left;
+	margin-right: 6px;
+	position: relative;
+}
+
+/*-----非首頁的未登入上方登入介面-----*/
+/*
+.headlogin .login-table tbody tr td{
+	padding: 0 5px;
+}*/
+.headlogin #preview_status{
+    position: fixed;
+    top: 130px;
+    background-color: rgba(208, 50, 45,0.8);
+    color:#fff;
+    border-radius: 4px;
+    line-height: 20px;
+    letter-spacing: 1px;
+}
+/*-----非首頁的已登入上方登入介面-----*/
+/*
+.headlogin .login-table-on tbody{
+	display: flex;
+}
+.headlogin .login-table-on tbody tr{
+	margin: 0px 5px;
+}
+.headlogin .login-table-on tbody tr:nth-child(1) td>div{
+	width: 180px !important;
+}
+.headlogin .login-table-on tbody tr:nth-child(2) td>div{
+	width: 180px !important;
+}
+.headlogin .login-table-on tbody tr:nth-child(2) td:nth-child(1){
+	width: auto !important;
+	padding: 0 !important;
+	position: absolute;
+	top: 0;
+}
+.headlogin .login-table-on tbody tr:nth-child(2) td:nth-child(1) div{
+	width: auto !important;
+	left: 0px;
+}
+.login-table-on tbody tr:nth-child(1) .btn-after-login{
+	width: 180px !important;
+}
+.login-table-on button{
+	background-color: rgba(255,255,255,0.1);
+	color: #fff;
+}*/
+/* #header .login-table-on .after-login-info{	    
+    background-color: #f1e9e09e;
+} */
+#header .login-table-on .btn-after-login{
+	background-color: #f1e9e09e;
+	border-color: transparent;
+}
+#header .login-table-on #submit_to_chpassword{
+	background-color: #3e2a0f;
+	border-color: #3e2a0f;
+}
+#header .login-table-on>div:nth-child(3),
+#header .login-table-on>div:nth-child(4),
+#header .hBox li.dropdown>a,
+#header .hBox li.dropdown,
+#header .hBox .topreturn,
+#header .hBox .topreturn a{
+	margin-right: 0;
+}
+.tooltip{
+	position: fixed;
+	z-index: 9999;
+}
+#member #submit_to_register{
+	border-radius: 25px
+}
+#register table tr th i {
+	color: #dc3545;
+	margin-right: 5px;
+}
+/*-------footer-----start--------------*/
+.footer {
+	overflow: hidden;
+	background-color: var(--footer-bg);
+}
+.footer .wrap {
+	width: 1000px;
+	margin: 0 auto;
+}
+.footer .fBox {
+	margin-bottom: 15px;
+	padding: 30px 0 10px;
+	border-bottom: 1px solid #7C4D37;
+	background-color: #5C3824;
+}
+.footer .fImg {
+	margin-bottom: 20px;
+	text-align: center;
+}
+.footer div[align="right"]{
+	text-align: right;
+	color: var(--footer-dark-font);
+}
+.footer a{
+	color: var(--footer-font);
+}
+.nav>li>a:focus, .nav>li>a:hover {
+    text-decoration: none;
+    background:none;
+}
+.footer .nav>li>a:hover {
+    color: var(--link-hover);
+}
+
+/*-------首页大图登录-----start--------------*/
+
+/*-----首頁大圖BANNER-----*/
+.mainImg a:hover{
+	text-decoration: none;
+}
+.login {
+	padding: 20px 20px 20px;
+	margin: 0 auto;
+	width: 250px;
+	height: 313px;
+	overflow: hidden;
+	position: absolute;
+	top:52px;
+	right: calc(50% - 500px);
+	box-sizing: border-box;
+}
+.login p {
+	height: 38px;
+	line-height: 38px;
+	margin-bottom: 8px;
+	position: relative;
+}
+.login .img {
+	position: absolute;
+	top: 17px;
+	left: 10px;
+}
+.login .p05 {
+	margin: 0;
+	color: #fff;
+	height: auto;
+	line-height: inherit;
+}
+.login .p05 a {
+	margin: 0 24px;
+	display: inline-block;
+	font-size: 12px;
+	color: #fff;
+	position: relative;
+}
+.login .p05 a:hover {
+	color: var(--highlight);
+}
+.login .p05 .shiwan:before {
+	content:"";
+	position: absolute;
+	top: 4px;
+	height: 6px;
+	width: 1px;
+	right: -25px;
+	background-color: #FFF;
+}
+/*-------登录后-----------------*/
+/*共通*/
+/*
+.login-table-on tbody>tr:nth-child(2)>td:nth-child(1)>div>div{
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+.login-table-on{
+	text-align: center;
+}
+#home .login-table-on a{
+	color: #fff;
+}*/
+/*-----首頁的會員登入介面-----*/
+#home .login{
+	background: none;
+	background-color: rgba(0,0,0,0.6);
+	border-radius: 10px;
+}
+#home .login-title{
+	color: #fff;
+	font-size: 24px;
+}
+#home .login-table>div{
+	margin-bottom: 1em;
+}
+#home .login-table>div input{
+	width: 210px;
+    padding-left: 30px;
+    height: 34px;
+    line-height: 34px;
+    border: none;
+    color: #fff;
+    font-size: 12px;
+    display: block;
+    background-color: transparent;
+    border: 1px solid #5E696D;
+    margin-bottom: 7px;
+}
+.login .login-table>div{
+	position: relative;
+}
+.login .login-table>div::before{
+    font-family: Font Awesome\ 5 Free;
+    font-weight: 900;
+    content: '';
+    font-size: 18px;
+    position: absolute;
+    color: #afb8bb;
+    top: 0;
+    line-height: 34px;
+    left: 6px;
+}
+.login .login-table>.login-table-account-td:before{
+    content: '\f2bd';
+}
+.login .login-table>.login-table-password-td::before{
+    content: '\f13e';
+}
+.login .login-table>.login-table-verification-td::before{
+    content: '\f084';
+}
+.login-table-login-btn-td a{    
+    color: #fff;
+    -webkit-appearance:unset;
+    border: 1px #fff solid;
+}
+
+.login-table-login-btn-td a:hover{
+	color: #fff;
+}
+.login-table-login-btn-td a:focus{
+	color: #fff;
+}
+#home #show_captcha{
+    position: absolute;
+    z-index: 50;
+}
+/*
+.login .login-table tbody td{
+	margin: 7px 0px;
+	display: block;
+}
+.login>.login-table>tbody>tr>td>div>input{
+    width: 210px;
+    padding-left: 30px;
+    height: 34px;
+    line-height: 34px;
+    border: none;
+    color: #fff;
+    font-size: 12px;
+    display: block;
+    background-color: transparent;
+    border: 1px solid #5E696D;
+    margin-bottom: 7px;
+}
+.login>.login-table>tbody>tr>td{
+	position: relative;
+}
+*/
+/*
+.login>.login-table-on>tbody>tr>td{
+	display: block;
+	width: 210px !important;
+	margin: 10px 0px;
+}
+.login .btn-after-login{
+	width: 210px !important;
+}*/
+/*
+.login-table-login-btn-td{
+	text-align: center;
+}
+.login-table-login-btn-td a{
+    margin-top: 10px;
+    color: #fff;
+    -webkit-appearance:unset;
+}
+.login-table-login-btn-td a:hover{
+	color: #fff;
+}
+.login-table-login-btn-td a:focus{
+	color: #fff;
+}
+#home #show_captcha{
+    position: absolute;
+    top: 4px;
+    right: 14px;
+    z-index: 50;
+}
+#show_captcha>img{
+	background-color: #fff;
+}
+.login-table-login-btn-td a{
+	border: white 1px solid;
+    box-sizing: border-box;
+    margin: 0 5px;
+}*/
+#home .login #preview_status{
+	color: #f4d15c;
+}
+/*------------首頁會員已登入--------------------*/
+#home .login-table-on{
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#home .login-table-on>div{
+	margin-bottom: 1em;
+}
+#home .login-table-on .after-login-account{
+	order: -1;
+}
+#home .login-table-on .after-login-info{
+	display: flex;
+    padding: .5em;
+    order:-1;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#home .login-table-on .after-login-info a{
+	color: #fff;
+}
+#home .login-table-on .account-notice{
+	width: 210px;
+	margin-bottom: 1em;
+}
+#home .login-table-on .after-login-account{
+	width: 100%;
+}
+#home .login-table-on .after-login-account .btn-after-login{
+	width: 100%;
+	background-color: transparent;
+	border-color: transparent;
+	color: #fff;
+	border-bottom-color: #fff;
+}
+#home .login-table-on #submit_to_chpassword {
+    background-color: #daa12b;
+    border-color: #daa12b;
+    color: #000;
+}
+/*------公告-----------------------*/
+#home .headbottom .newSection {
+	display: none;
+}
+.newSection {
+	height: 40px;
+	position: relative;
+}
+#home .newSection {
+	background: var(--dark-bg);
+	    margin-top: -1px;
+}
+
+/*------home-----------------------*/
+#home .mainImg {
+	margin-top: 112px;
+	position: relative;
+	text-align: center;
+}
+#home .mainImg .lunLink {
+	position: absolute;
+	display: block;
+	top: 0;
+	left: 0;
+	height: 450px;
+	width: 100%;
+}
+/*-----------------section01-------------------*/
+
+
+/*--------------------section02---------------------*/
+#home .section02 {
+	padding:30px 0 30px;
+	box-sizing: border-box;
+	background: #F1E9E0 url(../img/home/bg02.jpg) no-repeat center top;
+	overflow: hidden;
+}
+#home .section02 .photoUl>li {
+	float: left;
+	margin-right: 20px;
+	/*background: url(../images/index/li_bg.jpg) no-repeat center top;*/
+	width: 235px;
+	box-sizing: border-box;
+	position: relative;
+	cursor: pointer;
+}
+#home .section02 .photoUl  {
+	width: 1020px;
+	margin: 0 -20px 13px 0;
+	overflow: hidden;
+	position: relative;
+}
+#home .section02 .photoUl a {
+	display: block;
+	position: relative;
+}
+#home .section02 .photoUl .title {
+	text-align: center;
+	margin-bottom: 15px;
+}
+#home .section02 .photoUl .photo {
+	width: 235px;
+	height: 260px;
+	overflow: hidden;
+}
+#home .section02 .photoUl li .photo img {
+	transition: all 0.4s;
+}
+#home .section02 .photoUl li a:hover .photo img {
+	transform: scale(1.1);
+}
+#home .section02 .photoUl li .hov {
+	width: 235px;
+	height: 260px;
+	padding-top: 100px;
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	text-align: center;
+	box-sizing: border-box;
+	z-index: 200;
+	border: 2px solid #F2C770;
+	background: url(../img/home/hov_bg.png) repeat center top;
+}
+#home .section02 .photoUl li .hov span {
+	display: block;
+	font-size: 13px;
+	color: #F2C770;
+	margin-top: 10px;
+}
+#home .section02 .photoUl li a:hover .hov {
+	display: block;
+}
+#home .section02 .photoUl li .ttl {
+	background: url(../img/home/text_bg.png) no-repeat center top;
+	width: 190px;
+	margin: -45px auto 0;
+	font-size: 16px;
+	font-weight: bold;
+	height: 45px;
+	line-height: 45px;
+	text-align: center;
+	position: relative;
+}
+#home .section02 .photoUl li .text {
+	text-align: center;
+	color: var(--dark-font);
+}
+/*-------------breadcrumb--------------*/
+
+.breadcrumb {
+	background-color: #3e290f54;
+    border: 1px solid #ad835154;
+	padding: 8px 0;
+	line-height: 20px;
+	margin: 20px 0;
+}
+
+.breadcrumb span {
+	font-size: 13px;
+}
+
+.breadcrumb>li,.breadcrumb>li a{
+	padding: 0 15px;
+	position: relative;
+	/*text-shadow: 0 1px 0 #fff;*/
+	white-space: nowrap;
+	line-height: 19px !important;
+	color: #fff;
+	font-size: 0.75rem;
+}
+
+.breadcrumb>li+li::before {
+	content: "";
+	padding: 0;
+}
+
+.breadcrumb>li::after {
+	border-bottom: 1px solid #ad8351;
+	border-right: 1px solid #ad8351;
+	content: "";
+	display: block;
+	height: 26px;
+	position: absolute;
+	right: -5px;
+	top: -3px;
+	transform: rotate(-45deg);
+	width: 26px;
+}
+/*--------------文字部分(static)------------------*/
+#static #main h2,#static #main h3,.agent_ins h3{
+	color: var(--highlight) ;
+}
+/*
+#static #main .breadcrumb{
+	margin: 0px;
+	border-radius: 4px 4px 0 0;
+	background-color: var(--page-border);
+	border: 1px solid var(--page-line);
+    border-bottom: 0px;
+}*/
+#static #main .panel{
+	border-radius: 0 0 4px 4px;
+	border: 0px;
+}
+#static #main p{
+	line-height: 25px;
+}
+#static #main ol li{
+	list-style:decimal ;
+}
+
+#static #main .panel-body ol,#static #main .panel-body ul{
+	padding-left: 35px;
+	margin: 10px 0;
+}
+#static #main li{
+	line-height: 30px;
+}
+#static .pages {
+	padding: 15px 0;
+	border: 1px solid  #f1e9e0;
+  background-color:  #f1e9e0;
+}
+#static .pages table{
+	background-color: #ececec;
+}
+.pages,
+#member .panel{
+	background: #f1e9e0;
+	border:1px solid #f1e9e0;
+	padding: 2rem 0;
+}
+.sidebar_menu{
+	width: 203px;
+}
+.sidebar_menu li{
+	background: transparent;
+    margin: 0;
+	border-radius: 0;
+}
+.sidebar_menu li:last-child a{
+    border-bottom: none;
+}
+.sidebar_menu li {
+	color: #6A4E28;
+}
+.sidebar_menu li.active a,.sidebar_menu li a:hover{
+	text-decoration: none;
+}
+.sidebar_menu li a{
+	color: #333;
+}
+#admin .card:nth-child(1){
+	border: 0;
+	background-color: transparent;
+}
+#admin .card:nth-child(1) .card-header{
+	color: #d3ae76;
+}
+/* --------------------gamelobby------------------------- */
+#gamelobby #casinotab.nav>li{
+	cursor: pointer;
+}
+#gamelobby .items span {
+	color: #2E1C13;
+	background-color: rgba(255,255,255,0.5);
+}
+.items span:hover, .items span.selected {
+    background: #c39d6d none repeat scroll 0 0 !important;
+}
+#gamelobby #main .title{
+	color: #fff;
+}
+#gamelobby #casinotab.nav>li.active>a{
+	color: #ffead2;
+}
+#gamelobby .myagencyarea_title{
+	border: none;
+}
+#casino-next{
+	right: -45px;
+}
+#casino-pre{
+	left: -45px;
+}
+/* 遊戲分類選單 icon */
+#header #gNavi{
+	position: relative;
+}
+#header #gNavi li.navi_Live a::before{
+	top: 13px;
+}
+/* 棋牌 icon */
+#header #gNavi li.navi_Chessboard a::before {
+	font-family: "Glyphicons Halflings";
+	content: "\e212";
+	font-size: 24px;
+}
+#header #gNavi li.navi_Sport a::before{
+	content: "\F805";
+	font-size: 24px;
+	font: normal normal normal 24px/1 "Material Design Icons";
+}
+/*----------------promotion-----------------*/
+#static #main .div_show{
+	background: #b0a086;
+	padding: 10px 15px;
+}
+#static #main .div_show table{
+	width: 100% !important;
+}
+#static .panel a{
+	color: #c55129;
+}
+#static .panel a:hover{
+	color: #ff0000;
+}
+/*----------------announcement------------------*/
+.pages .recievemoneyTable{
+	background: transparent;
+}
+.li_list li a ,.recievemoneyTable tr,#promotionsTableBody .title_h2{
+    color: #444444;
+}
+.li_list>li>a:hover,.li_list>li>a:focus ,.recievemoneyTable tr:hover{
+    color: #000;
+}
+.li_list li a i.head {
+    color: #ad4b55;
+}
+.announcement_time ,.li_list li a i,#promotionsTableBody li i{
+    color: #ad8351;
+}
+/*-----------充值deposit--------------*/
+#admin .pages .deposit-card .card-header{
+	color: #212529;
+}
+/*----------------交易明細、投注明細-----------------*/
+#transactionDataTable,#betTable{
+	background: transparent;
+}
+#transactionDataTable tbody tr,#betTable tbody tr td{
+	color: #3E290E;
+}
+/*------------------- animate.css 動畫 for home-----------------*/
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+.animated.flip {
+  -webkit-backface-visibility: visible;
+  -ms-backface-visibility: visible;
+  backface-visibility: visible;
+  -webkit-animation-name: flip;
+  animation-name: flip;
+}
+
+@-webkit-keyframes flipInX {
+  0% {
+    -webkit-transform: perspective(400px) rotateX(90deg);
+    transform: perspective(400px) rotateX(90deg);
+    opacity: 0;
+  }
+
+  40% {
+    -webkit-transform: perspective(400px) rotateX(-10deg);
+    transform: perspective(400px) rotateX(-10deg);
+  }
+
+  70% {
+    -webkit-transform: perspective(400px) rotateX(10deg);
+    transform: perspective(400px) rotateX(10deg);
+  }
+
+  100% {
+    -webkit-transform: perspective(400px) rotateX(0deg);
+    transform: perspective(400px) rotateX(0deg);
+    opacity: 1;
+  }
+}
+
+@keyframes flipInX {
+  0% {
+    -webkit-transform: perspective(400px) rotateX(90deg);
+    -ms-transform: perspective(400px) rotateX(90deg);
+    transform: perspective(400px) rotateX(90deg);
+    opacity: 0;
+  }
+
+  40% {
+    -webkit-transform: perspective(400px) rotateX(-10deg);
+    -ms-transform: perspective(400px) rotateX(-10deg);
+    transform: perspective(400px) rotateX(-10deg);
+  }
+
+  70% {
+    -webkit-transform: perspective(400px) rotateX(10deg);
+    -ms-transform: perspective(400px) rotateX(10deg);
+    transform: perspective(400px) rotateX(10deg);
+  }
+
+  100% {
+    -webkit-transform: perspective(400px) rotateX(0deg);
+    -ms-transform: perspective(400px) rotateX(0deg);
+    transform: perspective(400px) rotateX(0deg);
+    opacity: 1;
+  }
+}
+
+.flipInX {
+  -webkit-backface-visibility: visible !important;
+  -ms-backface-visibility: visible !important;
+  backface-visibility: visible !important;
+  -webkit-animation-name: flipInX;
+  animation-name: flipInX;
+}
+/*-----------充值deposit--------------*/
+.deposit_center .deposit_method, .wallets_list_div{
+	width: 360px;
+}
+.deposit_center{
+	color: #563726;
+}
+.deposit_center .title, 
+.deposit_center .title p,
+.deposit_center .wallets_content p,
+.account_balance_title div#total_b{
+	color: #787878;
+}
+#deposit_company .deposit-card.company table td{
+	background: none;
+}
+#deposit_company .deposit-card.company table tr:first-child td{
+	border-top: 1px solid #555;
+}
+.de_companytitle{
+	font-size: 17.5px;
+	color: #563726;
+}
+/*----------------交易明細、投注明細-----------------*/
+#transactionDataTable,#betTable{
+	background: transparent;
+}
+#betTable tbody tr{
+	background: #ffffff17;
+}
+/*----------------站內信-----------------*/
+.pages table.table_liststyle,
+.pages table.member_table,
+.pages table.stationmail_list{
+	background: none;
+}
+.renew_btn{
+	height: 29px;
+}
+/*----------------model-----------------*/
+.modal-header,
+.modal-body,
+.modal-header .mail-detail-title-word{
+	color: #222;
+}
+/*------------首頁登入---------------*/
+/* #header .login-table{
+	width: 527px;
+} */
+/*------------邀請碼---------------*/
+input.spread_input_style + label{
+	color: #563726;
+}
+/*------------站內信---------------*/
+table.stationmail_list th,
+table.stationmail_list td{
+	color: #563726;
+}
+
+/*公告*/
+.announcement_content{
+	border:0;
+}
+.table_form2.table{
+	border: 1px solid #6c6c6c;
+}
+
+#stationmail_mail .inbox-subject,
+.table.stationmail_list td,
+#testArea .table_form2 td a,
+#testArea .table_form2 td a i,
+#testArea .table_form2 tr:hover td a,
+.stationmail_list tbody tr.no_data td,
+#betTable.table.table_from4 tr{
+	color: #333;
+}
+.nav-tabs .nav-item,
+.nav-tabs .nav-link.active,
+input.spread_input_style+label,
+input.spread_input_style:checked+label,
+.nav-tabs>li>a{
+	width: 281px;
+}
+#member_receivemoney .nav-tabs .nav-item{
+	width: 186px;	
+}
+#stationmail_mail .inbox-data-row:hover,
+#stationmail_mail .sent-data-row:hover,
+.announcement_content tr:hover,
+table.dataTable.table_liststyle tbody tr:hover td,
+#betTable tbody tr:hover,
+.spreadregister tbody tr:hover,
+#promotionsTableBody .promotion_row:hover{
+	box-shadow: none;
+	background: #ebceb5;
+}
+.btn.focus:focus, 
+.btn:focus:focus,
+.form-control:focus,
+.btn-primary:not(:disabled):not(.disabled):active:focus{
+	box-shadow: none;
+}
+.nav-tabs .nav-item:focus,
+.nav-tabs .nav-item,
+input.spread_input_style+label,
+input.spread_input_style:checked+label,
+.nav-tabs>li>a,
+.nav-tabs .nav-link:focus{
+ border-right: 1px solid #3e290e;
+}
+.nav-tabs .nav-item:last-child,
+.nav-tabs>li:last-child>a{
+	border-right:  none;
+}
+.register_add,
+#register_agenthelp,
+.main_content,
+.filter_list_button,
+#outbox-view,
+.nav-tabs .nav-item.show .nav-link,
+#stationmail_mail .nav-tabs,
+#member_receivemoney .nav-tabs,
+.parner .nav-tabs,
+.register_help,
+#stationmail_mail .tab-content .col-12,
+#member_receivemoney .tab-content .col-12,
+.parner .tab-content #franchise_id,
+.parner .tab-content #partner_id,
+#mo_translog .table_content,
+#moa_betlog .table_content,
+#promotionsTableBody,
+#member .panel{
+	border: 1px solid #9c886f;
+}
+.filter_list_button {
+    border-top: 0;
+}
+.nav-headerbuttonpc,
+#stationmail_mail .refresh-btn>div{
+	border-right: 1px solid #6f6f6f;
+}
+.nav-headerbuttonpc{
+	color: #5e5e5e;
+}
+.parner .nav-tabs,
+.register_help{
+	background: rgba(255, 255, 255, 0.12157);
+}
+#outbox-view,
+.table.stationmail_list tr{
+	background: none;
+}
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active,
+#static .parner .nav-tabs>li.active>a{
+	background-color:  #ad8351;
+	border-color:  #ad8351;
+}
+#static .parner .nav-tabs>li.active>a{
+	border: 0;
+}
+.member_management_table table.table_liststyle thead tr:first-child,
+.spreadregister .table.table_liststyle .row th,
+table.dataTable.table_liststyle thead tr:first-child,
+#show_list thead tr{
+    background:#e0c4aa;
+}
+#promotionsTableBody .promotion_row,
+.table.stationmail_list tr,
+.table.table_from4 tr,
+.table.table_from6 tr,
+.table.table_liststyle tr,
+.table_form2 td,
+.table_from6 tr,
+table.dataTable.table_liststyle tbody tr,
+table.dataTable.table_liststyle thead tr,
+.table.stationmail_list tr{
+	border-bottom: 1px solid #6c6c6c;
+	background: none;
+}
+/*Tab背景*/
+.tablehead,
+.filter_list_button,
+#member_receivemoney .nav-tabs,
+#stationmail_mail .nav-tabs,
+#static .pages .nav-tabs>li>a{
+	background:  #f1e9e0;
+}
+
+/*通用*/
+#stationmail_mail .tab-content .col-12,
+#member_receivemoney .tab-content .col-12,
+.parner .tab-content #franchise_id,
+.parner .tab-content #partner_id,
+.spreadregister .linkDataAreaBody,
+.member_management_table .dataTables_wrapper>.row:nth-child(2),
+.member_management_table,
+.main_content,
+.register_add,
+#register_agenthelp,
+#mo_translog .table_content,
+#moa_betlog .table_content,
+#promotionsTableBody,
+#member .panel-body,
+#admin .deposit-card,
+#casino-next, 
+#casino-pre{
+	background: none;
+}
+.stationmail_list td,
+.table.table_liststyle td,
+.table.table_liststyle th {
+    height: auto;
+    padding: 17px .75rem;
+}
+.send_btn {
+	margin-top: 16px;
+}
+.modal-body,
+.modal-text,
+.modal-title{
+	color: #333;
+}
+.modal_contentstyle .modal-time {
+  color: #939393;
+}
+#receiveAllMoney.btn-primary{
+	border:0;
+}
+.member_management_table .search .form-control{
+	width: 540px;
+}
+/*個人訊息*/
+.stationmail_list tr td,
+.stationmail_list tr th,
+table.dataTable.agencyarea_table thead tr th,
+table.dataTable.agencyarea_table tbody tr td,
+table.dataTable.table_liststyle  thead tr th,
+table.dataTable.table_liststyle  tbody tr td,
+.agencyarea_summary th,
+.agencyarea_summary td,
+.table.table_liststyle th,
+.table.table_liststyle td,
+#deposit_company table td,
+#step1_bank_select table td,
+.deposit_status th,
+.deposit_status td,
+.table.table_from4 td,
+.stationmail_list tr th,
+.stationmail_list tr td a,
+.table_form2 tr td a,
+.member_table tr th,
+.member_table tr td,
+.authentication_text,
+.return_table_table .account .col-4 .btn_info,
+.no_data_style p,
+.register_agent_accordion input.form-control, 
+.register_agent_accordion select.form-control,
+.application_button p,
+.application_input div,
+#promotionsTableBody time,
+.announcement_time,
+.return_table_table .dataTables_wrapper .dataTables_info,
+.return_table_table .dataTables_length label,
+#static .pages .pages-content p.no_data_p{
+	color: #333;
+}
+/*銀行卡*/
+.table-success, 
+.table-success>td, 
+.table-success>th{
+	background: #527259;
+}
+#admin .well.well-sm, 
+#transaction_list_wrapper th,
+#transaction_list th:nth-child(2), 
+#transaction_list th:nth-child(3){
+	color: #828282;
+}
+table.dataTable.agencyarea_table tbody tr{
+	background: none;
+}
+.login2-pc-m-logonbox #preview_status{
+	color: #dc3545;
+}
+/*-----------------通用-----------------*/
+.table.table_from4 tr:last-child,
+.table.table_from4 tr:last-child,
+.table.table_liststyle tr.no_data,
+.table.table_from6 tr.no_data,
+.table_from6 tr.no_data,
+.filter_list_button{
+	border-bottom:0;
+}
+#announcementTitle.modal-title{
+	color: #FFF;
+}
+.pages table tr{
+	background: none;
+}
+.table.table_from4 tr td:nth-child(3), 
+.table.table_from4 tr td:nth-child(4), 
+time{
+	color: #787878;
+}
+#gamelobby #casinotab,
+#gamelobby .gameitem{
+	background: #3e290e;
+}
+.roleicon-circle,
+.step_rounded{
+	border-color: #563726;
+}
+#sider-deposit-center .sider-member-txt span{
+	line-height: 22px;
+}
+.gold_key button.btn{
+	background: #c39d6d;
+}
+button.send_btn:disabled{
+	background-color: #696969!important;
+	border-color: rgba(76, 133, 190, 0.2)!important;
+	opacity: 0.5;
+}
+.token_au_content{
+	background: #ebceb5;
+}
+#register .table td, 
+#register .table th,
+.nav-tabs>li.active>a:focus,
+#admin .pages .deposit-card .card-header{
+	border: none;
+}
+#register .table th.col-2{
+	line-height: 44px;
+}
+.well{
+	padding: 10px 19px;
+	color: #0c5460;
+    background-color: #d1ecf1;
+    border-color: #bee5eb;
+}
+.help_register, .spread_btn, button#receiveAllMoney{
+	background-image: linear-gradient(to bottom, #e7ab76, #e48430);
+}
+.application_button,
+.application_p{
+	background: rgba(0,0,0,0.03);
+	border-color: #ad8351; 
+}
+.table_from6 tr td .btn-outline-secondary.disabled,
+.table.table_from4 tr td .btn-outline-secondary.disabled, 
+.table.table_from4 tr td .btn-outline-secondary:disabled
+.table.table_from6 tr td .btn-outline-secondary.disabled, 
+.table.table_from6 tr td .btn-outline-secondary:disabled,
+#stationmail_mail #delete-mails, 
+#stationmail_mail .renew_btn{
+	color: #5d5d5d;
+}
+
+#header .hBox li a,
+#header #head_member_menu .btn-logout,
+.reload_balance .badge,
+#header .menu_admin .account-info,
+.deposit-card .form-control,
+.return_table_table .account .col-4 .btn_info{
+	font-size: 14px;
+}
+.member_table tbody tr td input::placeholder,
+.div_from2input>div input::placeholder,
+.pen_icon,
+input.form-control::placeholder,
+.spread_add_style input.form-control::placeholder{
+    color: #818181;
+}
+.btn-default,
+.btn-default:hover{
+	font-size: 14px;
+	color: #fff;
+	background: #1f1f1f;
+	padding: .475rem 24px;
+}
+.filter_list_button .btn-outline-secondary,
+.member_management_table .search #search_send{
+	background: #31210b;
+}
+.return_table_table .account .col-4 .btn_info{
+	line-height: 1.4;
+}
+#deposit_company table td{
+	padding: 10px 0;
+}
+.filter_function_content{
+	background: #543e1f;
+	color: #fff;
+}
+#deposit_company table:first-child th{
+    display: flex;
+    align-items: center;
+}
+#deposit_company table th:first-child .alert-danger{
+	margin-left: 20px;
+}
+.breadcrumb>li::after{
+	height: 24px;
+}
+/* --------------------- 文字 --------------------- */
+/* 主色文字 */
+input.spread_input_style:checked+label,
+.nav-tabs .nav-item.active:hover,
+.nav-tabs .nav-link.active,
+.sidebar_menu li.active a,
+#gamelobby #casinotab li a[aria-expanded*="true"], 
+#gamelobby #casinotab li a[attr-open*="true"],
+#gamelobby #casinotab.nav>li.active>a{
+	color: #804907;
+}
+/* 一般黑色文字 */
+#show_list_wrapper .dataTables_filter label,
+#show_list_length label,
+.promotion_activity_box #act_promotion_number,
+.spread_add_style .form-control,
+.arc_style tr td input:focus,
+.arc_style tr td input,
+.de_company_atm tr td input,
+.de_company_atm tr td input.form-control:focus,
+#deposit_company table th,
+#register_agenthelp .form-control, 
+a.back_prev,
+input.spread_input_style+label:hover,
+.step_rounded,
+.authentication_select input, 
+.authentication_select input:focus, 
+.authentication_select select,
+.nav-tabs .nav-item:hover,
+.nav-tabs .nav-item,
+input.spread_input_style+label,
+input.spread_input_style:checked+label,
+.nav-tabs>li>a,
+#login2page input,
+#login2page .form-group label,
+.gamename_content,
+#gamelobby #casinotab li a[aria-expanded*="false"],
+#gamelobby .info-lb2 .label,
+#gamelobby #casinotab li a,
+.parner .nav>li>a:hover,
+.nav>li>a:hover,
+.nav-tabs>li>a {
+	color: #333;
+}
+.gameitem{
+	color: #333!important;
+}
+/* 白色 */
+.de_com_footer .nav>li>a:hover,
+.member_management_table .search #search_send,
+#gamelobby .items span:hover,
+#gamelobby .items span.gt.selected{
+ color: #FFF;
+}
+/* 淡色文字 - 返回 */
+a.back_prev.btn-secondary:not(:disabled):not(.disabled).active,
+a.back_prev.btn-secondary:not(:disabled):not(.disabled):active,
+a.back_prev.show>.btn-secondary.dropdown-toggle,
+a.back_prev,
+a.back_prev.btn-secondary:hover{
+	color: #c5a987;
+}
+/* 灰色文字 無資料 */
+.no_data_style,
+.no_data_style p,
+#betTable tr.no_data td p{
+ color: #ada9a5;
+} 
+.authentication_text a{
+	color: #5787b9;
+}
+/* --------------------- 線條 --------------------- */
+.wallets_list_div,
+.deposit_list_method .deposit_method:after,
+.nav-tabs .nav-item:hover,
+.nav-tabs .nav-item:focus,
+.table.stationmail_list tr,
+.table.stationmail_list tr.unread,
+.nav-tabs .nav-link.active,
+.table.table_from6 tr,
+#betTable.table.table_from4 tr,
+.table.table_from4 tr,
+.nav-tabs .nav-item,
+.table_form2.table,
+.announcement_content tr,
+.info-lb2,
+.sidebar_menu li a,
+.parner .nav>li>a:hover,
+.nav-tabs>li>a{
+	border-color: #9c886f;
+}
+.promotions.filter_list_button{
+ border-top: #9c886f solid 1px;
+}
+/* 淡色線條 */
+.token_au_content .row,
+.token_list tbody tr td,
+.cash_withdrawals .arc_style.gcash_style tr:nth-of-type(1),
+.arc_style tr,
+.bank_ac_content .arc_style tr:nth-of-type(1),
+#promotionsTableBody .promotion_row, 
+input.spread_input_style+label,
+table.dataTable.table_liststyle thead tr,
+.return_table_table .account .col-4:nth-child(2),
+.account_balance,
+.request_form .arc_style tr:nth-of-type(1),
+#step1_bank_select table td,
+.game_cu_awal .arc_style.gcash_style tr:nth-of-type(1),
+#deposit_company table th,
+#deposit_company table td,
+#deposit_company .deposit-card.company table tr:first-child td,
+.application_button,
+.application_p,
+a.back_prev.btn-secondary:not(:disabled):not(.disabled).active,
+a.back_prev.btn-secondary:not(:disabled):not(.disabled):active,
+a.back_prev.show>.btn-secondary.dropdown-toggle,
+a.back_prev,
+a.back_prev.btn-secondary:hover,
+.table.table_liststyle tr{
+	border-color: #cab194;
+}
+.nav-headerbuttonpc{
+	border-right: solid 1px #cab194;
+}
+.return_table_table .account{
+	border-top: #cab194 solid 1px;
+}
+/* hover active */
+input.spread_input_style:checked+label{
+	border-color:#f4dec5  #9c886f #f4dec5 #f4dec5;
+}
+.nav-tabs .nav-item{
+	border-right: #9c886f solid 1px;
+}
+.info-lb2{
+	border-color: #9c886f!important;
+}
+.gamesel{
+	border-color: #dfc09d;
+}
+.breadcrumb>li::after{
+	border-color: #FFF;
+}
+.step_rounded{
+	border-color: #333;
+}
+/* 最後一條線 */
+.token_list tbody tr:last-of-type td,
+.table.table_from6 tr:last-of-type,
+.table.table_from4 tr:last-of-type,
+#betTable.table.table_from4 tr:last-of-type,
+.table.table_from4 tr.no_data,
+#betTable.table.table_from4 tr.no_data{
+	border:0;
+}
+/* --------------------- 背景 --------------------- */
+/* hover */
+.application_button,
+.application_p,
+a.back_prev.btn-secondary:not(:disabled):not(.disabled).active,
+a.back_prev.btn-secondary:not(:disabled):not(.disabled):active,
+a.back_prev.show>.btn-secondary.dropdown-toggle,
+a.back_prev,
+a.back_prev.btn-secondary:hover,
+a.back_prev,
+input.spread_input_style:checked+label,
+.table.stationmail_list tr.unread,
+.nav-tabs .nav-link.active,
+.sidebar_menu li.active,
+.li_list li,
+.recievemoneyTable tr,
+.pages .recievemoneyTable tr:hover,
+#stationmail_mail .inbox-data-row:hover,
+#stationmail_mail .sent-data-row:hover,
+.announcement_content tr:hover,
+table.dataTable.table_liststyle tbody tr:hover td,
+#betTable tbody tr:hover,
+.spreadregister tbody tr:hover,
+#promotionsTableBody .promotion_row:hover{
+	background: #f4dec5;
+}
+/* 工具列 */
+.stationmail_list tbody tr:nth-child(1){
+	background: #e4d2be;
+}
+/* 公司入款標題 */
+#deposit_company table th{
+	background: #f4dec5;
+}
+/* 跑馬燈 深主色 */
+#login2page .headlogin{
+	background:#ad8351;
+}
+.items span:hover, .items span.selected{
+	background: #ad8351 none repeat scroll 0 0 !important;
+}
+/* gamelobby bg */
+.table_form2.table,
+#gamelobby #casinotab,
+#gamelobby .gameitem{
+	background: #f1e9e0;
+}
+/* game */
+.filter_function_content{
+	background: #c1a27e;
+}
+/* modal 公告 */
+#announcementFooter .btn,
+#announcementModal .modal-header{ 
+	background-color: #3E290E;
+}
+.deposit_nodata,
+.token_au_content,
+#show_list,
+.return_table_table .return_table_data,
+.return_table_table .account .col-4,
+#betTable tbody tr,
+#betTable tbody .data_empty.no_data:hover,
+#betTable tbody tr.no_data{
+	background: none;
+}
+/* --------------------- input背景 --------------------- */
+.promotion_activity_box #act_promotion_number,
+.arc_style tr td input:focus,
+.de_company_atm tr td input.form-control:focus,
+.deposit-card .form-control,
+.register_agent_accordion .form_content,
+#register_agenthelp .form-control, 
+.spread_add_style .form-control,
+.authentication_select input, 
+.authentication_select input:focus, 
+.authentication_select select,
+.member_table tr td,
+#member .form-control,
+#login2page input{
+	background: #FFF;
+	border: 1px solid #ced4da;
+}
+.filter_list_button .btn-outline-secondary,
+.btn-outline-secondary:not(:disabled):not(.disabled).active,
+.btn-outline-secondary:not(:disabled):not(.disabled):active,
+.show>.btn-outline-secondary.dropdown-toggle,
+.filter_list_button .btn-outline-secondary,
+.member_management_table .search #search_send {
+	background: #bc9a6d;
+	border-color: #bc9a6d;
+}
+/* game 篩選 */
+.input-group-append .btn-outline-secondary:not(:disabled):not(.disabled).active,
+.input-group-append .btn-outline-secondary:not(:disabled):not(.disabled):active{
+	color: #fff;
+    background-color: #545b62;
+    border-color: #4e555b;
+}
+/* ----------------- 按鈕 ----------------- */
+/* 不重要 */
+.qr_code_authentication{
+	background:#f4dec5;
+	border:#f4dec5;
+	color: #ad8351;
+}
+/*modal關閉按鈕*/
+#cooperationAgreementModal .modal-footer button{
+	color: #fff;
+	background-color: #5a6268;
+	border-color: #545b62;
+}
+/* --------------------- 共用 之後要拉出去 --------------------- */
+/* 合作夥伴 - 怪異的動畫線條效果 */
+#static .pages .nav-tabs>li>a{
+	transition:none;
+}
+#static .pages .nav-tabs>li:last-of-type >a{
+	border:0;
+}
+#wrapper, .container {
+	min-width: 1200px;
+}
+.nav-tabs>li>a{
+	width: 301px;
+}
+#gamelobby #casinotab li a{
+	border:0;
+}
+/* 首頁帳號登入 - 帳號不存在提示 */
+.headlogin #preview_status{
+	position: absolute;
+}
+#header .hBox li a,
+#header .hBox li{
+	margin-right: 0;
+	margin-left: 10px;
+}
+/* 登入頁面 灰色按鈕顏色 */
+#login2page .loginpage_bg.btn:hover{
+	color: #FFF;
+}
+#login2page .panel{
+	box-shadow: none;
+}
+/* 註冊按鈕 */
+#register #submit_to_register{
+	border-radius: 27px;
+}
+#member .table td,
+#member .table th{
+	border: 0;
+}
+#member .table th i{
+	color: #dc3545;
+	margin-right: 5px;
+	margin-left: -11px;
+}
+#member .table th{
+	padding-left: 23px;
+}
+.ca_tdcancel:hover{
+	color: #FFF;
+}
+.btn-outline-secondary:not(:disabled):not(.disabled).active:focus,
+.btn-outline-secondary:not(:disabled):not(.disabled):active:focus,
+.show>.btn-outline-secondary.dropdown-toggle:focus{
+ box-shadow: none;
+}
+/* 欄位版面的左側選單 */
+.sidebar_menu {
+	border-radius: 3px;
+}
+/* 登入後 - 右側帳號與註銷功能列 */
+#submit_to_chpassword,
+#submit_to_logout,
+#gtokenrecycling_balance,
+.reload_balance .badge{
+	height: 29px;
+	display: flex;
+	align-items: center;
+	border:0;
+}
+/* 不用拉出去 */
+/* 首頁登入樣式 */
+.formUl form{
+	display: flex;
+	justify-content: flex-end;
+	height: 40px;
+	align-items: center;
+	position: relative;
+}
+#header #gNavi li a{
+	padding: 50px 10px 17px;
+}
+.headlogin .formUl{
+	width: 100%;
+}
+.headlogin .rform{
+	margin: 0;
+	display: flex;
+	align-items: center;
+}
+.headlogin #preview_status{
+	top: 45px;
+	right: 162px;
+	text-align: center;
+}
+.headlogin{
+	height: 40px;
+}
+.headlogin .login-table-on{
+	margin-left: 0;
+	justify-content: flex-end;
+}
+.headlogin .newSection{
+	top: 3px;
+}
+/* 登入頁面 - 跑馬燈 */
+#login2page .marquee .btn {
+	padding-top: 5px;
+	height: 33px;
+}
+#login2page #main{
+	margin-top: 165px;
+}
+/* game 推薦遊戲顏色 */
+/* 淺色背景用 */
+.recommend_bg_style{
+	background: linear-gradient(to right, rgba(255, 255, 255, 0.03137) 0%,rgba(255, 255, 255, 0.67059) 7%,rgba(255, 255, 255, 0.55) 16%,rgba(255, 255, 255, 0.70196) 51%,rgba(255, 255, 255, 0.34902) 87%,rgba(255, 255, 255, 0.21) 94%,rgba(255, 255, 255, 0.24) 0%);
+}
+.recommend_bg_style::after{
+	background: rgba(241, 233, 224, 0.3);
+}
+/* 站內信 */
+.nav-tabs .nav-item,
+.nav-tabs .nav-link.active{
+	width: 301px;
+}
+#member_receivemoney .nav-tabs,
+#stationmail_mail .nav-tabs{
+ border-bottom: 0;
+}
+#header #gNavi li a::before{
+	top:13px;
+}
+/* 跑馬燈 */
+.newSection{
+	align-items: center;
+}
+.marquee li{
+	line-height: 27px;
+}
+.headlogin .newSection{
+	top: -1px;
+}
+/* 寄信按鈕 */
+#outbox-tab{
+	height: 54px;
+}
+#member_list_wrapper table.dataTable thead th{
+	font-weight: normal;
+}
+/* 取款 - 輸入銀行帳號畫面 */
+.bank_ac_footer{
+	background: none;
+}
+/* 首頁登入 */
+.headlogin input{
+	height: 30px;
+	font-size: 15px;
+}
+/* 錢 */
+.reload_balance .badge{
+	height: 29px;
+	display: flex;
+	align-items: center;
+	font-size: 15px;
+}
+/* 公司入款 */
+.deposit_nodata{
+	border:0;
+	padding: 0;
+	color: #333;
+}
+.deposit_nodata p.bg-info,
+.deposit_nodata p.bg-danger{
+	color: #FFF;
+}
+.main-menu>li>a{
+	font-size: 16px;
+}
+/*瀏覽紀錄*/
+.browse_content{
+	background: #f1e9e0;
+}
+.next_browse_list{
+	background: #dcc9b3;
+}
+/* contactus.php */
+.contacts_list li:hover{
+	background: #f6e8d8;
+}
+#home .mainImg{
+	height: auto!important;
+}
+/* gamelobby.php */
+.alert_gameblack {
+    background-color: #f1e9e0;
+    border-color: #f1e9e0;
+    color: #333;
+}

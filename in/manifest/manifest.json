@@ -1,0 +1,21 @@
+{
+  "name": "JIGDEMO",
+  "short_name": "JIGDEMO",
+  "icons": [{
+    "src": "icons/touch-icon-ipad.png",
+    "sizes": "76x76",
+    "type": "image/png"
+  }, {
+    "src": "icons/touch-icon-iphone-retina.png",
+    "sizes": "120x120",
+    "type": "image/png"
+  }, {
+    "src": "icons/touch-icon-ipad-retina.png",
+    "sizes": "152x152",
+    "type": "image/png"
+  }],
+  "start_url": "../../index.php",
+  "display": "standalone",
+  "background_color": "#333333",
+  "theme_color": "#333333"
+}

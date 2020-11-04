@@ -1,0 +1,119 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>An Error Has Occured</title>
+  <style stype="text/css">
+  @color-primary: #30A9DE;
+@color-secondary: #30A9DE;
+@color-tertiary: #30A9DE;
+@color-primary-light: #6AAFE6;
+@color-primary-dark: #8EC0E4;
+@Distance: 1000px;
+
+body{
+  overflow: hidden;
+  user-select: none;
+}
+
+html, body {
+  position: relative;
+  background: #04030C ;
+  height: 100%;
+  min-height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #F4ED71;
+}
+
+.Container {
+  text-align: center;
+  position: relative;
+}
+
+.MainTitle {
+  display: block;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.MainDescription {
+  max-width: 50%;
+  font-size: 1.2rem;
+  font-weight: lighter;
+}
+
+.MainGraphic {
+  position: relative;
+}
+
+.Cog {
+  width: 14rem;
+  height: 14rem;
+  fill: #F08B33;
+  transition: easeInOutQuint();
+  animation: CogAnimation 5s infinite;
+  cursor: pointer;
+
+}
+
+.Spanner {
+  position: absolute;
+  transform: rotate(20deg);
+  top: 10%;
+  left: 20%;
+  width: 10rem;
+  height: 10rem;
+  fill: #6AAFE6;
+}
+
+.Hummingbird{
+  position: absolute;
+  width: 3rem;
+  height: 3rem;
+  fill: #8EC0E4;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+
+@keyframes CogAnimation {
+    0%   {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+
+@keyframes ColorFiesta {
+    0%   {background: #a5dff9;}
+    20%   {background:#ef5285;}
+    40%   {background: #60c5ba;}
+    60%   {background: #feee7d;}
+   80%   {background:#6a60a9;}
+   100%   {background: #a5dff9;}
+}
+
+  </style>
+</head>
+
+<body id="MainBody">
+
+  <div class="Container">
+
+    <div class="MainGraphic">
+    <svg id="Gear" class="Cog" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M29.18 19.07c-1.678-2.908-.668-6.634 2.256-8.328L28.29 5.295c-.897.527-1.942.83-3.057.83-3.36 0-6.085-2.743-6.085-6.126h-6.29c.01 1.043-.25 2.102-.81 3.07-1.68 2.907-5.41 3.896-8.34 2.21L.566 10.727c.905.515 1.69 1.268 2.246 2.234 1.677 2.904.673 6.624-2.24 8.32l3.145 5.447c.895-.522 1.935-.82 3.044-.82 3.35 0 6.066 2.725 6.083 6.092h6.29c-.004-1.035.258-2.08.81-3.04 1.676-2.902 5.4-3.893 8.325-2.218l3.145-5.447c-.9-.515-1.678-1.266-2.232-2.226zM16 22.48c-3.578 0-6.48-2.902-6.48-6.48S12.423 9.52 16 9.52c3.578 0 6.48 2.902 6.48 6.48s-2.902 6.48-6.48 6.48z"/></svg>
+
+    </div>
+
+  <h1 class="MainTitle">
+        5xx ERROR !
+      </h1>
+    <p class="Main Description">
+      Oops! We're busy Fixing!
+    </p>
+
+  </div>
+
+</body>
+
+</html>

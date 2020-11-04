@@ -1,0 +1,873 @@
+/*----------------全站主要樣式--------------------*/
+/*---作為開發使用時 import root.css 載入色彩變數 --*/
+/*--- 正式上線 請使用CSSnext 轉為 一般CSS檔使用 ---*/
+/*--- 包含外框、陰影、顏色、透明度---*/
+/*----------------------------------------------*/
+@import 'root.css';
+
+a,a:hover{
+	color: unset;
+}
+
+body {
+	background-color:#eee;
+	color: var(--font-dark);
+}
+
+body#gamelobby,
+body#index{
+	background-color: #222; 
+}
+
+body#login {
+	/*background-color: #eee;*/
+	/*background: #222;*/
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#343434+0,232323+100 */
+	background: #343434; /* Old browsers */
+	background: -moz-linear-gradient(left, #343434 0%, #232323 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left, #343434 0%,#232323 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right, #343434 0%,#232323 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#343434', endColorstr='#232323',GradientType=1 ); /* IE6-9 */
+}
+
+/*bootstrap 基本色*/
+.btn-primary,
+.btn-primary:hover{
+	background-color: #c39d6d;
+	border-color: #c39d6d;
+	color: #FFF;
+}
+a.bg-primary:focus,
+a.bg-primary:hover,
+button.bg-primary:focus,
+button.bg-primary:hover,
+.btn-primary.disabled, .btn-primary:disabled,
+.btn-primary:not(:disabled):not(.disabled).active, 
+.btn-primary:not(:disabled):not(.disabled):active, 
+.show>.btn-primary.dropdown-toggle,
+.btn-primary:not(:disabled):not(.disabled).active:focus, 
+.btn-primary:not(:disabled):not(.disabled):active:focus, 
+.show>.btn-primary.dropdown-toggle:focus{
+	background-color: #c39d6d!important;
+	border-color: #c39d6d;
+	color: #FFF;
+	box-shadow:0 0 0 0.2rem rgba(195, 157, 109, 0.5);	
+}
+.btn-primary.btn.focus, .btn-primary.btn:focus{
+	box-shadow:0 0 0 0.2rem rgba(195, 157, 109, 0.5);
+}
+/*原本藍色改主色*/
+.bg-primary{
+	background: #c39d6d!important;
+}
+/*原本藍色改主色*/
+.text-primary{
+	color: #c39d6d!important;
+}
+a.text-primary:focus, 
+a.text-primary:hover,
+a.text-primary:focus, 
+a.text-primary:hover{
+	color: #c39d6d!important;	
+}
+/*原本灰色改淡色灰*/
+.btn-secondary{
+	background:#b1b1b1;
+	border-color:#b1b1b1;
+}
+/*原本灰色改淡色灰*/
+.border-secondary{
+	border-color:#eaeaea!important;
+}
+/*bootstrap*/
+.form-control:disabled, 
+.form-control[readonly]{
+  background: #e0e0e0;
+  color: #939393;
+  box-shadow: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.form-control:focus{
+	border-color: #e0e0e0;
+}
+
+.bg-secondary{
+	background: #b1b1b1!important;
+}
+
+.m-border-bottom{
+	border-bottom: solid 1px #ddd;
+}
+
+.member_m_text{
+	display: inline-block;
+	color: #FFF;
+	vertical-align: middle;
+}
+.member_m_text p{
+	position: relative;
+	margin-bottom: 5px;
+	color: #838383;
+}
+.member_m_text p:last-child{
+	margin: 0;
+}
+.member_m_text p a.glyphicon{
+	width: 20px;
+	height: 20px;
+	font-size: 12px;
+	border:0;
+	position: absolute;
+	right: -8px;
+	top:-8px;
+}
+.card-header:first-child{
+	border-radius:0;
+}
+/*-----------------------共用設定----------------*/
+/*陰影*/
+.nav-headerbutton,
+.stationmail_list tr,
+.table.table_from4 tr,
+.table_from4 tr,
+.table_from6 tr,
+.li_list li,
+.table_form2 tr,
+.table.table_liststyle tr{
+  box-shadow: 0px 1px 2px rgba(0,0,0,.12156862745098039);
+}
+.table_form2.table_form2_input tr,
+table.dataTable.table_liststyle tbody tr td.dataTables_empty{
+	box-shadow: none;
+}
+/*共用表格 - 烈表式 有連結*/
+table.dataTable.table_liststyle tbody tr,
+table.dataTable.table_liststyle tbody tr td.dataTables_empty{
+	background: none;
+}
+.table.table_liststyle tr.table-success td,
+table.dataTable.table_liststyle tbody tr td.alert-success{
+	background-color: #c3e6cb;
+}
+/*文字顏色 - 內文 #999999*/
+.announcement i,
+.promotions_detail time,
+.table.table_from4 td,
+.table_from4 td,
+.table_from6 td{
+	color:#999999; 
+}
+/*文字顏色 - 標題已讀與未讀*/
+.stationmail_list tr td p{
+	color:#575656;
+}
+/*文字顏色 - 標題 #666666*/
+.announcement_title,
+.stationmail_list tr td p,
+.table_from6 td:nth-child(1),
+.table.table_from4 td:nth-child(1),
+.table_from4 td:nth-child(1){
+	color:#666666 ; 
+}
+/*文字顏色 - 功能 #cccccc*/
+.btn-outline-secondary:hover,
+.btn-outline-secondary:not(:disabled):not(.disabled):active:focus,
+.btn-outline-secondary:not(:disabled):not(.disabled):active,
+.stationmail_input td label,
+.btn-outline-secondary{
+	color: #939393;
+}
+/*線條框 - 功能 #cccccc*/
+.btn-outline-secondary:hover,
+.btn-outline-secondary,
+.btn-outline-secondary:not(:disabled):not(.disabled):active{
+	border-color:#939393;
+}
+.btn-outline-secondary:not(:disabled):not(.disabled):active,
+.btn-outline-secondary:hover{
+ 	background: none;
+ 	box-shadow: none;
+ }
+.btn-outline-secondary:not(:disabled):not(.disabled):active:focus{
+ 	box-shadow: none;
+ }
+/*標題 黑色header*/
+.menuheader,
+.menuheader_menuadmin{
+	background: #434343;
+	color: #FFF;
+}
+/*內文標題顏色*/
+#stationmail_mail td h6{
+  color:#545353;
+}
+/*內文顏色*/
+#stationmail_mail td .detail{
+  color:#8c8c8c;
+}
+/*寬度100貼齊上方的header按鈕*/
+.nav-headerbutton a.active,
+.nav-headerbutton.nav-tabs .nav-link.active{
+	border-bottom: 2px solid #c39d6d;
+	color: #c39d6d;
+}
+/*共用*/
+.table_form2 th{
+	background: #FFF;
+}
+ /*共用div - 類似表格兩欄式 div_from2*/
+.div_from2>div:nth-child(1),
+.div_from2input,
+.div_from2>div:nth-child(2){
+	background: #FFF;
+}
+.div_from2input>div:nth-child(2){
+	margin-right: 0;
+	padding-right: 0;
+}
+.send_btn{
+  border:0;
+}
+.send_btn:disabled,
+.send_btn button[disabled]{
+  color:#949494;
+}
+button.send_btn:focus{
+ outline-color: #cccccc; 
+}
+/*-------------------header---------------------*/
+#header {
+	background: #222 url(../img/common/promotion_bg2.jpg) repeat fixed top;
+	color: var(--font-dark);
+}
+
+/* #header .navbar {
+	box-shadow: 0 4px 5px 0 rgba(0, 0, 0, .5);
+} */
+
+#header .domain {
+	color: var(--font-light);
+}
+
+#header .account-info {
+	background: #c39d6d none repeat scroll 0 0;
+}
+
+#header .account_img {
+	background-color: #eee;
+}
+
+#header .account_img span {
+	color: #c39d6d;
+}
+
+#header .account_img span {
+	color: #c39d6d;
+}
+
+#header .navbar-collapse {
+	background-color: #333;
+}
+
+#header .account-info .account-notice .badge {
+	color: var(--font-light);
+}
+
+#header .account-info .account-notice>a {
+	color: #633333;
+}
+
+#header .account-info .media-body {
+	color: #fff;
+}
+
+#header .dropdown-menu .dropdown-item a {
+	color: #6c757d;
+}
+/*---------------mainmenu----------------*/
+#header #menu-block{
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	display: none;
+	background-color: #0000004d;
+	position: fixed;
+	z-index: 998;
+}
+#header #main-menu{
+	top: 0;
+	right: -70vw;
+	width: 70vw;
+	height: 100vh;
+	background-color: #000;
+	position: fixed;
+	z-index: 999;
+}
+#header #main-menu .control{
+	background-color: #383838;
+	color: #fff;
+	padding: 10px 15px;
+}
+#header #main-menu .menu-list a{
+	display: flex;
+	color: #fff;
+	padding: 15px;
+}
+#header #main-menu .menu-list .lang-disabled-style a{
+	padding: 10px 15px;
+}
+#header #main-menu .menu-list a .icon{
+	margin-right: .5em;
+}
+/*語系選單調整*/
+.menu-list .btn-secondary{
+	background: #000;
+	border:0;
+}
+/*語系選單的文字顏色*/
+#header #main-menu .menu-list .dropdown-menu a{
+	color: var(--font-dark);
+}
+#header #main-menu .menu-list .dropdown{ 
+	display: inline-block;
+	vertical-align: middle;
+	width: 50%;
+}
+#header #main-menu .menu-list .dropdown .btn{
+	padding-left: 0;
+	width: 100%;	
+	text-align: left;
+}
+/*顯示mobile語系的星球icon*/
+.mobile_language{
+	color: #FFF;
+	display: inline-block;
+	padding: 15px 0 15px 15px;
+	vertical-align: middle;
+	margin-right: 5px;
+}
+#header #main-menu .menu-list .btn-secondary:not(:disabled):not(.disabled):active, .show>.btn-secondary.dropdown-toggle{
+	background: none;
+	border: 0;
+	box-shadow: none;
+}
+.dropdown-menu{
+	border: 0;
+}
+.show>.btn-secondary.dropdown-toggle:focus{
+	box-shadow: none;
+}
+/*------footer---------------*/
+.footer {
+	background-color: var(--bg-menu-bottom);
+	color: var(--font-menu-bottom);
+	box-shadow: 0 -4px 5px 0 rgba(0, 0, 0, .5);
+}
+
+/*marqueebox*/
+.marqueebox {
+	background-color: #333;
+}
+
+.marqueebox .title {
+	color: #c39d6d;
+	position: absolute;
+	top: 2px;
+}
+
+.marqueebox .marquee a {
+	color: var(--font-light);
+}
+
+.marqueebox .marquee .js-marquee li span {
+	color: #63d0b5;
+}
+
+/*--------------------有連結----------*/
+.table_link tr td:first-child{
+  color: #c39d6d;
+}
+
+.table_link tr td:first-child h6{
+  color: #000;
+}
+/*標題顏色*/
+.announcement_title,
+.li_list_link h6{
+	color: #666666;
+}
+/*內文顏色*/
+time,
+.li_list li a time,
+.announcement_time{
+	color: #999999;
+}
+/*----------元件_滑動選單-----------------------*/
+/* 單一分類 寬度更改*/
+.index_tabmenu>li.widthactive{
+	width: 49%!important;
+}
+
+.index_tabmenu>li.active,
+.index_tabmenu>li.active>a {
+	background-color: var(--bg-primary) !important;
+	border: 1px solid var(--bg-primary) !important;
+	border-bottom-color: var(--bg-primary) !important;
+}
+
+.swiper-slide {
+	background: #333;
+	box-shadow: 0 0 10px 0 rgba(0, 0, 0, .5);
+}
+
+.swiper-container #gNavi li a {
+	color: #c39d6d;
+}
+
+.swiper-container #gNavi li a.active {
+	color: var(--highlight);
+}
+
+.swiper-container #gNavi li.active a {
+	color: var(--highlight);
+}
+
+/*----------元件_遊戲項目-----------------------*/
+.gameitem {
+	background-color: #333 !important;
+	/*border: 2px var(--highlight-secondary) solid !important;*/
+}
+
+#index .gameitem {
+	border-radius: 10px;
+}
+
+/*----------page_#index-----------------------*/
+#index .index_m_title {
+	box-shadow: 0 0 10px 0 rgba(0, 0, 0, .5);
+	border-left: 5px solid var(--bg-primary);
+}
+
+#index .index_m_title.h5,
+#index .index_m_title h5 {
+	color: var(--font-menu-bottom);
+}
+
+/*----------page_#gamelobby-----------------------*/
+#gamelobby #casinotab #gamesel a {
+	color: #f1e9e0;
+}
+
+#gamelobby #casinotab.nav>li.active>a {
+	background: #f1e9e0 !important;
+	border: 2px solid #f1e9e0 !important;
+	color: #333 !important;
+}
+
+#gamelobby .input-group>.input-group-append>.btn {
+	background-color: var(--highlight-secondary);
+	color: #fff;
+}
+
+#gamelobby .nav-pills .nav-link {
+	border: 2px #f1e9e0 solid;
+	color: #fff;
+}
+
+#gamelobby .gamesel {
+	color: #fff !important;
+}
+/*
+#gamelobby .items span:hover {
+	background: none;
+}
+*/
+#gamelobby .items span.selected {
+	color: #fff;
+}
+
+#gamelobby .select {
+	background-color: var(--bg-primary);
+}
+
+/**/
+#static h2,
+#static h3 {
+	color: var(--bg-primary);
+}
+
+#static .pages {
+	background-color: #fff !important;
+	border: 1px solid #999 !important;
+}
+
+/*----------header_logo變化-----------------------*/
+.navbar-brand .logo {
+	background: url(../img/common/logo.png) no-repeat left center;
+	width: 100px;
+	min-height: 50px;
+	background-size: 100px;
+}
+
+#admin .navbar-brand .logo {
+	background: unset;
+}
+
+#admin .navbar-brand .logo::before {
+	width: 100px;
+	min-height: 50px;
+	background-size: 100px;
+	position: absolute;
+	top: calc(50% - 10px);
+	text-align: center;
+}
+
+
+/*下拉選單區塊顏色*/
+.navblock .nbox {
+	background-color: #222222;
+}
+
+
+/*------------會員中心----------------*/
+/*代理中心 - 會員管理*/
+.agenthelp_password{
+	background: #ccc;
+	border:0;
+	color: #FFF;
+}
+.agenthelp_password.btn-outline-secondary:hover, 
+.agenthelp_password.btn-outline-secondary:not(:disabled):not(.disabled):active:focus, 
+.agenthelp_password.btn-outline-secondary:not(:disabled):not(.disabled):active, 
+.agenthelp_password.stationmail_input td label, 
+.agenthelp_password.btn-outline-secondary{
+	background: #ccc;
+	border:0;
+	color: #FFF;
+}
+.register_agenthelpbt button {
+    background: none;
+    color: #CCC;
+    border: 0;
+}
+/*@media (min-width: 576px){
+	.container {
+	     max-width: 100%; 
+	}
+}*/
+#member_list_wrapper table.dataTable thead th{
+	border:0!important;
+}
+.sorting_1{
+	color: #FF6600;
+}
+table.dataTable.no-footer{
+	border: 0!important;
+}
+.border-bottom{
+	font-weight: normal;
+	color: #333;
+}
+table.dataTable thead th, table.dataTable thead td{
+	border-bottom: #e7e7e7 5px solid!important;
+	font-weight: normal!important;
+	color: #333!important;
+}
+#member_list_wrapper table.dataTable.m_management tbody th, 
+#member_list_wrapper table.dataTable.m_management tbody td{
+	padding: 15px;
+	font-size: 14px;
+}
+/*#main .card-body{
+padding-top: 0;
+}*/
+/* .col-sm-12{
+	padding: 0;
+} */
+/*代理中心 - 會員管理 - 頁碼*/
+.dataTables_wrapper .dataTables_paginate .paginate_button{
+	padding: 0!important;
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover{
+	border:0!important;
+	background: none!important;
+}
+#main .col-sm-12.col-md-7{
+	display: none!important;
+}
+
+/*會員圖像*/
+#member-icon{
+  background: #CCC;
+  border-radius: 100%;
+  font-size: 27px;
+  width: 50px;
+  height: 50px;
+  position: relative;	
+}
+
+#member-icon span{
+	color: #FFF;
+}
+
+.account-notice .notice_unread:before,.account-notice .notice_receiv:before{
+	font-size:33px;
+	display: block;
+	position: relative;
+}
+
+/*註銷*/
+#btn-logout{
+	background: var(--gray); 
+	color: #FFF;
+}
+/*提款UI*/
+#main .card.mb-2 .h5.col-3{
+	font-size: 14px;
+	margin-bottom: 0;
+}
+#gtoken_b .h5.col-3{
+	margin-bottom: 0;
+}
+#gtoken_b .h5.col-3 p{
+	position: relative;
+	top:50%;
+	transform: translateY(-50%);	
+}
+#main .row.success.h4.px-4.mb-3{
+	font-size: 14px;
+}
+/*#main .text-danger{
+	width: 21vw;
+	display: inline-block;
+	line-height: 18px;
+	text-align: right;
+}*/
+/*-------------註冊頁面---------------*/
+.register_pc_m{
+	background: none;
+	padding: 0;
+	border-radius: 0;
+}
+#member{
+	background-color: #222;
+}
+#register table th p{
+  color: #fff;
+}
+#register p a{
+	color: #ffc107;
+}
+#register table th{
+	color: #FFF;
+}
+#register table th i{
+	color: #dc3545;
+}
+#register table input,
+#register table tr td select{
+  background: #3b3b3b;
+  border: solid 1px #6c757d;
+  color: #c39d6d;
+}
+
+#register table tr td select{
+	color: #a3a3a3;
+}
+
+.checkbox label{
+	color: #FFF;
+}
+.checkbox.register_checkbox label{
+	color: #222;
+}
+#register .checkbox button{
+	background: none;
+	border: 0;
+	color: #dc3545;
+}
+/*
+
+#member .card,#member .card-header{
+	background: none!important;
+}
+#member .card-header{
+	text-align: center;	
+	color: #fff;
+}
+#member table th{
+  color: #fff;
+  border: 0;
+  vertical-align: middle;
+  padding-left: 23px;
+  width: 100%;
+  min-width: 100%;
+  font-size: 14px;	
+  box-sizing: border-box;
+  display: block;	
+}
+#member table td{
+  box-sizing: border-box;
+  width: 100%;
+  display: block;	
+}
+#member .checkbox{
+	padding-left: 0;	
+}
+#submit_to_register_result ~ .row  a{
+	color: #FFF;
+}
+
+.register_pc_m .show_captcha_css{
+  top: 50%;
+  transform: translateY(-50%);
+  right:10px;
+}*/
+/*------會員登入------*/
+#login .card-body input{
+	color: #c39d6d;
+}
+
+@media screen and (max-height:840px){
+	.card.register_pc_m{
+		position: relative;
+		margin-top: 2% auto;
+		left: auto;
+		top: auto;
+	}
+}
+/*------站內信------*/
+.modal_contentstyle .modal-time {
+    color: #939393;
+}
+.navstyle a{
+	background: #b1b1b1;
+	color: #FFF;
+}
+.navstyle a.btn-secondary:not(:disabled):not(.disabled).active:focus, 
+.navstyle a.btn-secondary:not(:disabled):not(.disabled):active:focus, 
+.navstyle a.show>.btn-secondary.dropdown-toggle:focus{
+	box-shadow: none;
+}
+.navstyle a.btn-secondary:not(:disabled):not(.disabled).active, 
+.navstyle a.btn-secondary:not(:disabled):not(.disabled):active, 
+.navstyle a.show>.btn-secondary.dropdown-toggle{
+	background: #FFF;
+	color:#495057;
+}
+#stationmail_mail .table_list tr{
+	background: #FFF;
+	border-color:#eeeeee;
+}
+/*------交易明細------*/
+#motransaction_log .table-mb-3{
+	margin-bottom: 0;
+}
+.table .thead-light th{
+	background: #b1b1b1;
+	color: #FFF;
+}
+/*------邀請碼------*/
+/*---------個人訊息----------*/
+.modal_contentstyle .modal-body .spread_registertable .row{
+	margin-bottom: 0;
+	margin-top: 0;
+}
+.modal_contentstyle .modal-body .spread_registertable .row:nth-child(1){
+	margin-bottom: 0;
+	margin-top: 0;
+}
+.table.spread_registertable{
+	margin-bottom: 0;
+}
+.spread_registertable td{
+	border: 1px solid #dee2e6;
+	border-bottom:0;
+}
+.spread_registertable tr td:nth-child(1){
+	border-right:0;
+}
+.spread_registertable:last-child tr:last-child td{
+	border-bottom: 1px solid #dee2e6;
+}
+.spread_add_style >div:nth-child(1),
+.member_table tr th{
+  background: #FFF;
+}
+/*.member_table tr{
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12156862745098039);
+}*/
+.card-header a.spread_color_bt,
+.card-header span.spread_color_bt{
+	color: #FFF;
+}
+#linkDataTableBody td h6{
+	color:#c39d6d;
+}
+.spread_add_bg input[type=password]{
+	background: #f8f8f8;
+}
+/*---------安全中心----------*/
+/*---------圓弧樣式----------*/
+.arc_style tr td:nth-child(1){ 
+	background: #FFF;
+}
+.arc_style tr td:nth-child(2){ 
+	background: #f8f8f8;
+}
+.arc_style tr td input,
+.arc_style tr td select{
+	background: #f8f8f8;
+}
+/*---------會員管理----------*/
+#rg_odds_table a:hover{
+	text-decoration: none;
+	color: #FFF;
+}
+#rg_odds_table.btn-secondary:not(:disabled):not(.disabled).active, 
+#rg_odds_table.btn-secondary:not(:disabled):not(.disabled):active, 
+#rg_odds_table.show>.btn-secondary.dropdown-toggle{
+	background-color: #b1b1b1;
+  border-color: #b1b1b1;
+  text-decoration: none;
+  color: #FFF;
+}
+#rg_odds_table.btn-link.focus, 
+#rg_odds_table.btn-link:focus{
+	text-decoration: none;
+	color: #FFF;
+}
+/* -----------------雙重驗證------------- */
+.twofa p{
+	color: #fff;
+}
+/*---------暫時補救----------*/
+/*已經設定好的- 會被影響的部分*/
+/*#transactionDataTable.table.dataTable tbody tr{
+  background: none!important;
+}*/
+#transactionDataTable.table.dataTable tbody tr.table_bg{
+  background: #FFF!important;
+}
+/*暫時補救 - 財務中心*/
+.bg-secondary2{
+		background: #dedede!important;
+		color: #000;
+	}
+	/*說明*/
+.prompt_btn{
+	color: #c39d6d;
+	display: inline-block;
+	background: none;
+	border:0;
+}
+button.prompt_btn:focus{
+	outline:none;
+}
+/* home.php */
+.domain .ezurl{
+	color: #c39d6d;
+}
